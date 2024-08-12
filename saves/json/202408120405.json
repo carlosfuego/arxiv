@@ -1,0 +1,926 @@
+[
+    {
+        "keyword": "kv cache",
+        "arxiv_results": [
+            {
+                "id": "http://arxiv.org/abs/2408.05171v1",
+                "guidislink": true,
+                "link": "http://arxiv.org/abs/2408.05171v1",
+                "updated": "2024-08-09T16:48:01Z",
+                "updated_parsed": [
+                    2024,
+                    8,
+                    9,
+                    16,
+                    48,
+                    1,
+                    4,
+                    222,
+                    0
+                ],
+                "published": "2024-08-09T16:48:01Z",
+                "published_parsed": [
+                    2024,
+                    8,
+                    9,
+                    16,
+                    48,
+                    1,
+                    4,
+                    222,
+                    0
+                ],
+                "title": "Time-resolved measurement of neutron energy isotropy in a\n  sheared-flow-stabilized Z pinch",
+                "title_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "Time-resolved measurement of neutron energy isotropy in a\n  sheared-flow-stabilized Z pinch"
+                },
+                "summary": "Previous measurements of neutron energy using fast plastic scintillators\nwhile operating the Fusion Z Pinch Experiment (FuZE) constrained the energy of\nany yield-producing deuteron beams to less than $4.65 keV$. FuZE has since been\noperated at increasingly higher input power, resulting in increased plasma\ncurrent and larger fusion neutron yields. A detailed experimental study of the\nneutron energy isotropy in these regimes applies more stringent limits to\npossible contributions from beam-target fusion. The FuZE device operated at\n$-25~kV$ charge voltage has resulted in average plasma currents of $370~kA$ and\nD-D fusion neutron yields of $4\\times10^7$ neutrons per discharge. Measurements\nof the neutron energy isotropy under these operating conditions demonstrates\nthe energy of deuteron beams is less than $7.4 \\pm 5.6^\\mathrm{(stat)} \\pm\n3.7^\\mathrm{(syst)}~keV$. Characterization of the detector response has reduced\nthe number of free parameters in the fit of the neutron energy distribution,\nimproving the confidence in the forward-fit method. Gamma backgrounds have been\nmeasured and the impact of these contributions on the isotropy results have\nbeen studied. Additionally, a time dependent measurement of the isotropy has\nbeen resolved for the first time, indicating increases to possible deuteron\nbeam energies at late times. This suggests the possible growth of $m$=0\ninstabilities at the end of the main radiation event but confirms that the\nmajority of the neutron production exhibits isotropy consistent with\nthermonuclear origin.",
+                "summary_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "Previous measurements of neutron energy using fast plastic scintillators\nwhile operating the Fusion Z Pinch Experiment (FuZE) constrained the energy of\nany yield-producing deuteron beams to less than $4.65 keV$. FuZE has since been\noperated at increasingly higher input power, resulting in increased plasma\ncurrent and larger fusion neutron yields. A detailed experimental study of the\nneutron energy isotropy in these regimes applies more stringent limits to\npossible contributions from beam-target fusion. The FuZE device operated at\n$-25~kV$ charge voltage has resulted in average plasma currents of $370~kA$ and\nD-D fusion neutron yields of $4\\times10^7$ neutrons per discharge. Measurements\nof the neutron energy isotropy under these operating conditions demonstrates\nthe energy of deuteron beams is less than $7.4 \\pm 5.6^\\mathrm{(stat)} \\pm\n3.7^\\mathrm{(syst)}~keV$. Characterization of the detector response has reduced\nthe number of free parameters in the fit of the neutron energy distribution,\nimproving the confidence in the forward-fit method. Gamma backgrounds have been\nmeasured and the impact of these contributions on the isotropy results have\nbeen studied. Additionally, a time dependent measurement of the isotropy has\nbeen resolved for the first time, indicating increases to possible deuteron\nbeam energies at late times. This suggests the possible growth of $m$=0\ninstabilities at the end of the main radiation event but confirms that the\nmajority of the neutron production exhibits isotropy consistent with\nthermonuclear origin."
+                },
+                "authors": [
+                    {
+                        "name": "R. A. Ryan"
+                    },
+                    {
+                        "name": "P. E. Tsai"
+                    },
+                    {
+                        "name": "A. R. Johansen"
+                    },
+                    {
+                        "name": "A. Youmans"
+                    },
+                    {
+                        "name": "D. P. Higginson"
+                    },
+                    {
+                        "name": "J. M. Mitrani"
+                    },
+                    {
+                        "name": "C. S. Adams"
+                    },
+                    {
+                        "name": "D. A. Sutherland"
+                    },
+                    {
+                        "name": "B. Levitt"
+                    },
+                    {
+                        "name": "U. Shumlak"
+                    }
+                ],
+                "author_detail": {
+                    "name": "U. Shumlak"
+                },
+                "author": "U. Shumlak",
+                "arxiv_comment": "16 pages, 11 figures, submitted to Journal of Nuclear Fusion",
+                "links": [
+                    {
+                        "href": "http://arxiv.org/abs/2408.05171v1",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    },
+                    {
+                        "title": "pdf",
+                        "href": "http://arxiv.org/pdf/2408.05171v1",
+                        "rel": "related",
+                        "type": "application/pdf"
+                    }
+                ],
+                "arxiv_primary_category": {
+                    "term": "physics.plasm-ph",
+                    "scheme": "http://arxiv.org/schemas/atom"
+                },
+                "tags": [
+                    {
+                        "term": "physics.plasm-ph",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    },
+                    {
+                        "term": "nucl-ex",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    }
+                ]
+            },
+            {
+                "id": "http://arxiv.org/abs/2408.04870v1",
+                "guidislink": true,
+                "link": "http://arxiv.org/abs/2408.04870v1",
+                "updated": "2024-08-09T05:20:05Z",
+                "updated_parsed": [
+                    2024,
+                    8,
+                    9,
+                    5,
+                    20,
+                    5,
+                    4,
+                    222,
+                    0
+                ],
+                "published": "2024-08-09T05:20:05Z",
+                "published_parsed": [
+                    2024,
+                    8,
+                    9,
+                    5,
+                    20,
+                    5,
+                    4,
+                    222,
+                    0
+                ],
+                "title": "ConfusedPilot: Compromising Enterprise Information Integrity and\n  Confidentiality with Copilot for Microsoft 365",
+                "title_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "ConfusedPilot: Compromising Enterprise Information Integrity and\n  Confidentiality with Copilot for Microsoft 365"
+                },
+                "summary": "Retrieval augmented generation (RAG) is a process where a large language\nmodel (LLM) retrieves useful information from a database and then generates the\nresponses. It is becoming popular in enterprise settings for daily business\noperations. For example, Copilot for Microsoft 365 has accumulated millions of\nbusinesses. However, the security implications of adopting such RAG-based\nsystems are unclear.\n  In this paper, we introduce ConfusedPilot, a class of security\nvulnerabilities of RAG systems that confuse Copilot and cause integrity and\nconfidentiality violations in its responses. First, we investigate a\nvulnerability that embeds malicious text in the modified prompt in RAG,\ncorrupting the responses generated by the LLM. Second, we demonstrate a\nvulnerability that leaks secret data, which leverages the caching mechanism\nduring retrieval. Third, we investigate how both vulnerabilities can be\nexploited to propagate misinformation within the enterprise and ultimately\nimpact its operations, such as sales and manufacturing. We also discuss the\nroot cause of these attacks by investigating the architecture of a RAG-based\nsystem. This study highlights the security vulnerabilities in today's RAG-based\nsystems and proposes design guidelines to secure future RAG-based systems.",
+                "summary_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "Retrieval augmented generation (RAG) is a process where a large language\nmodel (LLM) retrieves useful information from a database and then generates the\nresponses. It is becoming popular in enterprise settings for daily business\noperations. For example, Copilot for Microsoft 365 has accumulated millions of\nbusinesses. However, the security implications of adopting such RAG-based\nsystems are unclear.\n  In this paper, we introduce ConfusedPilot, a class of security\nvulnerabilities of RAG systems that confuse Copilot and cause integrity and\nconfidentiality violations in its responses. First, we investigate a\nvulnerability that embeds malicious text in the modified prompt in RAG,\ncorrupting the responses generated by the LLM. Second, we demonstrate a\nvulnerability that leaks secret data, which leverages the caching mechanism\nduring retrieval. Third, we investigate how both vulnerabilities can be\nexploited to propagate misinformation within the enterprise and ultimately\nimpact its operations, such as sales and manufacturing. We also discuss the\nroot cause of these attacks by investigating the architecture of a RAG-based\nsystem. This study highlights the security vulnerabilities in today's RAG-based\nsystems and proposes design guidelines to secure future RAG-based systems."
+                },
+                "authors": [
+                    {
+                        "name": "Ayush RoyChowdhury"
+                    },
+                    {
+                        "name": "Mulong Luo"
+                    },
+                    {
+                        "name": "Prateek Sahu"
+                    },
+                    {
+                        "name": "Sarbartha Banerjee"
+                    },
+                    {
+                        "name": "Mohit Tiwari"
+                    }
+                ],
+                "author_detail": {
+                    "name": "Mohit Tiwari"
+                },
+                "author": "Mohit Tiwari",
+                "links": [
+                    {
+                        "href": "http://arxiv.org/abs/2408.04870v1",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    },
+                    {
+                        "title": "pdf",
+                        "href": "http://arxiv.org/pdf/2408.04870v1",
+                        "rel": "related",
+                        "type": "application/pdf"
+                    }
+                ],
+                "arxiv_primary_category": {
+                    "term": "cs.CR",
+                    "scheme": "http://arxiv.org/schemas/atom"
+                },
+                "tags": [
+                    {
+                        "term": "cs.CR",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    },
+                    {
+                        "term": "cs.AI",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    }
+                ]
+            },
+            {
+                "id": "http://arxiv.org/abs/2408.03675v2",
+                "guidislink": true,
+                "link": "http://arxiv.org/abs/2408.03675v2",
+                "updated": "2024-08-08T01:20:13Z",
+                "updated_parsed": [
+                    2024,
+                    8,
+                    8,
+                    1,
+                    20,
+                    13,
+                    3,
+                    221,
+                    0
+                ],
+                "published": "2024-08-07T10:31:07Z",
+                "published_parsed": [
+                    2024,
+                    8,
+                    7,
+                    10,
+                    31,
+                    7,
+                    2,
+                    220,
+                    0
+                ],
+                "title": "NACL: A General and Effective KV Cache Eviction Framework for LLMs at\n  Inference Time",
+                "title_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "NACL: A General and Effective KV Cache Eviction Framework for LLMs at\n  Inference Time"
+                },
+                "summary": "Large Language Models (LLMs) have ignited an innovative surge of AI\napplications, marking a new era of exciting possibilities equipped with\nextended context windows. However, hosting these models is cost-prohibitive\nmainly due to the extensive memory consumption of KV Cache involving\nlong-context modeling. Despite several works proposing to evict unnecessary\ntokens from the KV Cache, most of them rely on the biased local statistics of\naccumulated attention scores and report performance using unconvincing metric\nlike perplexity on inadequate short-text evaluation. In this paper, we propose\nNACL, a general framework for long-context KV cache eviction that achieves more\noptimal and efficient eviction in a single operation during the encoding phase.\nDue to NACL's efficiency, we combine more accurate attention score statistics\nin PROXY TOKENS EVICTION with the diversified random eviction strategy of\nRANDOM EVICTION, aiming to alleviate the issue of attention bias and enhance\nthe robustness in maintaining pivotal tokens for long-context modeling tasks.\nNotably, our method significantly improves the performance on short- and\nlong-text tasks by 80% and 76% respectively, reducing KV Cache by up to 50%\nwith over 95% performance maintenance. The code is available at\nhttps://github.com/PaddlePaddle/Research/tree/master/NLP/ACL2024-NACL.",
+                "summary_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "Large Language Models (LLMs) have ignited an innovative surge of AI\napplications, marking a new era of exciting possibilities equipped with\nextended context windows. However, hosting these models is cost-prohibitive\nmainly due to the extensive memory consumption of KV Cache involving\nlong-context modeling. Despite several works proposing to evict unnecessary\ntokens from the KV Cache, most of them rely on the biased local statistics of\naccumulated attention scores and report performance using unconvincing metric\nlike perplexity on inadequate short-text evaluation. In this paper, we propose\nNACL, a general framework for long-context KV cache eviction that achieves more\noptimal and efficient eviction in a single operation during the encoding phase.\nDue to NACL's efficiency, we combine more accurate attention score statistics\nin PROXY TOKENS EVICTION with the diversified random eviction strategy of\nRANDOM EVICTION, aiming to alleviate the issue of attention bias and enhance\nthe robustness in maintaining pivotal tokens for long-context modeling tasks.\nNotably, our method significantly improves the performance on short- and\nlong-text tasks by 80% and 76% respectively, reducing KV Cache by up to 50%\nwith over 95% performance maintenance. The code is available at\nhttps://github.com/PaddlePaddle/Research/tree/master/NLP/ACL2024-NACL."
+                },
+                "authors": [
+                    {
+                        "name": "Yilong Chen"
+                    },
+                    {
+                        "name": "Guoxia Wang"
+                    },
+                    {
+                        "name": "Junyuan Shang"
+                    },
+                    {
+                        "name": "Shiyao Cui"
+                    },
+                    {
+                        "name": "Zhenyu Zhang"
+                    },
+                    {
+                        "name": "Tingwen Liu"
+                    },
+                    {
+                        "name": "Shuohuan Wang"
+                    },
+                    {
+                        "name": "Yu Sun"
+                    },
+                    {
+                        "name": "Dianhai Yu"
+                    },
+                    {
+                        "name": "Hua Wu"
+                    }
+                ],
+                "author_detail": {
+                    "name": "Hua Wu"
+                },
+                "author": "Hua Wu",
+                "arxiv_comment": "Accepted by ACL 2024 (main conference, long paper)",
+                "links": [
+                    {
+                        "href": "http://arxiv.org/abs/2408.03675v2",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    },
+                    {
+                        "title": "pdf",
+                        "href": "http://arxiv.org/pdf/2408.03675v2",
+                        "rel": "related",
+                        "type": "application/pdf"
+                    }
+                ],
+                "arxiv_primary_category": {
+                    "term": "cs.CL",
+                    "scheme": "http://arxiv.org/schemas/atom"
+                },
+                "tags": [
+                    {
+                        "term": "cs.CL",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    }
+                ]
+            },
+            {
+                "id": "http://arxiv.org/abs/2210.10978v2",
+                "guidislink": true,
+                "link": "http://arxiv.org/abs/2210.10978v2",
+                "updated": "2024-08-07T23:48:59Z",
+                "updated_parsed": [
+                    2024,
+                    8,
+                    7,
+                    23,
+                    48,
+                    59,
+                    2,
+                    220,
+                    0
+                ],
+                "published": "2022-10-20T02:58:36Z",
+                "published_parsed": [
+                    2022,
+                    10,
+                    20,
+                    2,
+                    58,
+                    36,
+                    3,
+                    293,
+                    0
+                ],
+                "title": "A Comprehensive Survey on Edge Data Integrity Verification: Fundamentals\n  and Future Trends",
+                "title_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "A Comprehensive Survey on Edge Data Integrity Verification: Fundamentals\n  and Future Trends"
+                },
+                "summary": "Recent advances in edge computing~(EC) have pushed cloud-based data caching\nservices to edge, however, such emerging edge storage comes with numerous\nchallenging and unique security issues. One of them is the problem of edge data\nintegrity verification (EDIV) which coordinates multiple participants (e.g.,\ndata owners and edge nodes) to inspect whether data cached on edge is\nauthentic. To date, various solutions have been proposed to address the EDIV\nproblem, while there is no systematic review. Thus, we offer a comprehensive\nsurvey for the first time, aiming to show current research status, open\nproblems, and potentially promising insights for readers to further investigate\nthis under-explored field. Specifically, we begin by stating the significance\nof the EDIV problem, the integrity verification difference between data cached\non cloud and edge, and three typical system models with corresponding\ninspection processes. To thoroughly assess prior research efforts, we\nsynthesize a universal criteria framework that an effective verification\napproach should satisfy. On top of it, a schematic development timeline is\ndeveloped to reveal the research advance on EDIV in a sequential manner,\nfollowed by a detailed review of the existing EDIV solutions. Finally, we\nhighlight intriguing research challenges and possible directions for future\nwork, along with a discussion on how forthcoming technology, e.g., machine\nlearning and context-aware security, can augment security in EC. Given our\nfindings, some major observations are: there is a noticeable trend to equip\nEDIV solutions with various functions and diversify study scenarios; completing\nEDIV within two types of participants (i.e., data owner and edge nodes) is\ngarnering escalating interest among researchers; although the majority of\nexisting methods rely on cryptography, emerging technology is being explored to\nhandle the EDIV problem.",
+                "summary_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "Recent advances in edge computing~(EC) have pushed cloud-based data caching\nservices to edge, however, such emerging edge storage comes with numerous\nchallenging and unique security issues. One of them is the problem of edge data\nintegrity verification (EDIV) which coordinates multiple participants (e.g.,\ndata owners and edge nodes) to inspect whether data cached on edge is\nauthentic. To date, various solutions have been proposed to address the EDIV\nproblem, while there is no systematic review. Thus, we offer a comprehensive\nsurvey for the first time, aiming to show current research status, open\nproblems, and potentially promising insights for readers to further investigate\nthis under-explored field. Specifically, we begin by stating the significance\nof the EDIV problem, the integrity verification difference between data cached\non cloud and edge, and three typical system models with corresponding\ninspection processes. To thoroughly assess prior research efforts, we\nsynthesize a universal criteria framework that an effective verification\napproach should satisfy. On top of it, a schematic development timeline is\ndeveloped to reveal the research advance on EDIV in a sequential manner,\nfollowed by a detailed review of the existing EDIV solutions. Finally, we\nhighlight intriguing research challenges and possible directions for future\nwork, along with a discussion on how forthcoming technology, e.g., machine\nlearning and context-aware security, can augment security in EC. Given our\nfindings, some major observations are: there is a noticeable trend to equip\nEDIV solutions with various functions and diversify study scenarios; completing\nEDIV within two types of participants (i.e., data owner and edge nodes) is\ngarnering escalating interest among researchers; although the majority of\nexisting methods rely on cryptography, emerging technology is being explored to\nhandle the EDIV problem."
+                },
+                "authors": [
+                    {
+                        "name": "Yao Zhao"
+                    },
+                    {
+                        "name": "Youyang Qu"
+                    },
+                    {
+                        "name": "Yong Xiang"
+                    },
+                    {
+                        "name": "Md Palash Uddin"
+                    },
+                    {
+                        "name": "Dezhong Peng"
+                    },
+                    {
+                        "name": "Longxiang Gao"
+                    }
+                ],
+                "author_detail": {
+                    "name": "Longxiang Gao"
+                },
+                "author": "Longxiang Gao",
+                "links": [
+                    {
+                        "href": "http://arxiv.org/abs/2210.10978v2",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    },
+                    {
+                        "title": "pdf",
+                        "href": "http://arxiv.org/pdf/2210.10978v2",
+                        "rel": "related",
+                        "type": "application/pdf"
+                    }
+                ],
+                "arxiv_primary_category": {
+                    "term": "cs.CR",
+                    "scheme": "http://arxiv.org/schemas/atom"
+                },
+                "tags": [
+                    {
+                        "term": "cs.CR",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    }
+                ]
+            },
+            {
+                "id": "http://arxiv.org/abs/2408.04107v1",
+                "guidislink": true,
+                "link": "http://arxiv.org/abs/2408.04107v1",
+                "updated": "2024-08-07T22:10:26Z",
+                "updated_parsed": [
+                    2024,
+                    8,
+                    7,
+                    22,
+                    10,
+                    26,
+                    2,
+                    220,
+                    0
+                ],
+                "published": "2024-08-07T22:10:26Z",
+                "published_parsed": [
+                    2024,
+                    8,
+                    7,
+                    22,
+                    10,
+                    26,
+                    2,
+                    220,
+                    0
+                ],
+                "title": "Zero-Delay QKV Compression for Mitigating KV Cache and Network\n  Bottlenecks in LLM Inference",
+                "title_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "Zero-Delay QKV Compression for Mitigating KV Cache and Network\n  Bottlenecks in LLM Inference"
+                },
+                "summary": "In large-language models, memory constraints in the key-value cache (KVC)\npose a challenge during inference, especially with long prompts. In this work,\nwe observed that compressing KV values is more effective than compressing the\nmodel regarding accuracy and job completion time (JCT). However, quantizing KV\nvalues and dropping less-important tokens incur significant runtime\ncomputational time overhead, delaying JCT. These methods also cannot reduce\ncomputation time or high network communication time overhead in\nsequence-parallelism (SP) frameworks for long prompts. To tackle these issues,\nbased on our insightful observations from experimental analysis, we propose\nZeroC, a Zero-delay QKV Compression system that eliminates time overhead and\neven reduces computation and communication time of the model operations. ZeroC\ninnovatively embeds compression and decompression operations within model\noperations and adaptively determines compression ratios at a hybrid layer-token\nlevel. Further, it enables a communication-efficient SP inference framework.\nTrace-driven experiments demonstrate that ZeroC achieves up to 80% lower\naverage JCT, 35% lower average perplexity, and 2.8x higher throughput with the\nsame latency compared to state-of-the-art compression methods. ZeroC also\nreduces the average JCT of current LLM serving systems by up to 91% with the\nconstraint of 0.1 perplexity increase. We open-sourced the code.",
+                "summary_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "In large-language models, memory constraints in the key-value cache (KVC)\npose a challenge during inference, especially with long prompts. In this work,\nwe observed that compressing KV values is more effective than compressing the\nmodel regarding accuracy and job completion time (JCT). However, quantizing KV\nvalues and dropping less-important tokens incur significant runtime\ncomputational time overhead, delaying JCT. These methods also cannot reduce\ncomputation time or high network communication time overhead in\nsequence-parallelism (SP) frameworks for long prompts. To tackle these issues,\nbased on our insightful observations from experimental analysis, we propose\nZeroC, a Zero-delay QKV Compression system that eliminates time overhead and\neven reduces computation and communication time of the model operations. ZeroC\ninnovatively embeds compression and decompression operations within model\noperations and adaptively determines compression ratios at a hybrid layer-token\nlevel. Further, it enables a communication-efficient SP inference framework.\nTrace-driven experiments demonstrate that ZeroC achieves up to 80% lower\naverage JCT, 35% lower average perplexity, and 2.8x higher throughput with the\nsame latency compared to state-of-the-art compression methods. ZeroC also\nreduces the average JCT of current LLM serving systems by up to 91% with the\nconstraint of 0.1 perplexity increase. We open-sourced the code."
+                },
+                "authors": [
+                    {
+                        "name": "Zeyu Zhang"
+                    },
+                    {
+                        "name": "Haiying Shen"
+                    }
+                ],
+                "author_detail": {
+                    "name": "Haiying Shen"
+                },
+                "author": "Haiying Shen",
+                "links": [
+                    {
+                        "href": "http://arxiv.org/abs/2408.04107v1",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    },
+                    {
+                        "title": "pdf",
+                        "href": "http://arxiv.org/pdf/2408.04107v1",
+                        "rel": "related",
+                        "type": "application/pdf"
+                    }
+                ],
+                "arxiv_primary_category": {
+                    "term": "cs.LG",
+                    "scheme": "http://arxiv.org/schemas/atom"
+                },
+                "tags": [
+                    {
+                        "term": "cs.LG",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    },
+                    {
+                        "term": "cs.DC",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    }
+                ]
+            },
+            {
+                "id": "http://arxiv.org/abs/2407.19547v2",
+                "guidislink": true,
+                "link": "http://arxiv.org/abs/2407.19547v2",
+                "updated": "2024-08-07T20:43:10Z",
+                "updated_parsed": [
+                    2024,
+                    8,
+                    7,
+                    20,
+                    43,
+                    10,
+                    2,
+                    220,
+                    0
+                ],
+                "published": "2024-07-28T17:46:15Z",
+                "published_parsed": [
+                    2024,
+                    7,
+                    28,
+                    17,
+                    46,
+                    15,
+                    6,
+                    210,
+                    0
+                ],
+                "title": "Temporal Feature Matters: A Framework for Diffusion Model Quantization",
+                "title_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "Temporal Feature Matters: A Framework for Diffusion Model Quantization"
+                },
+                "summary": "The Diffusion models, widely used for image generation, face significant\nchallenges related to their broad applicability due to prolonged inference\ntimes and high memory demands. Efficient Post-Training Quantization (PTQ) is\ncrucial to address these issues. However, unlike traditional models, diffusion\nmodels critically rely on the time-step for the multi-round denoising.\nTypically, each time-step is encoded into a hypersensitive temporal feature by\nseveral modules. Despite this, existing PTQ methods do not optimize these\nmodules individually. Instead, they employ unsuitable reconstruction objectives\nand complex calibration methods, leading to significant disturbances in the\ntemporal feature and denoising trajectory, as well as reduced compression\nefficiency. To address these challenges, we introduce a novel quantization\nframework that includes three strategies: 1) TIB-based Maintenance: Based on\nour innovative Temporal Information Block (TIB) definition, Temporal\nInformation-aware Reconstruction (TIAR) and Finite Set Calibration (FSC) are\ndeveloped to efficiently align original temporal features. 2) Cache-based\nMaintenance: Instead of indirect and complex optimization for the related\nmodules, pre-computing and caching quantized counterparts of temporal features\nare developed to minimize errors. 3) Disturbance-aware Selection: Employ\ntemporal feature errors to guide a fine-grained selection between the two\nmaintenance strategies for further disturbance reduction. This framework\npreserves most of the temporal information and ensures high-quality end-to-end\ngeneration. Extensive testing on various datasets, diffusion models and\nhardware confirms our superior performance and acceleration..",
+                "summary_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "The Diffusion models, widely used for image generation, face significant\nchallenges related to their broad applicability due to prolonged inference\ntimes and high memory demands. Efficient Post-Training Quantization (PTQ) is\ncrucial to address these issues. However, unlike traditional models, diffusion\nmodels critically rely on the time-step for the multi-round denoising.\nTypically, each time-step is encoded into a hypersensitive temporal feature by\nseveral modules. Despite this, existing PTQ methods do not optimize these\nmodules individually. Instead, they employ unsuitable reconstruction objectives\nand complex calibration methods, leading to significant disturbances in the\ntemporal feature and denoising trajectory, as well as reduced compression\nefficiency. To address these challenges, we introduce a novel quantization\nframework that includes three strategies: 1) TIB-based Maintenance: Based on\nour innovative Temporal Information Block (TIB) definition, Temporal\nInformation-aware Reconstruction (TIAR) and Finite Set Calibration (FSC) are\ndeveloped to efficiently align original temporal features. 2) Cache-based\nMaintenance: Instead of indirect and complex optimization for the related\nmodules, pre-computing and caching quantized counterparts of temporal features\nare developed to minimize errors. 3) Disturbance-aware Selection: Employ\ntemporal feature errors to guide a fine-grained selection between the two\nmaintenance strategies for further disturbance reduction. This framework\npreserves most of the temporal information and ensures high-quality end-to-end\ngeneration. Extensive testing on various datasets, diffusion models and\nhardware confirms our superior performance and acceleration.."
+                },
+                "authors": [
+                    {
+                        "name": "Yushi Huang"
+                    },
+                    {
+                        "name": "Ruihao Gong"
+                    },
+                    {
+                        "name": "Xianglong Liu"
+                    },
+                    {
+                        "name": "Jing Liu"
+                    },
+                    {
+                        "name": "Yuhang Li"
+                    },
+                    {
+                        "name": "Jiwen Lu"
+                    },
+                    {
+                        "name": "Dacheng Tao"
+                    }
+                ],
+                "author_detail": {
+                    "name": "Dacheng Tao"
+                },
+                "author": "Dacheng Tao",
+                "arxiv_comment": "arXiv admin note: substantial text overlap with arXiv:2311.16503",
+                "links": [
+                    {
+                        "href": "http://arxiv.org/abs/2407.19547v2",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    },
+                    {
+                        "title": "pdf",
+                        "href": "http://arxiv.org/pdf/2407.19547v2",
+                        "rel": "related",
+                        "type": "application/pdf"
+                    }
+                ],
+                "arxiv_primary_category": {
+                    "term": "cs.CV",
+                    "scheme": "http://arxiv.org/schemas/atom"
+                },
+                "tags": [
+                    {
+                        "term": "cs.CV",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    }
+                ]
+            },
+            {
+                "id": "http://arxiv.org/abs/2408.04043v1",
+                "guidislink": true,
+                "link": "http://arxiv.org/abs/2408.04043v1",
+                "updated": "2024-08-07T18:51:07Z",
+                "updated_parsed": [
+                    2024,
+                    8,
+                    7,
+                    18,
+                    51,
+                    7,
+                    2,
+                    220,
+                    0
+                ],
+                "published": "2024-08-07T18:51:07Z",
+                "published_parsed": [
+                    2024,
+                    8,
+                    7,
+                    18,
+                    51,
+                    7,
+                    2,
+                    220,
+                    0
+                ],
+                "title": "Ownership in low-level intermediate representation",
+                "title_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "Ownership in low-level intermediate representation"
+                },
+                "summary": "The concept of ownership in high level languages can aid both the programmer\nand the compiler to reason about the validity of memory operations. Previously,\nownership semantics has been used successfully in high level automatic program\nverification to model a reference to data by a first order logic (FOL)\nrepresentation of data instead of maintaining an address map. However,\nownership semantics is not used in low level program verification. We have\nidentified two challenges. First, ownership information is lost when a program\nis compiled to a low level intermediate representation (e.g., in LLVM IR).\nSecond, pointers in low level programs point to bytes using an address map\n(e.g., in unsafe Rust) and thus the verification condition (VC) cannot always\nreplace a pointer by its FOL abstraction. To remedy the situation, we develop\nownership semantics for an LLVM like low level intermediate representation.\nUsing these semantics, the VC can opportunistically model some memory accesses\nby a direct access of a pointer cache that stores byte representation of data.\nThis scheme reduces instances where an address map must be maintained,\nespecially for mostly safe programs that follow ownership semantics. For unsafe\nfunctionality, memory accesses are modelled by operations on an address map and\nwe provide mechanisms to keep the address map and pointer cache in sync. We\nimplement these semantics in SEABMC, a bit precise bounded model checker for\nLLVM. For evaluation, the source programs are assumed to be written in C. Since\nC does not have ownership built in, suitable macros are added that introduce\nand preserve ownership during translation to LLVM like IR for verification.\nThis approach is evaluated on mature open source C code. For both handcrafted\nbenchmarks and practical programs, we observe a speedup of $1.3x--5x$ during\nSMT solving.",
+                "summary_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "The concept of ownership in high level languages can aid both the programmer\nand the compiler to reason about the validity of memory operations. Previously,\nownership semantics has been used successfully in high level automatic program\nverification to model a reference to data by a first order logic (FOL)\nrepresentation of data instead of maintaining an address map. However,\nownership semantics is not used in low level program verification. We have\nidentified two challenges. First, ownership information is lost when a program\nis compiled to a low level intermediate representation (e.g., in LLVM IR).\nSecond, pointers in low level programs point to bytes using an address map\n(e.g., in unsafe Rust) and thus the verification condition (VC) cannot always\nreplace a pointer by its FOL abstraction. To remedy the situation, we develop\nownership semantics for an LLVM like low level intermediate representation.\nUsing these semantics, the VC can opportunistically model some memory accesses\nby a direct access of a pointer cache that stores byte representation of data.\nThis scheme reduces instances where an address map must be maintained,\nespecially for mostly safe programs that follow ownership semantics. For unsafe\nfunctionality, memory accesses are modelled by operations on an address map and\nwe provide mechanisms to keep the address map and pointer cache in sync. We\nimplement these semantics in SEABMC, a bit precise bounded model checker for\nLLVM. For evaluation, the source programs are assumed to be written in C. Since\nC does not have ownership built in, suitable macros are added that introduce\nand preserve ownership during translation to LLVM like IR for verification.\nThis approach is evaluated on mature open source C code. For both handcrafted\nbenchmarks and practical programs, we observe a speedup of $1.3x--5x$ during\nSMT solving."
+                },
+                "authors": [
+                    {
+                        "name": "Siddharth Priya"
+                    },
+                    {
+                        "name": "Arie Gurfinkel"
+                    }
+                ],
+                "author_detail": {
+                    "name": "Arie Gurfinkel"
+                },
+                "author": "Arie Gurfinkel",
+                "arxiv_comment": "FMCAD 2024 conference",
+                "links": [
+                    {
+                        "href": "http://arxiv.org/abs/2408.04043v1",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    },
+                    {
+                        "title": "pdf",
+                        "href": "http://arxiv.org/pdf/2408.04043v1",
+                        "rel": "related",
+                        "type": "application/pdf"
+                    }
+                ],
+                "arxiv_primary_category": {
+                    "term": "cs.PL",
+                    "scheme": "http://arxiv.org/schemas/atom"
+                },
+                "tags": [
+                    {
+                        "term": "cs.PL",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    },
+                    {
+                        "term": "cs.SE",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    },
+                    {
+                        "term": "D.2.4",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    }
+                ]
+            },
+            {
+                "id": "http://arxiv.org/abs/2408.03652v1",
+                "guidislink": true,
+                "link": "http://arxiv.org/abs/2408.03652v1",
+                "updated": "2024-08-07T09:34:55Z",
+                "updated_parsed": [
+                    2024,
+                    8,
+                    7,
+                    9,
+                    34,
+                    55,
+                    2,
+                    220,
+                    0
+                ],
+                "published": "2024-08-07T09:34:55Z",
+                "published_parsed": [
+                    2024,
+                    8,
+                    7,
+                    9,
+                    34,
+                    55,
+                    2,
+                    220,
+                    0
+                ],
+                "title": "mucAI at WojoodNER 2024: Arabic Named Entity Recognition with Nearest\n  Neighbor Search",
+                "title_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "mucAI at WojoodNER 2024: Arabic Named Entity Recognition with Nearest\n  Neighbor Search"
+                },
+                "summary": "Named Entity Recognition (NER) is a task in Natural Language Processing (NLP)\nthat aims to identify and classify entities in text into predefined categories.\nHowever, when applied to Arabic data, NER encounters unique challenges stemming\nfrom the language's rich morphological inflections, absence of capitalization\ncues, and spelling variants, where a single word can comprise multiple\nmorphemes. In this paper, we introduce Arabic KNN-NER, our submission to the\nWojood NER Shared Task 2024 (ArabicNLP 2024). We have participated in the\nshared sub-task 1 Flat NER. In this shared sub-task, we tackle fine-grained\nflat-entity recognition for Arabic text, where we identify a single main entity\nand possibly zero or multiple sub-entities for each word. Arabic KNN-NER\naugments the probability distribution of a fine-tuned model with another label\nprobability distribution derived from performing a KNN search over the cached\ntraining data. Our submission achieved 91% on the test set on the WojoodFine\ndataset, placing Arabic KNN-NER on top of the leaderboard for the shared task.",
+                "summary_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "Named Entity Recognition (NER) is a task in Natural Language Processing (NLP)\nthat aims to identify and classify entities in text into predefined categories.\nHowever, when applied to Arabic data, NER encounters unique challenges stemming\nfrom the language's rich morphological inflections, absence of capitalization\ncues, and spelling variants, where a single word can comprise multiple\nmorphemes. In this paper, we introduce Arabic KNN-NER, our submission to the\nWojood NER Shared Task 2024 (ArabicNLP 2024). We have participated in the\nshared sub-task 1 Flat NER. In this shared sub-task, we tackle fine-grained\nflat-entity recognition for Arabic text, where we identify a single main entity\nand possibly zero or multiple sub-entities for each word. Arabic KNN-NER\naugments the probability distribution of a fine-tuned model with another label\nprobability distribution derived from performing a KNN search over the cached\ntraining data. Our submission achieved 91% on the test set on the WojoodFine\ndataset, placing Arabic KNN-NER on top of the leaderboard for the shared task."
+                },
+                "authors": [
+                    {
+                        "name": "Ahmed Abdou"
+                    },
+                    {
+                        "name": "Tasneem Mohsen"
+                    }
+                ],
+                "author_detail": {
+                    "name": "Tasneem Mohsen"
+                },
+                "author": "Tasneem Mohsen",
+                "links": [
+                    {
+                        "href": "http://arxiv.org/abs/2408.03652v1",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    },
+                    {
+                        "title": "pdf",
+                        "href": "http://arxiv.org/pdf/2408.03652v1",
+                        "rel": "related",
+                        "type": "application/pdf"
+                    }
+                ],
+                "arxiv_primary_category": {
+                    "term": "cs.CL",
+                    "scheme": "http://arxiv.org/schemas/atom"
+                },
+                "tags": [
+                    {
+                        "term": "cs.CL",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    },
+                    {
+                        "term": "cs.LG",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    }
+                ]
+            },
+            {
+                "id": "http://arxiv.org/abs/2408.03308v1",
+                "guidislink": true,
+                "link": "http://arxiv.org/abs/2408.03308v1",
+                "updated": "2024-08-06T17:16:19Z",
+                "updated_parsed": [
+                    2024,
+                    8,
+                    6,
+                    17,
+                    16,
+                    19,
+                    1,
+                    219,
+                    0
+                ],
+                "published": "2024-08-06T17:16:19Z",
+                "published_parsed": [
+                    2024,
+                    8,
+                    6,
+                    17,
+                    16,
+                    19,
+                    1,
+                    219,
+                    0
+                ],
+                "title": "Potential and Limitation of High-Frequency Cores and Caches",
+                "title_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "Potential and Limitation of High-Frequency Cores and Caches"
+                },
+                "summary": "This paper explores the potential of cryogenic computing and superconducting\nelectronics as promising alternatives to traditional semiconductor devices. As\nsemiconductor devices face challenges such as increased leakage currents and\nreduced performance at higher temperatures, these novel technologies offer high\nperformance and low power computation. Cryogenic computing operates at\nultra-low temperatures near 77 K, leading to lower leakage currents and\nimproved electron mobility. On the other hand, superconducting electronics,\noperating near 0 K, allow electrons to flow without resistance, offering the\npotential for ultra-low-power, high-speed computation. This study presents a\ncomprehensive performance modeling and analysis of these technologies and\nprovides insights into their potential benefits and limitations. We implement\nmodels of in-order and out-of-order cores operating at high clock frequencies\nassociated with superconducting electronics and cryogenic computing in gem5. We\nevaluate the performance of these components using workloads representative of\nreal-world applications like NPB, SPEC CPU2006, and GAPBS. Our results show the\npotential speedups achievable by these components and the limitations posed by\ncache bandwidth. This work provides valuable insights into the performance\nimplications and design trade-offs associated with cryogenic and\nsuperconducting technologies, laying the foundation for future research in this\nfield using gem5.",
+                "summary_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "This paper explores the potential of cryogenic computing and superconducting\nelectronics as promising alternatives to traditional semiconductor devices. As\nsemiconductor devices face challenges such as increased leakage currents and\nreduced performance at higher temperatures, these novel technologies offer high\nperformance and low power computation. Cryogenic computing operates at\nultra-low temperatures near 77 K, leading to lower leakage currents and\nimproved electron mobility. On the other hand, superconducting electronics,\noperating near 0 K, allow electrons to flow without resistance, offering the\npotential for ultra-low-power, high-speed computation. This study presents a\ncomprehensive performance modeling and analysis of these technologies and\nprovides insights into their potential benefits and limitations. We implement\nmodels of in-order and out-of-order cores operating at high clock frequencies\nassociated with superconducting electronics and cryogenic computing in gem5. We\nevaluate the performance of these components using workloads representative of\nreal-world applications like NPB, SPEC CPU2006, and GAPBS. Our results show the\npotential speedups achievable by these components and the limitations posed by\ncache bandwidth. This work provides valuable insights into the performance\nimplications and design trade-offs associated with cryogenic and\nsuperconducting technologies, laying the foundation for future research in this\nfield using gem5."
+                },
+                "authors": [
+                    {
+                        "name": "Kunal Pai"
+                    },
+                    {
+                        "name": "Anusheel Nand"
+                    },
+                    {
+                        "name": "Jason Lowe-Power"
+                    }
+                ],
+                "author_detail": {
+                    "name": "Jason Lowe-Power"
+                },
+                "author": "Jason Lowe-Power",
+                "links": [
+                    {
+                        "href": "http://arxiv.org/abs/2408.03308v1",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    },
+                    {
+                        "title": "pdf",
+                        "href": "http://arxiv.org/pdf/2408.03308v1",
+                        "rel": "related",
+                        "type": "application/pdf"
+                    }
+                ],
+                "arxiv_primary_category": {
+                    "term": "cs.AR",
+                    "scheme": "http://arxiv.org/schemas/atom"
+                },
+                "tags": [
+                    {
+                        "term": "cs.AR",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    }
+                ]
+            },
+            {
+                "id": "http://arxiv.org/abs/2408.02999v1",
+                "guidislink": true,
+                "link": "http://arxiv.org/abs/2408.02999v1",
+                "updated": "2024-08-06T07:12:09Z",
+                "updated_parsed": [
+                    2024,
+                    8,
+                    6,
+                    7,
+                    12,
+                    9,
+                    1,
+                    219,
+                    0
+                ],
+                "published": "2024-08-06T07:12:09Z",
+                "published_parsed": [
+                    2024,
+                    8,
+                    6,
+                    7,
+                    12,
+                    9,
+                    1,
+                    219,
+                    0
+                ],
+                "title": "LLMs as Probabilistic Minimally Adequate Teachers for DFA Learning",
+                "title_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "LLMs as Probabilistic Minimally Adequate Teachers for DFA Learning"
+                },
+                "summary": "The emergence of intelligence in large language models (LLMs) has inspired\ninvestigations into their integration into automata learning. This paper\nintroduces the probabilistic Minimally Adequate Teacher (pMAT) formulation,\nwhich leverages a probabilistic oracle that could give persistent errors\nrandomly during answering the membership queries for deterministic finite\nautomata (DFA) learning. Given the tendency of LLMs to produce hallucinatory\ncontent, we have developed techniques to improve answer accuracy and ensure the\ncorrectness of the learned automata. We propose the $\\mathtt{Discrimination}$\nprompt as well as the $\\mathtt{Verification}$ prompt and explore their\nadvantages over common prompts. Additionally, we compare DFA learning\nperformance between the TTT algorithm and common active learning algorithms. To\naddress the exponential number of persistent errors, we implement a dynamic\nquery cache refinement algorithm that identifies and corrects conflicting\nqueries by combining the active and passive learning algorithms. The empirical\nresults demonstrate the robustness and efficiency of our approach, providing a\ntheoretical foundation for automata learning with LLMs in the loop.",
+                "summary_detail": {
+                    "type": "text/plain",
+                    "language": null,
+                    "base": "",
+                    "value": "The emergence of intelligence in large language models (LLMs) has inspired\ninvestigations into their integration into automata learning. This paper\nintroduces the probabilistic Minimally Adequate Teacher (pMAT) formulation,\nwhich leverages a probabilistic oracle that could give persistent errors\nrandomly during answering the membership queries for deterministic finite\nautomata (DFA) learning. Given the tendency of LLMs to produce hallucinatory\ncontent, we have developed techniques to improve answer accuracy and ensure the\ncorrectness of the learned automata. We propose the $\\mathtt{Discrimination}$\nprompt as well as the $\\mathtt{Verification}$ prompt and explore their\nadvantages over common prompts. Additionally, we compare DFA learning\nperformance between the TTT algorithm and common active learning algorithms. To\naddress the exponential number of persistent errors, we implement a dynamic\nquery cache refinement algorithm that identifies and corrects conflicting\nqueries by combining the active and passive learning algorithms. The empirical\nresults demonstrate the robustness and efficiency of our approach, providing a\ntheoretical foundation for automata learning with LLMs in the loop."
+                },
+                "authors": [
+                    {
+                        "name": "Lekai Chen"
+                    },
+                    {
+                        "name": "Ashutosh Trivedi"
+                    },
+                    {
+                        "name": "Alvaro Velasquez"
+                    }
+                ],
+                "author_detail": {
+                    "name": "Alvaro Velasquez"
+                },
+                "author": "Alvaro Velasquez",
+                "links": [
+                    {
+                        "href": "http://arxiv.org/abs/2408.02999v1",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    },
+                    {
+                        "title": "pdf",
+                        "href": "http://arxiv.org/pdf/2408.02999v1",
+                        "rel": "related",
+                        "type": "application/pdf"
+                    }
+                ],
+                "arxiv_primary_category": {
+                    "term": "cs.FL",
+                    "scheme": "http://arxiv.org/schemas/atom"
+                },
+                "tags": [
+                    {
+                        "term": "cs.FL",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    },
+                    {
+                        "term": "cs.AI",
+                        "scheme": "http://arxiv.org/schemas/atom",
+                        "label": null
+                    }
+                ]
+            }
+        ]
+    }
+]
