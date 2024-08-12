@@ -35,7 +35,7 @@ jobs:
 
     - name: Commit and push changes
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
         git config --global user.name "${{ env.GITHUB_USER_NAME }}"
         git config --global user.email "${{ env.GITHUB_USER_EMAIL }}"
