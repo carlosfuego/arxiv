@@ -3,6 +3,7 @@ name: Python Application CI
 on:
   schedule:
     - cron: '0 0 * * *'  # 每天凌晨0点触发
+  workflow_dispatch:
 
 env:
   GITHUB_USER_NAME: carlosfuego # your github id
