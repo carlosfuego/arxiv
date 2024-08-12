@@ -60,7 +60,7 @@ def search_command(args):
     if args.html:
         html_output_path= os.path.join(args.output_dir,f"html/{filename}.html")
         if args.over_index:
-            html_output_path= os.path.join(args.output_dir,f"index.html")
+            html_output_path= f"index.html"
         render_json_to_html(json_output_path,html_output_path)
     
 def render_command(args):
