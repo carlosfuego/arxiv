@@ -31,10 +31,11 @@ def render_json_to_markdown(json_path,md_path):
         markdown_content+=f"## Keyword: {keyword} \n {paper_md_data}"
     open(md_path,"w").write(markdown_content)        
 
-    
 
-def render_json_to_html(json_path,html_path):
-    metadata_list = json.load(open(json_path,"r"))
+
+def render_json_to_html(json_path, html_path):
+    metadata_list = json.load(open(json_path, "r"))
+    
     # Start the HTML content
     html_content = """
     <!DOCTYPE html>
@@ -48,10 +49,17 @@ def render_json_to_html(json_path,html_path):
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 0;
-                width: 21cm;
-                height: 29.7cm;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color: #f9f9f9;
+            }
+            .container {
+                width: 17cm;
                 padding: 2cm;
-                box-sizing: border-box;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             }
             h1, h2 {
                 color: #333;
@@ -83,9 +91,10 @@ def render_json_to_html(json_path,html_path):
         </style>
     </head>
     <body>
+        <div class="container">
     """
+    
     for data in metadata_list:
-        
         # Add the keyword as the main title
         html_content += f"<h1>Keyword: {data['keyword']}</h1>\n"
         
@@ -96,11 +105,11 @@ def render_json_to_html(json_path,html_path):
             summary = paper['summary'].replace('\n', ' ')
             updated = paper['updated']
             tags = ''.join([f"<span>{tag['term']}</span>" for tag in paper['tags']])
-            links = ''.join([f"<a href='{link['href']}' target='_blank'>{link['title'] if 'title' in link else 'HTML'}</a>" for link in paper['links']])
+            links = ''.join([f"<a href='{link['href']}' target='_blank'>{link.get('title', 'HTML')}</a>" for link in paper['links']])
             
             html_content += f"""
             <div class="paper">
-                <h2>#{idx} {title}</h2>
+                <h2>#{idx + 1} {title}</h2>
                 <div class="authors">
                     <strong>Authors:</strong> {authors}
                 </div>
@@ -121,7 +130,10 @@ def render_json_to_html(json_path,html_path):
     
     # Close the HTML content
     html_content += """
+        </div>
     </body>
     </html>
     """
-    open(html_path,"w").write(html_content)
+    
+    with open(html_path, "w") as file:
+        file.write(html_content)
