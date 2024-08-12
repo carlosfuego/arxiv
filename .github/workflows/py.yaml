@@ -40,6 +40,5 @@ jobs:
         git config --global user.name "${{ env.GITHUB_USER_NAME }}"
         git config --global user.email "${{ env.GITHUB_USER_EMAIL }}"
         git add .
-        git diff --quiet && echo "No changes to commit" && exit 0
-        git commit -m "Automatic update from GitHub Actions" || true
-        git push origin HEAD:main
+        git commit -m "Automatic update from GitHub Actions"
+        git push
