@@ -1093,13 +1093,13 @@
                     <strong>Summary:</strong> In this short paper, we characterize symmetric locality. In designing algorithms, compilers, and systems, data movement is a common bottleneck in high-performance computation, in which we improve cache and memory performance. We study a special type of data reuse in the form of repeated traversals, or re-traversals, which are based on the symmetric group. The cyclic and sawtooth traces are previously known results in symmetric locality, and in this work, we would like to generalize this result for any re-traversal. Then, we also provide an abstract framework for applications in compiler design and machine learning models to improve the memory performance of certain programs.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-07-27T16:20:21Z
+                    <strong>Updated:</strong> 2024-08-16T04:12:25Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>eess.SY</span><span>cs.SY</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2407.19291v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2407.19291v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2407.19291v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2407.19291v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -1538,16 +1538,16 @@
                     <strong>Authors:</strong> Yuan Feng, Junlin Lv, Yukun Cao, Xike Xie, S. Kevin Zhou
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Large Language Models have excelled in various fields but encounter efficiency limitations due to the substantial Key-Value (KV) cache required for long-sequence inference. Recent efforts try to evict non-critical cache elements during runtime, thereby reducing cache size within given memory budgets while preserving generation quality. Our reexamination of foundational principles reveals that prevailing methods aim to minimize an upper bound of eviction loss, quantified as the L1 distance between the pre- and post-eviction outputs of multi-head self-attention mechanisms. Moreover, our analysis indicates that the common practices of uniformly assigning budgets across different attention heads during cache eviction hinder their budget utilization, negatively impacting generation quality. In light of these findings, we propose a simple yet effective adaptive budget allocation algorithm. This algorithm not only optimizes the loss upper bound in theory but also reduces the eviction loss in practice by aligning with the intrinsic patterns of self-attention mechanisms. Integrating this algorithm into two advanced methods, we develop Ada-SnapKV and Ada-Pyramid. Extensive evaluations on 16 datasets and the Needle-in-a-Haystack test confirm that they both significantly boost performance across various tasks.
+                    <strong>Summary:</strong> Large Language Models have excelled in various fields but encounter challenges in memory and time efficiency due to the expanding Key-Value (KV) cache required for long-sequence inference. Recent efforts try to reduce KV cache size to a given memory budget by evicting vast non-critical cache elements during runtime, while preserving generation quality. Our revisiting of current eviction methods reveals that they fundamentally minimize an upper bound of the $L_1$ eviction loss between the pre- and post-eviction outputs of multi-head self-attention mechanisms. Moreover, our analysis indicates that the common practices of uniformly assigning budgets across attention heads harm their post-eviction generation quality. In light of these findings, we propose a simple yet effective adaptive budget allocation algorithm. This algorithm not only optimizes the theoretical loss upper bound but also reduces the $L_1$ eviction loss in practice by aligning with the varied characteristics across different heads. By integrating this algorithm into two state-of-the-art methods, we demonstrate the effectiveness of using adaptive budget allocation to optimize KV cache eviction. Extensive evaluations on 16 datasets and the Needle-in-a-Haystack test confirm significant performance improvements across various tasks.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-07-21T14:08:42Z
+                    <strong>Updated:</strong> 2024-08-16T08:46:33Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2407.11550v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2407.11550v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2407.11550v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2407.11550v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2400,22 +2400,22 @@
             </div>
             
             <div class="paper">
-                <h2>#21 Covert Bias: The Severity of Social Views' Unalignment Towards Implicit
-  and Explicit Opinion</h2>
+                <h2>#21 Covert Bias: The Severity of Social Views' Unalignment in Language
+  Models Towards Implicit and Explicit Opinion</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Abeer Aldayel, Areej Alokaili, Rehab Alahmadi
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> While various approaches have recently been studied for bias identification, little is known about how implicit language that does not explicitly convey a viewpoint affects bias amplification in large language models.To examine the severity of bias toward a view, we evaluated the performance of two downstream tasks where the implicit and explicit knowledge of social groups were used. First, we present a stress test evaluation by using a biased model in edge cases of excessive bias scenarios. Then, we evaluate how LLMs calibrate linguistically in response to both implicit and explicit opinions when they are aligned with conflicting viewpoints. Our findings reveal a discrepancy in LLM performance in identifying implicit and explicit opinions, with a general tendency of bias toward explicit opinions of opposing stances. Moreover, the bias-aligned models generate more cautious responses using uncertainty phrases compared to the unaligned (zero-shot) base models. The direct, incautious responses of the unaligned models suggest a need for further refinement of decisiveness by incorporating uncertainty markers to enhance their reliability, especially on socially nuanced topics with high subjectivity.
+                    <strong>Summary:</strong> While various approaches have recently been studied for bias identification, little is known about how implicit language that does not explicitly convey a viewpoint affects bias amplification in large language models. To examine the severity of bias toward a view, we evaluated the performance of two downstream tasks where the implicit and explicit knowledge of social groups were used. First, we present a stress test evaluation by using a biased model in edge cases of excessive bias scenarios. Then, we evaluate how LLMs calibrate linguistically in response to both implicit and explicit opinions when they are aligned with conflicting viewpoints. Our findings reveal a discrepancy in LLM performance in identifying implicit and explicit opinions, with a general tendency of bias toward explicit opinions of opposing stances. Moreover, the bias-aligned models generate more cautious responses using uncertainty phrases compared to the unaligned (zero-shot) base models. The direct, incautious responses of the unaligned models suggest a need for further refinement of decisiveness by incorporating uncertainty markers to enhance their reliability, especially on socially nuanced topics with high subjectivity.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-15T15:23:00Z
+                    <strong>Updated:</strong> 2024-08-16T11:57:53Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.CY</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2408.08212v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.08212v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2408.08212v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.08212v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2587,13 +2587,13 @@
                     <strong>Summary:</strong> Deep Learning Systems (DLSs) have been widely applied in safety-critical tasks such as autopilot. However, when a perturbed input is fed into a DLS for inference, the DLS often has incorrect outputs (i.e., faults). DLS testing techniques (e.g., DeepXplore) detect such faults by generating perturbed inputs to explore data flows that induce faults. Since a DLS often has infinitely many data flows, existing techniques require developers to manually specify a set of activation values in a DLS's neurons for exploring fault-inducing data flows. Unfortunately, recent studies show that such manual effort is tedious and can detect only a tiny proportion of fault-inducing data flows.   In this paper, we present Themis, the first automatic DLS testing system, which attains strong fault detection capability by ensuring a full coverage of fault-inducing data flows at a high probability. Themis carries a new workflow for automatically and systematically revealing data flows whose internal neurons' outputs vary substantially when the inputs are slightly perturbed, as these data flows are likely fault-inducing. We evaluated Themis on ten different DLSs and found that on average the number of faults detected by Themis was 3.78X more than four notable DLS testing techniques. By retraining all evaluated DLSs with the detected faults, Themis also increased (regained) these DLSs' accuracies on average 14.7X higher than all baselines.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-15T13:40:16Z
+                    <strong>Updated:</strong> 2024-08-16T06:44:12Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SE</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2405.09314v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2405.09314v3' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2405.09314v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2405.09314v4' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3001,13 +3001,13 @@
                     <strong>Summary:</strong> Chain of thought finetuning (cot-finetuning) aims to endow small language models (SLM) with reasoning ability to improve their performance towards specific tasks by allowing them to imitate the reasoning procedure of large language models (LLM) beyond simply predicting the answers. Most existing cot-finetuning methods adopt a pre-thinking mechanism, allowing the SLM to generate a rationale before providing an answer. This mechanism enables SLM to analyze and think about complex questions, but it also makes answer correctness highly sensitive to minor errors in rationale. Therefore, we propose a robust post-thinking mechanism to generate answers before rationale. Thanks to this answer-first setting, 1) the answer can escape from the adverse effects caused by minor errors in the rationale; 2) the rationale serves as an error amplifier to the answer, which makes the SLM focus on learning hard samples; 3) the inferring efficiency can also benefit from the setting since users can stop the generation right after answers are outputted when inference is conducted. However, although the post-thinking mechanism brings many advantages and improves the overall performance of SLM on specific tasks, it may lose the ability to think about the questions and decompose complex questions into simple sub-questions compared to pre-thinking mechanism. Therefore, a plug-and-play adaptive-thinking mechanism is proposed with the aid of the soft prompt tuning to integrate the merits of the pre-thinking mechanism and post-thinking mechanism, in which a perception module is introduced to adaptively prompt SLM answer or think first based on perceiving the complexity of the questions. Extensive experiments are conducted across 12 reasoning tasks and 2 representative language models to demonstrate the effectiveness of the proposed mechanism.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-15T10:12:54Z
+                    <strong>Updated:</strong> 2024-08-16T02:21:13Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2404.09170v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2404.09170v4' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2404.09170v5' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2404.09170v5' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3927,16 +3927,16 @@
                     <strong>Authors:</strong> Andrea Lops, Fedelucio Narducci, Azzurra Ragone, Michelantonio Trizio, Claudio Bartolini
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Unit tests represent the most basic level of testing within the software testing lifecycle and are crucial to ensuring software correctness. Designing and creating unit tests is a costly and labor-intensive process that is ripe for automation. Recently, Large Language Models (LLMs) have been applied to various aspects of software development, including unit test generation. Although several empirical studies evaluating LLMs' capabilities in test code generation exist, they primarily focus on simple scenarios, such as the straightforward generation of unit tests for individual methods. These evaluations often involve independent and small-scale test units, providing a limited view of LLMs' performance in real-world software development scenarios. Moreover, previous studies do not approach the problem at a suitable scale for real-life applications. Generated unit tests are often evaluated via manual integration into the original projects, a process that limits the number of tests executed and reduces overall efficiency. To address these gaps, we have developed an approach for generating and evaluating more real-life complexity test suites. Our approach focuses on class-level test code generation and automates the entire process from test generation to test assessment. In this work, we present \textsc{AgoneTest}: an automated system for generating test suites for Java projects and a comprehensive and principled methodology for evaluating the generated test suites. Starting from a state-of-the-art dataset (i.e., \textsc{Methods2Test}), we built a new dataset for comparing human-written tests with those generated by LLMs. Our key contributions include a scalable automated software system, a new dataset, and a detailed methodology for evaluating test quality.
+                    <strong>Summary:</strong> Unit tests represent the most basic level of testing within the software testing lifecycle and are crucial to ensuring software correctness. Designing and creating unit tests is a costly and labor-intensive process that is ripe for automation. Recently, Large Language Models (LLMs) have been applied to various aspects of software development, including unit test generation. Although several empirical studies evaluating LLMs' capabilities in test code generation exist, they primarily focus on simple scenarios, such as the straightforward generation of unit tests for individual methods. These evaluations often involve independent and small-scale test units, providing a limited view of LLMs' performance in real-world software development scenarios. Moreover, previous studies do not approach the problem at a suitable scale for real-life applications. Generated unit tests are often evaluated via manual integration into the original projects, a process that limits the number of tests executed and reduces overall efficiency. To address these gaps, we have developed an approach for generating and evaluating more real-life complexity test suites. Our approach focuses on class-level test code generation and automates the entire process from test generation to test assessment. In this work, we present AgoneTest: an automated system for generating test suites for Java projects and a comprehensive and principled methodology for evaluating the generated test suites. Starting from a state-of-the-art dataset (i.e., Methods2Test), we built a new dataset for comparing human-written tests with those generated by LLMs. Our key contributions include a scalable automated software system, a new dataset, and a detailed methodology for evaluating test quality.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-14T23:02:16Z
+                    <strong>Updated:</strong> 2024-08-16T00:18:03Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SE</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2408.07846v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.07846v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2408.07846v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.07846v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4199,22 +4199,22 @@
             </div>
             
             <div class="paper">
-                <h2>#12 Covert Bias: The Severity of Social Views' Unalignment Towards Implicit
-  and Explicit Opinion</h2>
+                <h2>#12 Covert Bias: The Severity of Social Views' Unalignment in Language
+  Models Towards Implicit and Explicit Opinion</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Abeer Aldayel, Areej Alokaili, Rehab Alahmadi
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> While various approaches have recently been studied for bias identification, little is known about how implicit language that does not explicitly convey a viewpoint affects bias amplification in large language models.To examine the severity of bias toward a view, we evaluated the performance of two downstream tasks where the implicit and explicit knowledge of social groups were used. First, we present a stress test evaluation by using a biased model in edge cases of excessive bias scenarios. Then, we evaluate how LLMs calibrate linguistically in response to both implicit and explicit opinions when they are aligned with conflicting viewpoints. Our findings reveal a discrepancy in LLM performance in identifying implicit and explicit opinions, with a general tendency of bias toward explicit opinions of opposing stances. Moreover, the bias-aligned models generate more cautious responses using uncertainty phrases compared to the unaligned (zero-shot) base models. The direct, incautious responses of the unaligned models suggest a need for further refinement of decisiveness by incorporating uncertainty markers to enhance their reliability, especially on socially nuanced topics with high subjectivity.
+                    <strong>Summary:</strong> While various approaches have recently been studied for bias identification, little is known about how implicit language that does not explicitly convey a viewpoint affects bias amplification in large language models. To examine the severity of bias toward a view, we evaluated the performance of two downstream tasks where the implicit and explicit knowledge of social groups were used. First, we present a stress test evaluation by using a biased model in edge cases of excessive bias scenarios. Then, we evaluate how LLMs calibrate linguistically in response to both implicit and explicit opinions when they are aligned with conflicting viewpoints. Our findings reveal a discrepancy in LLM performance in identifying implicit and explicit opinions, with a general tendency of bias toward explicit opinions of opposing stances. Moreover, the bias-aligned models generate more cautious responses using uncertainty phrases compared to the unaligned (zero-shot) base models. The direct, incautious responses of the unaligned models suggest a need for further refinement of decisiveness by incorporating uncertainty markers to enhance their reliability, especially on socially nuanced topics with high subjectivity.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-15T15:23:00Z
+                    <strong>Updated:</strong> 2024-08-16T11:57:53Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.CY</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2408.08212v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.08212v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2408.08212v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.08212v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4623,13 +4623,13 @@
                     <strong>Summary:</strong> Chain of thought finetuning (cot-finetuning) aims to endow small language models (SLM) with reasoning ability to improve their performance towards specific tasks by allowing them to imitate the reasoning procedure of large language models (LLM) beyond simply predicting the answers. Most existing cot-finetuning methods adopt a pre-thinking mechanism, allowing the SLM to generate a rationale before providing an answer. This mechanism enables SLM to analyze and think about complex questions, but it also makes answer correctness highly sensitive to minor errors in rationale. Therefore, we propose a robust post-thinking mechanism to generate answers before rationale. Thanks to this answer-first setting, 1) the answer can escape from the adverse effects caused by minor errors in the rationale; 2) the rationale serves as an error amplifier to the answer, which makes the SLM focus on learning hard samples; 3) the inferring efficiency can also benefit from the setting since users can stop the generation right after answers are outputted when inference is conducted. However, although the post-thinking mechanism brings many advantages and improves the overall performance of SLM on specific tasks, it may lose the ability to think about the questions and decompose complex questions into simple sub-questions compared to pre-thinking mechanism. Therefore, a plug-and-play adaptive-thinking mechanism is proposed with the aid of the soft prompt tuning to integrate the merits of the pre-thinking mechanism and post-thinking mechanism, in which a perception module is introduced to adaptively prompt SLM answer or think first based on perceiving the complexity of the questions. Extensive experiments are conducted across 12 reasoning tasks and 2 representative language models to demonstrate the effectiveness of the proposed mechanism.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-15T10:12:54Z
+                    <strong>Updated:</strong> 2024-08-16T02:21:13Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2404.09170v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2404.09170v4' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2404.09170v5' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2404.09170v5' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5235,16 +5235,16 @@
                     <strong>Authors:</strong> Andrea Lops, Fedelucio Narducci, Azzurra Ragone, Michelantonio Trizio, Claudio Bartolini
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Unit tests represent the most basic level of testing within the software testing lifecycle and are crucial to ensuring software correctness. Designing and creating unit tests is a costly and labor-intensive process that is ripe for automation. Recently, Large Language Models (LLMs) have been applied to various aspects of software development, including unit test generation. Although several empirical studies evaluating LLMs' capabilities in test code generation exist, they primarily focus on simple scenarios, such as the straightforward generation of unit tests for individual methods. These evaluations often involve independent and small-scale test units, providing a limited view of LLMs' performance in real-world software development scenarios. Moreover, previous studies do not approach the problem at a suitable scale for real-life applications. Generated unit tests are often evaluated via manual integration into the original projects, a process that limits the number of tests executed and reduces overall efficiency. To address these gaps, we have developed an approach for generating and evaluating more real-life complexity test suites. Our approach focuses on class-level test code generation and automates the entire process from test generation to test assessment. In this work, we present \textsc{AgoneTest}: an automated system for generating test suites for Java projects and a comprehensive and principled methodology for evaluating the generated test suites. Starting from a state-of-the-art dataset (i.e., \textsc{Methods2Test}), we built a new dataset for comparing human-written tests with those generated by LLMs. Our key contributions include a scalable automated software system, a new dataset, and a detailed methodology for evaluating test quality.
+                    <strong>Summary:</strong> Unit tests represent the most basic level of testing within the software testing lifecycle and are crucial to ensuring software correctness. Designing and creating unit tests is a costly and labor-intensive process that is ripe for automation. Recently, Large Language Models (LLMs) have been applied to various aspects of software development, including unit test generation. Although several empirical studies evaluating LLMs' capabilities in test code generation exist, they primarily focus on simple scenarios, such as the straightforward generation of unit tests for individual methods. These evaluations often involve independent and small-scale test units, providing a limited view of LLMs' performance in real-world software development scenarios. Moreover, previous studies do not approach the problem at a suitable scale for real-life applications. Generated unit tests are often evaluated via manual integration into the original projects, a process that limits the number of tests executed and reduces overall efficiency. To address these gaps, we have developed an approach for generating and evaluating more real-life complexity test suites. Our approach focuses on class-level test code generation and automates the entire process from test generation to test assessment. In this work, we present AgoneTest: an automated system for generating test suites for Java projects and a comprehensive and principled methodology for evaluating the generated test suites. Starting from a state-of-the-art dataset (i.e., Methods2Test), we built a new dataset for comparing human-written tests with those generated by LLMs. Our key contributions include a scalable automated software system, a new dataset, and a detailed methodology for evaluating test quality.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-14T23:02:16Z
+                    <strong>Updated:</strong> 2024-08-16T00:18:03Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SE</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2408.07846v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.07846v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2408.07846v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.07846v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
