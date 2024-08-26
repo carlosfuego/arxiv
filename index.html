@@ -103,13 +103,13 @@
                     <strong>Summary:</strong> Large Language Models (LLMs) have become more prevalent in long-context applications such as interactive chatbots, document analysis, and agent workflows, but it is challenging to serve long-context requests with low latency and high throughput. Speculative decoding (SD) is a widely used technique to reduce latency without sacrificing performance but the conventional wisdom suggests that its efficacy is limited to small batch sizes. In MagicDec, we show that surprisingly SD can achieve speedup even for a high throughput inference regime for moderate to long sequences. More interestingly, an intelligent drafting strategy can achieve better speedup with increasing batch size based on our rigorous analysis. MagicDec first identifies the bottleneck shifts with increasing batch size and sequence length, and uses these insights to deploy speculative decoding more effectively for high throughput inference. Then, it leverages draft models with sparse KV cache to address the KV bottleneck that scales with both sequence length and batch size. This finding underscores the broad applicability of speculative decoding in long-context serving, as it can enhance throughput and reduce latency without compromising accuracy. For moderate to long sequences, we demonstrate up to 2x speedup for LLaMA-2-7B-32K and 1.84x speedup for LLaMA-3.1-8B when serving batch sizes ranging from 32 to 256 on 8 NVIDIA A100 GPUs. The code is available at https://github.com/Infini-AI-Lab/MagicDec/.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-21T17:55:29Z
+                    <strong>Updated:</strong> 2024-08-23T17:54:34Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2408.11049v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.11049v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2408.11049v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.11049v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2838,13 +2838,13 @@
                     <strong>Summary:</strong> With advancements in Large Language Models (LLMs), a major use case that has emerged is querying databases in plain English, translating user questions into executable database queries, which has improved significantly. However, real-world datasets often feature a vast array of attributes and complex values, complicating the LLMs task of accurately identifying relevant columns or values from natural language queries. Traditional methods cannot fully relay the datasets size and complexity to the LLM. To address these challenges, we propose a novel framework that leverages Full-Text Search (FTS) on the input table. This approach not only enables precise detection of specific values and columns but also narrows the search space for language models, thereby enhancing query accuracy. Additionally, it supports a custom auto-complete feature that suggests queries based on the data in the table. This integration significantly refines the interaction between the user and complex datasets, offering a sophisticated solution to the limitations faced by current table querying capabilities. This work is accompanied by an application for both Mac and Windows platforms, which readers can try out themselves on their own data.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-22T13:13:06Z
+                    <strong>Updated:</strong> 2024-08-23T08:11:09Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2408.12369v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.12369v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2408.12369v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.12369v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3357,8 +3357,8 @@
             </div>
             
             <div class="paper">
-                <h2>#70 Efficient Multivariate Time Series Anomaly Detection Through Transfer
-  Learning for Large-Scale Web services</h2>
+                <h2>#70 Enhanced Fine-Tuning of Lightweight Domain-Specific Q&A Model Based on
+  Large Language Models</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Shenglin Zhang, Pengtian Zhu, Minghua Ma, Jiagang Wang, Yongqian Sun, Dongwen Li, Jingyu Wang, Qianying Guo, Xiaolei Hua, Lin Zhu, Dan Pei
                 </div>
@@ -3366,13 +3366,13 @@
                     <strong>Summary:</strong> Large language models (LLMs) excel at general question-answering (Q&A) but often fall short in specialized domains due to a lack of domain-specific knowledge. Commercial companies face the dual challenges of privacy protection and resource constraints when involving LLMs for fine-tuning. This paper propose a novel framework, Self-Evolution, designed to address these issues by leveraging lightweight open-source LLMs through multiple iterative fine-tuning rounds. To enhance the efficiency of iterative fine-tuning, Self-Evolution employ a strategy that filters and reinforces the knowledge with higher value during the iterative process. We employed Self-Evolution on Qwen1.5-7B-Chat using 4,000 documents containing rich domain knowledge from China Mobile, achieving a performance score 174% higher on domain-specific question-answering evaluations than Qwen1.5-7B-Chat and even 22% higher than Qwen1.5-72B-Chat. Self-Evolution has been deployed in China Mobile's daily operation and maintenance for 117 days, and it improves the efficiency of locating alarms, fixing problems, and finding related reports, with an average efficiency improvement of over 18.6%. In addition, we release Self-Evolution framework code in https://github.com/Zero-Pointer/Self-Evolution.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-22T09:36:15Z
+                    <strong>Updated:</strong> 2024-08-23T01:25:26Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2408.12247v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.12247v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2408.12247v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.12247v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3605,13 +3605,13 @@
                     <strong>Summary:</strong> While Large Language Models (LLMs) have achieved remarkable success in various fields, the efficiency of training and inference remains a major challenge. To address this issue, we propose SUBLLM, short for Subsampling-Upsampling-Bypass Large Language Model, an innovative architecture that extends the core decoder-only framework by incorporating subsampling, upsampling, and bypass modules. The subsampling modules are responsible for shortening the sequence, while the upsampling modules restore the sequence length, and the bypass modules enhance convergence. In comparison to LLaMA, the proposed SUBLLM exhibits significant enhancements in both training and inference speeds as well as memory usage, while maintaining competitive few-shot performance. During training, SUBLLM increases speeds by 26% and cuts memory by 10GB per GPU. In inference, it boosts speeds by up to 37% and reduces memory by 1GB per GPU. The training and inference speeds can be enhanced by 34% and 52% respectively when the context window is expanded to 8192. Our code is available at https://github.com/XiaoMi/subllm.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-22T08:19:20Z
+                    <strong>Updated:</strong> 2024-08-23T08:17:58Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span><span>I.2.7</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2406.06571v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2406.06571v4' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2406.06571v5' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2406.06571v5' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3625,13 +3625,13 @@
                     <strong>Summary:</strong> Pretrained language models like BERT and T5 serve as crucial backbone encoders for dense retrieval. However, these models often exhibit limited generalization capabilities and face challenges in improving in domain accuracy. Recent research has explored using large language models (LLMs) as retrievers, achieving SOTA performance across various tasks. Despite these advancements, the specific benefits of LLMs over traditional retrievers and the impact of different LLM configurations, such as parameter sizes, pretraining duration, and alignment processes on retrieval tasks remain unclear. In this work, we conduct a comprehensive empirical study on a wide range of retrieval tasks, including in domain accuracy, data efficiency, zero shot generalization, lengthy retrieval, instruction based retrieval, and multi task learning. We evaluate over 15 different backbone LLMs and non LLMs. Our findings reveal that larger models and extensive pretraining consistently enhance in domain accuracy and data efficiency. Additionally, larger models demonstrate significant potential in zero shot generalization, lengthy retrieval, instruction based retrieval, and multi task learning. These results underscore the advantages of LLMs as versatile and effective backbone encoders in dense retrieval, providing valuable insights for future research and development in this field.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-22T08:16:07Z
+                    <strong>Updated:</strong> 2024-08-23T06:46:41Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2408.12194v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.12194v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2408.12194v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.12194v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4471,13 +4471,13 @@
                     <strong>Summary:</strong> With advancements in Large Language Models (LLMs), a major use case that has emerged is querying databases in plain English, translating user questions into executable database queries, which has improved significantly. However, real-world datasets often feature a vast array of attributes and complex values, complicating the LLMs task of accurately identifying relevant columns or values from natural language queries. Traditional methods cannot fully relay the datasets size and complexity to the LLM. To address these challenges, we propose a novel framework that leverages Full-Text Search (FTS) on the input table. This approach not only enables precise detection of specific values and columns but also narrows the search space for language models, thereby enhancing query accuracy. Additionally, it supports a custom auto-complete feature that suggests queries based on the data in the table. This integration significantly refines the interaction between the user and complex datasets, offering a sophisticated solution to the limitations faced by current table querying capabilities. This work is accompanied by an application for both Mac and Windows platforms, which readers can try out themselves on their own data.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-22T13:13:06Z
+                    <strong>Updated:</strong> 2024-08-23T08:11:09Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2408.12369v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.12369v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2408.12369v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.12369v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4795,8 +4795,8 @@
             </div>
             
             <div class="paper">
-                <h2>#43 Efficient Multivariate Time Series Anomaly Detection Through Transfer
-  Learning for Large-Scale Web services</h2>
+                <h2>#43 Enhanced Fine-Tuning of Lightweight Domain-Specific Q&A Model Based on
+  Large Language Models</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Shenglin Zhang, Pengtian Zhu, Minghua Ma, Jiagang Wang, Yongqian Sun, Dongwen Li, Jingyu Wang, Qianying Guo, Xiaolei Hua, Lin Zhu, Dan Pei
                 </div>
@@ -4804,13 +4804,13 @@
                     <strong>Summary:</strong> Large language models (LLMs) excel at general question-answering (Q&A) but often fall short in specialized domains due to a lack of domain-specific knowledge. Commercial companies face the dual challenges of privacy protection and resource constraints when involving LLMs for fine-tuning. This paper propose a novel framework, Self-Evolution, designed to address these issues by leveraging lightweight open-source LLMs through multiple iterative fine-tuning rounds. To enhance the efficiency of iterative fine-tuning, Self-Evolution employ a strategy that filters and reinforces the knowledge with higher value during the iterative process. We employed Self-Evolution on Qwen1.5-7B-Chat using 4,000 documents containing rich domain knowledge from China Mobile, achieving a performance score 174% higher on domain-specific question-answering evaluations than Qwen1.5-7B-Chat and even 22% higher than Qwen1.5-72B-Chat. Self-Evolution has been deployed in China Mobile's daily operation and maintenance for 117 days, and it improves the efficiency of locating alarms, fixing problems, and finding related reports, with an average efficiency improvement of over 18.6%. In addition, we release Self-Evolution framework code in https://github.com/Zero-Pointer/Self-Evolution.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-22T09:36:15Z
+                    <strong>Updated:</strong> 2024-08-23T01:25:26Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2408.12247v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.12247v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2408.12247v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.12247v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4884,13 +4884,13 @@
                     <strong>Summary:</strong> While Large Language Models (LLMs) have achieved remarkable success in various fields, the efficiency of training and inference remains a major challenge. To address this issue, we propose SUBLLM, short for Subsampling-Upsampling-Bypass Large Language Model, an innovative architecture that extends the core decoder-only framework by incorporating subsampling, upsampling, and bypass modules. The subsampling modules are responsible for shortening the sequence, while the upsampling modules restore the sequence length, and the bypass modules enhance convergence. In comparison to LLaMA, the proposed SUBLLM exhibits significant enhancements in both training and inference speeds as well as memory usage, while maintaining competitive few-shot performance. During training, SUBLLM increases speeds by 26% and cuts memory by 10GB per GPU. In inference, it boosts speeds by up to 37% and reduces memory by 1GB per GPU. The training and inference speeds can be enhanced by 34% and 52% respectively when the context window is expanded to 8192. Our code is available at https://github.com/XiaoMi/subllm.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-22T08:19:20Z
+                    <strong>Updated:</strong> 2024-08-23T08:17:58Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span><span>I.2.7</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2406.06571v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2406.06571v4' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2406.06571v5' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2406.06571v5' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4904,13 +4904,13 @@
                     <strong>Summary:</strong> Pretrained language models like BERT and T5 serve as crucial backbone encoders for dense retrieval. However, these models often exhibit limited generalization capabilities and face challenges in improving in domain accuracy. Recent research has explored using large language models (LLMs) as retrievers, achieving SOTA performance across various tasks. Despite these advancements, the specific benefits of LLMs over traditional retrievers and the impact of different LLM configurations, such as parameter sizes, pretraining duration, and alignment processes on retrieval tasks remain unclear. In this work, we conduct a comprehensive empirical study on a wide range of retrieval tasks, including in domain accuracy, data efficiency, zero shot generalization, lengthy retrieval, instruction based retrieval, and multi task learning. We evaluate over 15 different backbone LLMs and non LLMs. Our findings reveal that larger models and extensive pretraining consistently enhance in domain accuracy and data efficiency. Additionally, larger models demonstrate significant potential in zero shot generalization, lengthy retrieval, instruction based retrieval, and multi task learning. These results underscore the advantages of LLMs as versatile and effective backbone encoders in dense retrieval, providing valuable insights for future research and development in this field.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-22T08:16:07Z
+                    <strong>Updated:</strong> 2024-08-23T06:46:41Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2408.12194v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.12194v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2408.12194v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.12194v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
