@@ -895,19 +895,19 @@
                 <h2>#44 QET: Enhancing Quantized LLM Parameters and KV cache Compression through
   Element Substitution and Residual Clustering</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Yanshu Wang, Wang Li, Tong Yang
+                    <strong>Authors:</strong> Yanshu Wang, Wang Li, Zhaoqian Yao, Tong Yang
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Matrix quantization compresses matrix elements into a more compact form to reduce storage requirements, with dequantization enabling reconstruction for use. We define the Quantization Error Minimization (QEM) problem as minimizing the difference between the original and quantized matrices while ensuring the quantized matrix remains within fixed memory constraints. This technique is crucial in applications like Large Language Model (LLM) weight compression and KV cache compression, where large matrix sizes demand efficient storage solutions.   As modern LLMs like GPT-4 and BERT continue to grow, effective matrix compression is increasingly important. These models contain billions of parameters in matrix form, making efficient weight quantization essential for both storage and computational efficiency. Similarly, KV caches, storing intermediate inference results, are matrix-based and benefit significantly from optimized compression techniques.   To address the QEM problem in the context of LLM weight and KV cache compression, we propose Quantum Entanglement Trees (QET). QET leverages the local structure of matrix elements by iteratively swapping elements to create a locally ordered matrix, which is then grouped and quantized column by column. To enhance QET, we introduce two optimizations: residual quantization to further reduce Mean Squared Error (MSE) and masking with batch processing to accelerate the algorithm.   Our experiments demonstrate that QET can reduce MSE to 12.3% of its original value at the same compression ratio, outperforming leading baseline methods. Our contributions include framing the QEM problem specifically for LLM and KV cache compression, developing the QET algorithm, and implementing optimizations that improve accuracy and processing speed.
+                    <strong>Summary:</strong> The matrix quantization entails representing matrix elements in a more space-efficient form to reduce storage usage, with dequantization restoring the original matrix for use. We formulate the Quantization Error Minimization (QEM) problem as minimizing the distance between a matrix before and after quantization, under the condition that the quantized matrix occupies the same memory space. Matrix quantization is crucial in various applications, including Large Language Models (LLMs) weight quantization, vector databases, KV cache quantization, graph compression, and image compression. Recent advancements in LLMs, such as GPT-4 and BERT, have highlighted the importance of matrix compression due to the large size of parameters and KV cache, which are stored as matrices.   We propose Quantum Entanglement Trees (QET) to address the QEM problem by leveraging the local orderliness of matrix elements, involving iterative element swapping to form a locally ordered matrix. This matrix is then grouped and quantized by columns. To enhance QET, we introduce two optimizations: further quantizing residuals to reduce MSE, and using masking and batch processing to accelerate the algorithm.   Experimental results demonstrate that QET can effectively reduce MSE to 5.05%, 13.33%, and 11.89% of the current best method on the LLM dataset, K cache, and V cache, respectively. Our contributions include the abstraction of the QEM problem, the design of the QET algorithm, and the proposal of two optimizations to improve accuracy and speed.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-21T02:32:43Z
+                    <strong>Updated:</strong> 2024-09-06T08:28:01Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2407.03637v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2407.03637v3' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2407.03637v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2407.03637v4' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -1540,16 +1540,16 @@
                     <strong>Authors:</strong> Kunal Pai, Anusheel Nand, Jason Lowe-Power
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> This paper explores the potential of cryogenic computing and superconducting electronics as promising alternatives to traditional semiconductor devices. As semiconductor devices face challenges such as increased leakage currents and reduced performance at higher temperatures, these novel technologies offer high performance and low power computation. Cryogenic computing operates at ultra-low temperatures near 77 K, leading to lower leakage currents and improved electron mobility. On the other hand, superconducting electronics, operating near 0 K, allow electrons to flow without resistance, offering the potential for ultra-low-power, high-speed computation. This study presents a comprehensive performance modeling and analysis of these technologies and provides insights into their potential benefits and limitations. We implement models of in-order and out-of-order cores operating at high clock frequencies associated with superconducting electronics and cryogenic computing in gem5. We evaluate the performance of these components using workloads representative of real-world applications like NPB, SPEC CPU2006, and GAPBS. Our results show the potential speedups achievable by these components and the limitations posed by cache bandwidth. This work provides valuable insights into the performance implications and design trade-offs associated with cryogenic and superconducting technologies, laying the foundation for future research in this field using gem5.
+                    <strong>Summary:</strong> This paper explores the potential of cryogenic semiconductor computing and superconductor electronics as promising alternatives to traditional semiconductor devices. As semiconductor devices face challenges such as increased leakage currents and reduced performance at higher temperatures, these novel technologies offer high performance and low power computation. Conventional semiconductor electronics operating at cryogenic temperatures (below -150{\deg}C or 123.15 K) can benefit from reduced leakage currents and improved electron mobility. On the other hand, superconductor electronics, operating below 10 K, allow electrons to flow without resistance, offering the potential for ultra-low-power, high-speed computation. This study presents a comprehensive performance modeling and analysis of these technologies and provides insights into their potential benefits and limitations. We implement models of in-order and out-of-order cores operating at high clock frequencies associated with superconductor electronics and cryogenic semiconductor computing in gem5. We evaluate the performance of these components using workloads representative of real-world applications like NPB, SPEC CPU2006, and GAPBS. Our results show the potential speedups achievable by these components and the limitations posed by cache bandwidth. This work provides valuable insights into the performance implications and design trade-offs associated with cryogenic and superconductor technologies, laying the foundation for future research in this field using gem5.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-08-06T17:16:19Z
+                    <strong>Updated:</strong> 2024-09-05T20:21:54Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AR</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2408.03308v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.03308v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2408.03308v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2408.03308v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2139,19 +2139,19 @@
             <div class="paper">
                 <h2>#8 RAG based Question-Answering for Contextual Response Prediction System</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Sriram Veturi, Saurabh Vaichal, Nafis Irtiza Tripto, Reshma Lal Jagadheesh, Nian Yan
+                    <strong>Authors:</strong> Sriram Veturi, Saurabh Vaichal, Reshma Lal Jagadheesh, Nafis Irtiza Tripto, Nian Yan
                 </div>
                 <div class="summary">
                     <strong>Summary:</strong> Large Language Models (LLMs) have shown versatility in various Natural Language Processing (NLP) tasks, including their potential as effective question-answering systems. However, to provide precise and relevant information in response to specific customer queries in industry settings, LLMs require access to a comprehensive knowledge base to avoid hallucinations. Retrieval Augmented Generation (RAG) emerges as a promising technique to address this challenge. Yet, developing an accurate question-answering framework for real-world applications using RAG entails several challenges: 1) data availability issues, 2) evaluating the quality of generated content, and 3) the costly nature of human evaluation. In this paper, we introduce an end-to-end framework that employs LLMs with RAG capabilities for industry use cases. Given a customer query, the proposed system retrieves relevant knowledge documents and leverages them, along with previous chat history, to generate response suggestions for customer service agents in the contact centers of a major retail company. Through comprehensive automated and human evaluations, we show that this solution outperforms the current BERT-based algorithms in accuracy and relevance. Our findings suggest that RAG-based LLMs can be an excellent support to human customer service representatives by lightening their workload.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-09-05T17:14:23Z
+                    <strong>Updated:</strong> 2024-09-06T14:18:20Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.IR</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2409.03708v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03708v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2409.03708v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03708v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2341,13 +2341,13 @@
                     <strong>Summary:</strong> Despite substantial progress of large language models (LLMs) for automatic poetry generation, the generated poetry lacks diversity while the training process differs greatly from human learning. Under the rationale that the learning process of the poetry generation systems should be more human-like and their output more diverse and novel, we introduce a framework based on social learning where we emphasize non-cooperative interactions besides cooperative interactions to encourage diversity. Our experiments are the first attempt at LLM-based multi-agent systems in non-cooperative environments for poetry generation employing both TRAINING-BASED agents (GPT-2) and PROMPTING-BASED agents (GPT-3 and GPT-4). Our evaluation based on 96k generated poems shows that our framework benefits the poetry generation process for TRAINING-BASED agents resulting in 1) a 3.0-3.7 percentage point (pp) increase in diversity and a 5.6-11.3 pp increase in novelty according to distinct and novel n-grams. The generated poetry from TRAINING-BASED agents also exhibits group divergence in terms of lexicons, styles and semantics. PROMPTING-BASED agents in our framework also benefit from non-cooperative environments and a more diverse ensemble of models with non-homogeneous agents has the potential to further enhance diversity, with an increase of 7.0-17.5 pp according to our experiments. However, PROMPTING-BASED agents show a decrease in lexical diversity over time and do not exhibit the group-based divergence intended in the social network. Our paper argues for a paradigm shift in creative tasks such as automatic poetry generation to include social learning processes (via LLM-based agent modeling) similar to human interaction.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-09-05T16:12:29Z
+                    <strong>Updated:</strong> 2024-09-06T06:50:32Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2409.03659v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03659v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2409.03659v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03659v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2777,13 +2777,13 @@
                     <strong>Summary:</strong> Light pulse atom interferometers (AIFs) are exquisite quantum probes of spatial inhomogeneity and gravitational curvature. Moreover, detailed measurement and calibration are necessary prerequisites for very-long-baseline atom interferometry (VLBAI). Here we present a method in which the differential signal of two co-located interferometers singles out a phase shift proportional to the curvature of the gravitational potential. The scale factor depends only on well controlled quantities, namely the photon wave number, the interferometer time and the atomic recoil, which allows the curvature to be accurately inferred from a measured phase. As a case study, we numerically simulate such a co-located gradiometric interferometer in the context of the Hannover VLBAI facility and prove the robustness of the phase shift in gravitational fields with complex spatial dependence. We define an estimator of the gravitational curvature for non-trivial gravitational fields and calculate the trade-off between signal strength and estimation accuracy with regard to spatial resolution. As a perspective, we discuss the case of a time-dependent gravitational field and corresponding measurement strategies.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-09-05T13:29:45Z
+                    <strong>Updated:</strong> 2024-09-06T12:17:04Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>quant-ph</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2409.03515v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03515v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2409.03515v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03515v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3013,13 +3013,13 @@
                     <strong>Summary:</strong> Owing to the diverse geographical environments, intricate landscapes, and high-density settlements, the automatic identification of urban village boundaries using remote sensing images is a highly challenging task. This paper proposes a novel and efficient neural network model called UV-Mamba for accurate boundary detection in high-resolution remote sensing images. UV-Mamba mitigates the memory loss problem in long sequence modeling, which arises in state space model (SSM) with increasing image size, by incorporating deformable convolutions (DCN). Its architecture utilizes an encoder-decoder framework, includes an encoder with four deformable state space augmentation (DSSA) blocks for efficient multi-level semantic extraction and a decoder to integrate the extracted semantic information. We conducted experiments on the Beijing and Xi'an datasets, and the results show that UV-Mamba achieves state-of-the-art performance. Specifically, our model achieves 73.3% and 78.1% IoU on the Beijing and Xi'an datasets, respectively, representing improvements of 1.2% and 3.4% IoU over the previous best model, while also being 6x faster in inference speed and 40x smaller in parameter count. Source code and pre-trained models are available in the supplementary material.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-09-05T11:23:41Z
+                    <strong>Updated:</strong> 2024-09-06T06:57:59Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CV</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2409.03431v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03431v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2409.03431v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03431v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3151,13 +3151,13 @@
                     <strong>Summary:</strong> Cognitive psychology investigates perception, attention, memory, language, problem-solving, decision-making, and reasoning. Kahneman's dual-system theory elucidates the human decision-making process, distinguishing between the rapid, intuitive System 1 and the deliberative, rational System 2. Recent advancements have positioned large language Models (LLMs) as formidable tools nearing human-level proficiency in various cognitive tasks. Nonetheless, the presence of a dual-system framework analogous to human cognition in LLMs remains unexplored. This study introduces the \textbf{CogniDual Framework for LLMs} (CFLLMs), designed to assess whether LLMs can, through self-training, evolve from deliberate deduction to intuitive responses, thereby emulating the human process of acquiring and mastering new information. Our findings reveal the cognitive mechanisms behind LLMs' response generation, enhancing our understanding of their capabilities in cognitive psychology. Practically, self-trained models can provide faster responses to certain queries, reducing computational demands during inference.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-09-05T09:33:24Z
+                    <strong>Updated:</strong> 2024-09-06T09:37:36Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2409.03381v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03381v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2409.03381v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03381v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3489,13 +3489,13 @@
                     <strong>Summary:</strong> Large Language Models (LLMs) have revolutionized artificial intelligence and machine learning through their advanced text processing and generating capabilities. However, their widespread deployment has raised significant safety and reliability concerns. Established vulnerabilities in deep neural networks, coupled with emerging threat models, may compromise security evaluations and create a false sense of security. Given the extensive research in the field of LLM security, we believe that summarizing the current state of affairs will help the research community better understand the present landscape and inform future developments. This paper reviews current research on LLM vulnerabilities and threats, and evaluates the effectiveness of contemporary defense mechanisms. We analyze recent studies on attack vectors and model weaknesses, providing insights into attack mechanisms and the evolving threat landscape. We also examine current defense strategies, highlighting their strengths and limitations. By contrasting advancements in attack and defense methodologies, we identify research gaps and propose future directions to enhance LLM security. Our goal is to advance the understanding of LLM safety challenges and guide the development of more robust security measures.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-09-05T06:31:37Z
+                    <strong>Updated:</strong> 2024-09-06T10:31:07Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CR</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2409.03274v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03274v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2409.03274v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03274v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4072,19 +4072,19 @@
             <div class="paper">
                 <h2>#6 RAG based Question-Answering for Contextual Response Prediction System</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Sriram Veturi, Saurabh Vaichal, Nafis Irtiza Tripto, Reshma Lal Jagadheesh, Nian Yan
+                    <strong>Authors:</strong> Sriram Veturi, Saurabh Vaichal, Reshma Lal Jagadheesh, Nafis Irtiza Tripto, Nian Yan
                 </div>
                 <div class="summary">
                     <strong>Summary:</strong> Large Language Models (LLMs) have shown versatility in various Natural Language Processing (NLP) tasks, including their potential as effective question-answering systems. However, to provide precise and relevant information in response to specific customer queries in industry settings, LLMs require access to a comprehensive knowledge base to avoid hallucinations. Retrieval Augmented Generation (RAG) emerges as a promising technique to address this challenge. Yet, developing an accurate question-answering framework for real-world applications using RAG entails several challenges: 1) data availability issues, 2) evaluating the quality of generated content, and 3) the costly nature of human evaluation. In this paper, we introduce an end-to-end framework that employs LLMs with RAG capabilities for industry use cases. Given a customer query, the proposed system retrieves relevant knowledge documents and leverages them, along with previous chat history, to generate response suggestions for customer service agents in the contact centers of a major retail company. Through comprehensive automated and human evaluations, we show that this solution outperforms the current BERT-based algorithms in accuracy and relevance. Our findings suggest that RAG-based LLMs can be an excellent support to human customer service representatives by lightening their workload.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-09-05T17:14:23Z
+                    <strong>Updated:</strong> 2024-09-06T14:18:20Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.IR</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2409.03708v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03708v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2409.03708v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03708v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4196,13 +4196,13 @@
                     <strong>Summary:</strong> Despite substantial progress of large language models (LLMs) for automatic poetry generation, the generated poetry lacks diversity while the training process differs greatly from human learning. Under the rationale that the learning process of the poetry generation systems should be more human-like and their output more diverse and novel, we introduce a framework based on social learning where we emphasize non-cooperative interactions besides cooperative interactions to encourage diversity. Our experiments are the first attempt at LLM-based multi-agent systems in non-cooperative environments for poetry generation employing both TRAINING-BASED agents (GPT-2) and PROMPTING-BASED agents (GPT-3 and GPT-4). Our evaluation based on 96k generated poems shows that our framework benefits the poetry generation process for TRAINING-BASED agents resulting in 1) a 3.0-3.7 percentage point (pp) increase in diversity and a 5.6-11.3 pp increase in novelty according to distinct and novel n-grams. The generated poetry from TRAINING-BASED agents also exhibits group divergence in terms of lexicons, styles and semantics. PROMPTING-BASED agents in our framework also benefit from non-cooperative environments and a more diverse ensemble of models with non-homogeneous agents has the potential to further enhance diversity, with an increase of 7.0-17.5 pp according to our experiments. However, PROMPTING-BASED agents show a decrease in lexical diversity over time and do not exhibit the group-based divergence intended in the social network. Our paper argues for a paradigm shift in creative tasks such as automatic poetry generation to include social learning processes (via LLM-based agent modeling) similar to human interaction.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-09-05T16:12:29Z
+                    <strong>Updated:</strong> 2024-09-06T06:50:32Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2409.03659v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03659v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2409.03659v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03659v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4710,13 +4710,13 @@
                     <strong>Summary:</strong> Cognitive psychology investigates perception, attention, memory, language, problem-solving, decision-making, and reasoning. Kahneman's dual-system theory elucidates the human decision-making process, distinguishing between the rapid, intuitive System 1 and the deliberative, rational System 2. Recent advancements have positioned large language Models (LLMs) as formidable tools nearing human-level proficiency in various cognitive tasks. Nonetheless, the presence of a dual-system framework analogous to human cognition in LLMs remains unexplored. This study introduces the \textbf{CogniDual Framework for LLMs} (CFLLMs), designed to assess whether LLMs can, through self-training, evolve from deliberate deduction to intuitive responses, thereby emulating the human process of acquiring and mastering new information. Our findings reveal the cognitive mechanisms behind LLMs' response generation, enhancing our understanding of their capabilities in cognitive psychology. Practically, self-trained models can provide faster responses to certain queries, reducing computational demands during inference.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-09-05T09:33:24Z
+                    <strong>Updated:</strong> 2024-09-06T09:37:36Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2409.03381v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03381v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2409.03381v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03381v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4787,16 +4787,16 @@
                     <strong>Authors:</strong> J. Bumberger, M. Abbrent, N. Brinckmann, J. Hemmen, R. Kunkel, C. Lorenz, P. Lünenschloß, B. Palm, T. Schnicke, C. Schulz, H. van der Schaaf, D. Schäfer
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Addressing the challenges posed by climate change, biodiversity loss, and environmental pollution requires comprehensive monitoring and effective data management strategies that are applicable across various scales in environmental system science. This paper introduces a versatile and transferable digital ecosystem for managing time series data, designed to adhere to the FAIR principles (Findable, Accessible, Interoperable, and Reusable). The system is highly adaptable, cloud-ready, and suitable for deployment in a wide range of settings, from small-scale projects to large-scale monitoring initiatives. The ecosystem comprises three core components: the Sensor Management System (SMS) for detailed metadata registration and management; time.IO, a platform for efficient time series data storage, transfer, and real-time visualization; and the System for Automated Quality Control (SaQC), which ensures data integrity through real-time analysis and quality assurance. The modular architecture, combined with standardized protocols and interfaces, ensures that the ecosystem can be easily transferred and deployed across different environments and institutions. This approach enhances data accessibility for a broad spectrum of stakeholders, including researchers, policymakers, and the public, while fostering collaboration and advancing scientific research in environmental monitoring.
+                    <strong>Summary:</strong> Addressing the challenges posed by climate change, biodiversity loss, and environmental pollution requires comprehensive monitoring and effective data management strategies that are applicable across various scales in environmental system science. This paper introduces a versatile and transferable digital ecosystem for managing time series data, designed to adhere to the FAIR principles (Findable, Accessible, Interoperable, and Reusable). The system is highly adaptable, cloud-ready, and suitable for deployment in a wide range of settings, from small-scale projects to large-scale monitoring initiatives. The ecosystem comprises three core components: the Sensor Management System (SMS) for detailed metadata registration and management; \nolinkurl{time.IO}, a platform for efficient time series data storage, transfer, and real-time visualization; and the System for Automated Quality Control (SaQC), which ensures data integrity through real-time analysis and quality assurance. The modular architecture, combined with standardized protocols and interfaces, ensures that the ecosystem can be easily transferred and deployed across different environments and institutions. This approach enhances data accessibility for a broad spectrum of stakeholders, including researchers, policymakers, and the public, while fostering collaboration and advancing scientific research in environmental monitoring.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-09-05T08:53:23Z
+                    <strong>Updated:</strong> 2024-09-06T07:29:00Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SE</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2409.03351v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03351v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2409.03351v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03351v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4967,13 +4967,13 @@
                     <strong>Summary:</strong> Large Language Models (LLMs) have revolutionized artificial intelligence and machine learning through their advanced text processing and generating capabilities. However, their widespread deployment has raised significant safety and reliability concerns. Established vulnerabilities in deep neural networks, coupled with emerging threat models, may compromise security evaluations and create a false sense of security. Given the extensive research in the field of LLM security, we believe that summarizing the current state of affairs will help the research community better understand the present landscape and inform future developments. This paper reviews current research on LLM vulnerabilities and threats, and evaluates the effectiveness of contemporary defense mechanisms. We analyze recent studies on attack vectors and model weaknesses, providing insights into attack mechanisms and the evolving threat landscape. We also examine current defense strategies, highlighting their strengths and limitations. By contrasting advancements in attack and defense methodologies, we identify research gaps and propose future directions to enhance LLM security. Our goal is to advance the understanding of LLM safety challenges and guide the development of more robust security measures.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2024-09-05T06:31:37Z
+                    <strong>Updated:</strong> 2024-09-06T10:31:07Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CR</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2409.03274v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03274v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2409.03274v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.03274v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
