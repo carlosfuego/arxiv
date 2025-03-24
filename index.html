@@ -120,16 +120,16 @@
                     <strong>Authors:</strong> Feiyang Li, Yingjian Chen, Haoran Liu, Rui Yang, Han Yuan, Yuang Jiang, Tianxiao Li, Edison Marrese Taylor, Hossein Rouhizadeh, Yusuke Iwasawa, Douglas Teodoro, Yutaka Matsuo, Irene Li
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Large Language Models (LLMs) have shown remarkable progress in medical question answering (QA), yet their effectiveness remains predominantly limited to English due to imbalanced multilingual training data and scarce medical resources for low-resource languages. To address this critical language gap in medical QA, we propose Multilingual Knowledge Graph-based Retrieval Ranking (MKG-Rank), a knowledge graph-enhanced framework that enables English-centric LLMs to perform multilingual medical QA. Through a word-level translation mechanism, our framework efficiently integrates comprehensive English-centric medical knowledge graphs into LLM reasoning at a low cost, mitigating cross-lingual semantic distortion and achieving precise medical QA across language barriers. To enhance efficiency, we introduce caching and multi-angle ranking strategies to optimize the retrieval process, significantly reducing response times and prioritizing relevant medical knowledge. Extensive evaluations on multilingual medical QA benchmarks across Chinese, Japanese, Korean, and Swahili demonstrate that MKG-Rank consistently outperforms zero-shot LLMs, achieving maximum 33.89% increase in accuracy, while maintaining an average retrieval time of only 0.0009 seconds.
+                    <strong>Summary:</strong> Large Language Models (LLMs) have shown remarkable progress in medical question answering (QA), yet their effectiveness remains predominantly limited to English due to imbalanced multilingual training data and scarce medical resources for low-resource languages. To address this critical language gap in medical QA, we propose Multilingual Knowledge Graph-based Retrieval Ranking (MKG-Rank), a knowledge graph-enhanced framework that enables English-centric LLMs to perform multilingual medical QA. Through a word-level translation mechanism, our framework efficiently integrates comprehensive English-centric medical knowledge graphs into LLM reasoning at a low cost, mitigating cross-lingual semantic distortion and achieving precise medical QA across language barriers. To enhance efficiency, we introduce caching and multi-angle ranking strategies to optimize the retrieval process, significantly reducing response times and prioritizing relevant medical knowledge. Extensive evaluations on multilingual medical QA benchmarks across Chinese, Japanese, Korean, and Swahili demonstrate that MKG-Rank consistently outperforms zero-shot LLMs, achieving maximum 35.03% increase in accuracy, while maintaining an average retrieval time of only 0.0009 seconds.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-03-20T13:25:03Z
+                    <strong>Updated:</strong> 2025-03-21T01:59:12Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2503.16131v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.16131v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2503.16131v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.16131v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -240,13 +240,13 @@
                     <strong>Summary:</strong> Web refresh crawling is the problem of keeping a cache of web pages fresh, that is, having the most recent copy available when a page is requested, given a limited bandwidth available to the crawler. Under the assumption that the change and request events, resp., to each web page follow independent Poisson processes, the optimal scheduling policy was derived by Azar et al. 2018. In this paper, we study an extension of this problem where side information indicating content changes, such as various types of web pings, for example, signals from sitemaps, content delivery networks, etc., is available. Incorporating such side information into the crawling policy is challenging, because (i) the signals can be noisy with false positive events and with missing change events; and (ii) the crawler should achieve a fair performance over web pages regardless of the quality of the side information, which might differ from web page to web page. We propose a scalable crawling algorithm which (i) uses the noisy side information in an optimal way under mild assumptions; (ii) can be deployed without heavy centralized computation; (iii) is able to crawl web pages at a constant total rate without spikes in the total bandwidth usage over any time interval, and automatically adapt to the new optimal solution when the total bandwidth changes without centralized computation. Experiments clearly demonstrate the versatility of our approach.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-03-19T04:49:08Z
+                    <strong>Updated:</strong> 2025-03-20T21:49:15Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>stat.ML</span><span>cs.IR</span><span>cs.LG</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2502.02430v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2502.02430v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2502.02430v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2502.02430v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2258,16 +2258,16 @@
                     <strong>Authors:</strong> Zachary Ravichandran, Varun Murali, Mariliza Tzes, George J. Pappas, Vijay Kumar
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> As robots become increasingly capable, users will want to describe high-level missions and have robots infer the relevant details. because pre-built maps are difficult to obtain in many realistic settings, accomplishing such missions will require the robot to map and plan online. while many semantic planning methods operate online, they are typically designed for well specified missions such as object search or exploration. recently, large language models (LLMs) have demonstrated powerful contextual reasoning abilities over a range of robotic tasks described in natural language. however, existing LLM-enabled planners typically do not consider online planning or complex missions; rather, relevant subtasks and semantics are provided by a pre-built map or a user. we address these limitations via spine, an online planner for missions with incomplete mission specifications provided in natural language. the planner uses an LLM to reason about subtasks implied by the mission specification and then realizes these subtasks in a receding horizon framework. tasks are automatically validated for safety and refined online with new map observations. we evaluate spine in simulation and real-world settings with missions that require multiple steps of semantic reasoning and exploration in cluttered outdoor environments of over 20,000m$^2$. compared to baselines that use existing LLM-enabled planning approaches, our method is over twice as efficient in terms of time and distance, requires less user interactions, and does not require a full map. Additional resources are provided at: https://zacravichandran.github.io/SPINE.
+                    <strong>Summary:</strong> As robots become increasingly capable, users will want to describe high-level missions and have robots infer the relevant details. Because pre-built maps are difficult to obtain in many realistic settings, accomplishing such missions will require the robot to map and plan online. While many semantic planning methods operate online, they are typically designed for well specified missions such as object search or exploration. Recently, Large Language Models (LLMs) have demonstrated powerful contextual reasoning abilities over a range of robotic tasks described in natural language. However, existing LLM-enabled planners typically do not consider online planning or complex missions; rather, relevant subtasks and semantics are provided by a pre-built map or a user. We address these limitations via SPINE, an online planner for missions with incomplete mission specifications provided in natural language. The planner uses an LLM to reason about subtasks implied by the mission specification and then realizes these subtasks in a receding horizon framework. Tasks are automatically validated for safety and refined online with new map observations. We evaluate SPINE in simulation and real-world settings with missions that require multiple steps of semantic reasoning and exploration in cluttered outdoor environments of over 20,000m$^2$. Compared to baselines that use existing LLM-enabled planning approaches, our method is over twice as efficient in terms of time and distance, requires less user interactions, and does not require a full map. Additional resources are provided at https://zacravichandran.github.io/SPINE.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-03-20T17:43:39Z
+                    <strong>Updated:</strong> 2025-03-21T01:34:48Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.RO</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2410.03035v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2410.03035v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2410.03035v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2410.03035v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2792,13 +2792,13 @@
                     <strong>Summary:</strong> Reasoning large language models are rapidly evolving across various domains. However, their capabilities in handling complex financial tasks still require in-depth exploration. In this paper, we introduce Fin-R1, a reasoning large language model specifically designed for the financial sector. Fin-R1 is built using a two-stage architecture, leveraging a financial reasoning dataset distilled and processed based on DeepSeek-R1. Through supervised fine-tuning (SFT) and reinforcement learning (RL) training, it demonstrates performance close to DeepSeek-R1 with a parameter size of 7 billion across a range of financial reasoning tasks. It achieves the state-of-the-art (SOTA) in the FinQA and ConvFinQA tasks between those LLMs in our evaluation, surpassing larger models in other tasks as well. Fin-R1 showcases strong reasoning and decision-making capabilities, providing solutions to various problems encountered in the financial domain. Our code is available at https://github.com/SUFE-AIFLM-Lab/Fin-R1.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-03-20T15:46:18Z
+                    <strong>Updated:</strong> 2025-03-21T01:57:58Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2503.16252v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.16252v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2503.16252v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.16252v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3100,16 +3100,16 @@
                     <strong>Authors:</strong> Francesco Ruggieri
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> I propose a novel argument to identify economically interpretable intertemporal treatment effects in dynamic regression discontinuity designs (RDDs). Specifically, I develop a dynamic potential outcomes model and reformulate two assumptions from the difference-in-differences literature, no anticipation and common trends, to attain point identification of cutoff-specific impulse responses. The estimand of each target parameter can be expressed as the sum of two static RDD contrasts, thereby allowing for nonparametric estimation and inference with standard local polynomial methods. I also propose a nonparametric approach to aggregate treatment effects across calendar time and treatment paths, leveraging a limited path independence restriction to reduce the dimensionality of the parameter space. I apply this approach to estimate the dynamic effects of school district expenditure authorizations on housing prices in Wisconsin.
+                    <strong>Summary:</strong> I propose a novel argument to identify economically interpretable intertemporal treatment effects in dynamic regression discontinuity designs (RDDs). Specifically, I develop a dynamic potential outcomes model and reformulate two assumptions from the difference-in-differences literature, no anticipation and common trends, to attain point identification of cutoff-specific impulse responses. The estimand of each target parameter can be expressed as the sum of two static RDD contrasts, thereby allowing for nonparametric estimation and inference with standard local polynomial methods. I also propose a nonparametric approach to aggregate treatment effects across calendar time and treatment paths, leveraging a limited path independence restriction to reduce the dimensionality of the parameter space. I apply this method to estimate the dynamic effects of school district expenditure authorizations on housing prices in Wisconsin.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-03-20T14:41:40Z
+                    <strong>Updated:</strong> 2025-03-21T04:46:07Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>econ.EM</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2307.14203v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2307.14203v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2307.14203v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2307.14203v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3433,16 +3433,16 @@
                     <strong>Authors:</strong> Feiyang Li, Yingjian Chen, Haoran Liu, Rui Yang, Han Yuan, Yuang Jiang, Tianxiao Li, Edison Marrese Taylor, Hossein Rouhizadeh, Yusuke Iwasawa, Douglas Teodoro, Yutaka Matsuo, Irene Li
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Large Language Models (LLMs) have shown remarkable progress in medical question answering (QA), yet their effectiveness remains predominantly limited to English due to imbalanced multilingual training data and scarce medical resources for low-resource languages. To address this critical language gap in medical QA, we propose Multilingual Knowledge Graph-based Retrieval Ranking (MKG-Rank), a knowledge graph-enhanced framework that enables English-centric LLMs to perform multilingual medical QA. Through a word-level translation mechanism, our framework efficiently integrates comprehensive English-centric medical knowledge graphs into LLM reasoning at a low cost, mitigating cross-lingual semantic distortion and achieving precise medical QA across language barriers. To enhance efficiency, we introduce caching and multi-angle ranking strategies to optimize the retrieval process, significantly reducing response times and prioritizing relevant medical knowledge. Extensive evaluations on multilingual medical QA benchmarks across Chinese, Japanese, Korean, and Swahili demonstrate that MKG-Rank consistently outperforms zero-shot LLMs, achieving maximum 33.89% increase in accuracy, while maintaining an average retrieval time of only 0.0009 seconds.
+                    <strong>Summary:</strong> Large Language Models (LLMs) have shown remarkable progress in medical question answering (QA), yet their effectiveness remains predominantly limited to English due to imbalanced multilingual training data and scarce medical resources for low-resource languages. To address this critical language gap in medical QA, we propose Multilingual Knowledge Graph-based Retrieval Ranking (MKG-Rank), a knowledge graph-enhanced framework that enables English-centric LLMs to perform multilingual medical QA. Through a word-level translation mechanism, our framework efficiently integrates comprehensive English-centric medical knowledge graphs into LLM reasoning at a low cost, mitigating cross-lingual semantic distortion and achieving precise medical QA across language barriers. To enhance efficiency, we introduce caching and multi-angle ranking strategies to optimize the retrieval process, significantly reducing response times and prioritizing relevant medical knowledge. Extensive evaluations on multilingual medical QA benchmarks across Chinese, Japanese, Korean, and Swahili demonstrate that MKG-Rank consistently outperforms zero-shot LLMs, achieving maximum 35.03% increase in accuracy, while maintaining an average retrieval time of only 0.0009 seconds.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-03-20T13:25:03Z
+                    <strong>Updated:</strong> 2025-03-21T01:59:12Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2503.16131v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.16131v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2503.16131v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.16131v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4163,16 +4163,16 @@
                     <strong>Authors:</strong> Zachary Ravichandran, Varun Murali, Mariliza Tzes, George J. Pappas, Vijay Kumar
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> As robots become increasingly capable, users will want to describe high-level missions and have robots infer the relevant details. because pre-built maps are difficult to obtain in many realistic settings, accomplishing such missions will require the robot to map and plan online. while many semantic planning methods operate online, they are typically designed for well specified missions such as object search or exploration. recently, large language models (LLMs) have demonstrated powerful contextual reasoning abilities over a range of robotic tasks described in natural language. however, existing LLM-enabled planners typically do not consider online planning or complex missions; rather, relevant subtasks and semantics are provided by a pre-built map or a user. we address these limitations via spine, an online planner for missions with incomplete mission specifications provided in natural language. the planner uses an LLM to reason about subtasks implied by the mission specification and then realizes these subtasks in a receding horizon framework. tasks are automatically validated for safety and refined online with new map observations. we evaluate spine in simulation and real-world settings with missions that require multiple steps of semantic reasoning and exploration in cluttered outdoor environments of over 20,000m$^2$. compared to baselines that use existing LLM-enabled planning approaches, our method is over twice as efficient in terms of time and distance, requires less user interactions, and does not require a full map. Additional resources are provided at: https://zacravichandran.github.io/SPINE.
+                    <strong>Summary:</strong> As robots become increasingly capable, users will want to describe high-level missions and have robots infer the relevant details. Because pre-built maps are difficult to obtain in many realistic settings, accomplishing such missions will require the robot to map and plan online. While many semantic planning methods operate online, they are typically designed for well specified missions such as object search or exploration. Recently, Large Language Models (LLMs) have demonstrated powerful contextual reasoning abilities over a range of robotic tasks described in natural language. However, existing LLM-enabled planners typically do not consider online planning or complex missions; rather, relevant subtasks and semantics are provided by a pre-built map or a user. We address these limitations via SPINE, an online planner for missions with incomplete mission specifications provided in natural language. The planner uses an LLM to reason about subtasks implied by the mission specification and then realizes these subtasks in a receding horizon framework. Tasks are automatically validated for safety and refined online with new map observations. We evaluate SPINE in simulation and real-world settings with missions that require multiple steps of semantic reasoning and exploration in cluttered outdoor environments of over 20,000m$^2$. Compared to baselines that use existing LLM-enabled planning approaches, our method is over twice as efficient in terms of time and distance, requires less user interactions, and does not require a full map. Additional resources are provided at https://zacravichandran.github.io/SPINE.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-03-20T17:43:39Z
+                    <strong>Updated:</strong> 2025-03-21T01:34:48Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.RO</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2410.03035v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2410.03035v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2410.03035v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2410.03035v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4558,13 +4558,13 @@
                     <strong>Summary:</strong> Reasoning large language models are rapidly evolving across various domains. However, their capabilities in handling complex financial tasks still require in-depth exploration. In this paper, we introduce Fin-R1, a reasoning large language model specifically designed for the financial sector. Fin-R1 is built using a two-stage architecture, leveraging a financial reasoning dataset distilled and processed based on DeepSeek-R1. Through supervised fine-tuning (SFT) and reinforcement learning (RL) training, it demonstrates performance close to DeepSeek-R1 with a parameter size of 7 billion across a range of financial reasoning tasks. It achieves the state-of-the-art (SOTA) in the FinQA and ConvFinQA tasks between those LLMs in our evaluation, surpassing larger models in other tasks as well. Fin-R1 showcases strong reasoning and decision-making capabilities, providing solutions to various problems encountered in the financial domain. Our code is available at https://github.com/SUFE-AIFLM-Lab/Fin-R1.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-03-20T15:46:18Z
+                    <strong>Updated:</strong> 2025-03-21T01:57:58Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2503.16252v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.16252v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2503.16252v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.16252v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5102,16 +5102,16 @@
                     <strong>Authors:</strong> Feiyang Li, Yingjian Chen, Haoran Liu, Rui Yang, Han Yuan, Yuang Jiang, Tianxiao Li, Edison Marrese Taylor, Hossein Rouhizadeh, Yusuke Iwasawa, Douglas Teodoro, Yutaka Matsuo, Irene Li
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Large Language Models (LLMs) have shown remarkable progress in medical question answering (QA), yet their effectiveness remains predominantly limited to English due to imbalanced multilingual training data and scarce medical resources for low-resource languages. To address this critical language gap in medical QA, we propose Multilingual Knowledge Graph-based Retrieval Ranking (MKG-Rank), a knowledge graph-enhanced framework that enables English-centric LLMs to perform multilingual medical QA. Through a word-level translation mechanism, our framework efficiently integrates comprehensive English-centric medical knowledge graphs into LLM reasoning at a low cost, mitigating cross-lingual semantic distortion and achieving precise medical QA across language barriers. To enhance efficiency, we introduce caching and multi-angle ranking strategies to optimize the retrieval process, significantly reducing response times and prioritizing relevant medical knowledge. Extensive evaluations on multilingual medical QA benchmarks across Chinese, Japanese, Korean, and Swahili demonstrate that MKG-Rank consistently outperforms zero-shot LLMs, achieving maximum 33.89% increase in accuracy, while maintaining an average retrieval time of only 0.0009 seconds.
+                    <strong>Summary:</strong> Large Language Models (LLMs) have shown remarkable progress in medical question answering (QA), yet their effectiveness remains predominantly limited to English due to imbalanced multilingual training data and scarce medical resources for low-resource languages. To address this critical language gap in medical QA, we propose Multilingual Knowledge Graph-based Retrieval Ranking (MKG-Rank), a knowledge graph-enhanced framework that enables English-centric LLMs to perform multilingual medical QA. Through a word-level translation mechanism, our framework efficiently integrates comprehensive English-centric medical knowledge graphs into LLM reasoning at a low cost, mitigating cross-lingual semantic distortion and achieving precise medical QA across language barriers. To enhance efficiency, we introduce caching and multi-angle ranking strategies to optimize the retrieval process, significantly reducing response times and prioritizing relevant medical knowledge. Extensive evaluations on multilingual medical QA benchmarks across Chinese, Japanese, Korean, and Swahili demonstrate that MKG-Rank consistently outperforms zero-shot LLMs, achieving maximum 35.03% increase in accuracy, while maintaining an average retrieval time of only 0.0009 seconds.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-03-20T13:25:03Z
+                    <strong>Updated:</strong> 2025-03-21T01:59:12Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2503.16131v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.16131v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2503.16131v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.16131v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5401,13 +5401,13 @@
                     <strong>Summary:</strong> The transition from traditional architectures to containerized microservices within the cloud-edge computing continuum introduces significant challenges, particularly in the efficient scheduling of microservices under dynamic conditions. Complex and fluctuating call-graph dependencies, varying cross-node communication latencies, and unpredictable bandwidth conditions substantially impact the performance and reliability of deployed microservices. Consequently, accurately evaluating scheduling policies in such dynamic environments remains essential yet challenging due to the lack of realistic and controllable evaluation frameworks.   In this paper, we propose iDynamics, a novel evaluation framework designed explicitly to address these challenges. iDynamics provides comprehensive and controllable evaluation capabilities by emulating realistic dynamics, including configurable call-graph topologies, cross-node communication delays, and bandwidth variability. The framework is composed of modular components, such as the Graph Dynamics Analyzer, Networking Dynamics Manager, and Scheduling Policy Extender, enabling fine-grained environmental control and facilitating systematic comparisons of different scheduling strategies. Extensive experiments on a real cloud-edge testbed demonstrate that iDynamics effectively captures diverse dynamic scenarios encountered in microservice deployments, offering a robust solution for evaluating and optimizing policy performance under realistic and controllable conditions.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-03-20T10:52:50Z
+                    <strong>Updated:</strong> 2025-03-21T03:03:15Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.DC</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2503.16029v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.16029v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2503.16029v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.16029v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5817,13 +5817,13 @@
                     <strong>Summary:</strong> We propose V-Droid, a mobile GUI task automation agent. Unlike previous mobile agents that utilize Large Language Models (LLMs) as generators to directly generate actions at each step, V-Droid employs LLMs as verifiers to evaluate candidate actions before making final decisions. To realize this novel paradigm, we introduce a comprehensive framework for constructing verifier-driven mobile agents: the discretized action space construction coupled with the prefilling-only workflow to accelerate the verification process, the pair-wise progress preference training to significantly enhance the verifier's decision-making capabilities, and the scalable human-agent joint annotation scheme to efficiently collect the necessary data at scale. V-Droid sets a new state-of-the-art task success rate across several public mobile task automation benchmarks: 59.5% on AndroidWorld, 38.3% on AndroidLab, and 49% on MobileAgentBench, surpassing existing agents by 9.5%, 2.1%, and 9%, respectively. Furthermore, V-Droid achieves an impressively low latency of 0.7 seconds per step, making it the first mobile agent capable of delivering near-real-time, effective decision-making capabilities.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-03-20T08:25:00Z
+                    <strong>Updated:</strong> 2025-03-21T03:19:57Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2503.15937v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.15937v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2503.15937v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.15937v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
