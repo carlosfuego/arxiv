@@ -81,16 +81,16 @@
                     <strong>Authors:</strong> Vincenzo Petrolo, Flavia Guella, Michele Caon, Pasquale Davide Schiavone, Guido Masera, Maurizio Martina
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Modern data-driven applications expose limitations of von Neumann architectures - extensive data movement, low throughput, and poor energy efficiency. Accelerators improve performance but lack flexibility and require data transfers. Existing compute in- and near-memory solutions mitigate these issues but face usability challenges due to data placement constraints. We propose a novel cache architecture that doubles as a tightly-coupled compute-near-memory coprocessor. Our \riscv cache controller executes custom instructions from the host CPU using vector operations dispatched to near-memory vector processing units within the cache memory subsystem. This architecture abstracts memory synchronization and data mapping from application software while offering software-based \isa extensibility. Our implementation shows $30\times$ to $84\times$ performance improvement when operating on 8-bit data over the same system with a traditional cache when executing a worst-case 32-bit CNN workload, with only $41.3\%$ area overhead.
+                    <strong>Summary:</strong> Modern data-driven applications expose limitations of von Neumann architectures - extensive data movement, low throughput, and poor energy efficiency. Accelerators improve performance but lack flexibility and require data transfers. Existing compute in- and near-memory solutions mitigate these issues but face usability challenges due to data placement constraints. We propose a novel cache architecture that doubles as a tightly-coupled compute-near-memory coprocessor. Our RISC-V cache controller executes custom instructions from the host CPU using vector operations dispatched to near-memory vector processing units within the cache memory subsystem. This architecture abstracts memory synchronization and data mapping from application software while offering software-based ISA extensibility. Our implementation shows $30\times$ to $84\times$ performance improvement when operating on 8-bit data over the same system with a traditional cache when executing a worst-case 32-bit CNN workload, with only $41.3\%$ area overhead.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-04-03T12:36:01Z
+                    <strong>Updated:</strong> 2025-04-04T11:12:18Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AR</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2504.02533v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2504.02533v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2504.02533v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2504.02533v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -202,13 +202,13 @@
                     <strong>Summary:</strong> We propose EVOlutionary Selector (EVOS), an efficient training paradigm for accelerating Implicit Neural Representation (INR). Unlike conventional INR training that feeds all samples through the neural network in each iteration, our approach restricts training to strategically selected points, reducing computational overhead by eliminating redundant forward passes. Specifically, we treat each sample as an individual in an evolutionary process, where only those fittest ones survive and merit inclusion in training, adaptively evolving with the neural network dynamics. While this is conceptually similar to Evolutionary Algorithms, their distinct objectives (selection for acceleration vs. iterative solution optimization) require a fundamental redefinition of evolutionary mechanisms for our context. In response, we design sparse fitness evaluation, frequency-guided crossover, and augmented unbiased mutation to comprise EVOS. These components respectively guide sample selection with reduced computational cost, enhance performance through frequency-domain balance, and mitigate selection bias from cached evaluation. Extensive experiments demonstrate that our method achieves approximately 48%-66% reduction in training time while ensuring superior convergence without additional cost, establishing state-of-the-art acceleration among recent sampling-based strategies.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-04-02T14:51:11Z
+                    <strong>Updated:</strong> 2025-04-04T13:27:49Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CV</span><span>cs.MM</span><span>cs.NE</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2412.10153v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2412.10153v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2412.10153v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2412.10153v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2128,13 +2128,13 @@
                     <strong>Summary:</strong> The detection and intervention of mental health issues represent a critical global research focus, and social media data has been recognized as an important resource for mental health research. However, how to utilize Large Language Models (LLMs) for mental health problem detection on social media poses significant challenges. Hence, this paper aims to explore the potential of LLM applications in social media data analysis, focusing not only on the most common psychological disorders such as depression and anxiety but also incorporating psychotic disorders and externalizing disorders, summarizing the application methods of LLM from different dimensions, such as text data analysis and detection of mental disorders, and revealing the major challenges and shortcomings of current research. In addition, the paper provides an overview of popular datasets, and evaluation metrics. The survey in this paper provides a comprehensive frame of reference for researchers in the field of mental health, while demonstrating the great potential of LLMs in mental health detection to facilitate the further application of LLMs in future mental health interventions.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-04-03T17:43:14Z
+                    <strong>Updated:</strong> 2025-04-04T02:07:59Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>I.2.7; J.3; J.4</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2504.02800v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2504.02800v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2504.02800v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2504.02800v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2437,19 +2437,19 @@
             <div class="paper">
                 <h2>#22 Why do LLMs attend to the first token?</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Federico Barbero, Álvaro Arroyo, Xiangming Gu, Christos Perivolaropoulos, Michael Bronstein, Petar Veličkovi ć, Razvan Pascanu
+                    <strong>Authors:</strong> Federico Barbero, Álvaro Arroyo, Xiangming Gu, Christos Perivolaropoulos, Michael Bronstein, Petar Veličković, Razvan Pascanu
                 </div>
                 <div class="summary">
                     <strong>Summary:</strong> Large Language Models (LLMs) tend to attend heavily to the first token in the sequence -- creating a so-called attention sink. Many works have studied this phenomenon in detail, proposing various ways to either leverage or alleviate it. Attention sinks have been connected to quantisation difficulties, security issues, and streaming attention. Yet, while many works have provided conditions in which they occur or not, a critical question remains shallowly answered: Why do LLMs learn such patterns and how are they being used? In this work, we argue theoretically and empirically that this mechanism provides a method for LLMs to avoid over-mixing, connecting this to existing lines of work that study mathematically how information propagates in Transformers. We conduct experiments to validate our theoretical intuitions and show how choices such as context length, depth, and data packing influence the sink behaviour. We hope that this study provides a new practical perspective on why attention sinks are useful in LLMs, leading to a better understanding of the attention patterns that form during training.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-04-03T16:17:55Z
+                    <strong>Updated:</strong> 2025-04-04T07:41:19Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2504.02732v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2504.02732v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2504.02732v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2504.02732v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2542,13 +2542,13 @@
                     <strong>Summary:</strong> Non-verbal communication often comprises of semantically rich gestures that help convey the meaning of an utterance. Producing such semantic co-speech gestures has been a major challenge for the existing neural systems that can generate rhythmic beat gestures, but struggle to produce semantically meaningful gestures. Therefore, we present RAG-Gesture, a diffusion-based gesture generation approach that leverages Retrieval Augmented Generation (RAG) to produce natural-looking and semantically rich gestures. Our neuro-explicit gesture generation approach is designed to produce semantic gestures grounded in interpretable linguistic knowledge. We achieve this by using explicit domain knowledge to retrieve exemplar motions from a database of co-speech gestures. Once retrieved, we then inject these semantic exemplar gestures into our diffusion-based gesture generation pipeline using DDIM inversion and retrieval guidance at the inference time without any need of training. Further, we propose a control paradigm for guidance, that allows the users to modulate the amount of influence each retrieval insertion has over the generated sequence. Our comparative evaluations demonstrate the validity of our approach against recent gesture generation approaches. The reader is urged to explore the results on our project page.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-04-03T15:37:26Z
+                    <strong>Updated:</strong> 2025-04-04T07:48:19Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CV</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2412.06786v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2412.06786v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2412.06786v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2412.06786v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2968,13 +2968,13 @@
                     <strong>Summary:</strong> Large Language Models (LLMs) have revolutionized natural language processing, but their application to speech-based tasks remains challenging due to the complexities of integrating audio and text modalities. This paper introduces Ichigo, a mixed-modal model that seamlessly processes interleaved sequences of speech and text. Utilizing a tokenized early-fusion approach, Ichigo quantizes speech into discrete tokens and employs a uniform transformer-based architecture for both speech and text modalities. This method enables joint reasoning and generation across modalities without the need for separate adapters. We present a comprehensive training methodology, including pre-training on multilingual speech recognition datasets and fine-tuning on a curated instruction dataset. Ichigo demonstrates state-of-the-art performance on speech question-answering benchmarks, outperforming existing open-source speech language models and achieving comparable results to cascaded systems. Notably, Ichigo exhibits a latency of just 111 ms to first token generation, significantly lower than current models. Our approach not only advances the field of multimodal AI but also provides a framework for smaller research teams to contribute effectively to open-source speech-language models.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-04-03T13:57:22Z
+                    <strong>Updated:</strong> 2025-04-04T08:29:19Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.SD</span><span>eess.AS</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2410.15316v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2410.15316v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2410.15316v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2410.15316v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3456,13 +3456,13 @@
                     <strong>Summary:</strong> Who should we prioritize for intervention when we cannot estimate intervention effects? In many applied domains (e.g., advertising, customer retention, and behavioral nudging) prioritization is guided by predictive models that estimate outcome probabilities rather than causal effects. This paper investigates when these predictions (scores) can effectively rank individuals by their intervention effects, particularly when direct effect estimation is infeasible or unreliable. We propose a conceptual framework based on amenability: an individual's latent proclivity to be influenced by an intervention. We then formalize conditions under which predictive scores serve as effective proxies for amenability. These conditions justify using non-causal scores for intervention prioritization, even when the scores do not directly estimate effects. We further show that, under plausible assumptions, predictive models can outperform causal effect estimators in ranking individuals by intervention effects. Empirical evidence from an advertising context supports our theoretical findings, demonstrating that predictive modeling can offer a more robust approach to targeting than effect estimation. Our framework suggests a shift in focus, from estimating effects to inferring who is amenable, as a practical and theoretically grounded strategy for prioritizing interventions in resource-constrained environments.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-04-03T10:20:48Z
+                    <strong>Updated:</strong> 2025-04-04T02:16:54Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span><span>stat.ME</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2504.02456v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2504.02456v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2504.02456v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2504.02456v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4067,13 +4067,13 @@
                     <strong>Summary:</strong> The detection and intervention of mental health issues represent a critical global research focus, and social media data has been recognized as an important resource for mental health research. However, how to utilize Large Language Models (LLMs) for mental health problem detection on social media poses significant challenges. Hence, this paper aims to explore the potential of LLM applications in social media data analysis, focusing not only on the most common psychological disorders such as depression and anxiety but also incorporating psychotic disorders and externalizing disorders, summarizing the application methods of LLM from different dimensions, such as text data analysis and detection of mental disorders, and revealing the major challenges and shortcomings of current research. In addition, the paper provides an overview of popular datasets, and evaluation metrics. The survey in this paper provides a comprehensive frame of reference for researchers in the field of mental health, while demonstrating the great potential of LLMs in mental health detection to facilitate the further application of LLMs in future mental health interventions.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-04-03T17:43:14Z
+                    <strong>Updated:</strong> 2025-04-04T02:07:59Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>I.2.7; J.3; J.4</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2504.02800v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2504.02800v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2504.02800v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2504.02800v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4297,19 +4297,19 @@
             <div class="paper">
                 <h2>#17 Why do LLMs attend to the first token?</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Federico Barbero, Álvaro Arroyo, Xiangming Gu, Christos Perivolaropoulos, Michael Bronstein, Petar Veličkovi ć, Razvan Pascanu
+                    <strong>Authors:</strong> Federico Barbero, Álvaro Arroyo, Xiangming Gu, Christos Perivolaropoulos, Michael Bronstein, Petar Veličković, Razvan Pascanu
                 </div>
                 <div class="summary">
                     <strong>Summary:</strong> Large Language Models (LLMs) tend to attend heavily to the first token in the sequence -- creating a so-called attention sink. Many works have studied this phenomenon in detail, proposing various ways to either leverage or alleviate it. Attention sinks have been connected to quantisation difficulties, security issues, and streaming attention. Yet, while many works have provided conditions in which they occur or not, a critical question remains shallowly answered: Why do LLMs learn such patterns and how are they being used? In this work, we argue theoretically and empirically that this mechanism provides a method for LLMs to avoid over-mixing, connecting this to existing lines of work that study mathematically how information propagates in Transformers. We conduct experiments to validate our theoretical intuitions and show how choices such as context length, depth, and data packing influence the sink behaviour. We hope that this study provides a new practical perspective on why attention sinks are useful in LLMs, leading to a better understanding of the attention patterns that form during training.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-04-03T16:17:55Z
+                    <strong>Updated:</strong> 2025-04-04T07:41:19Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2504.02732v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2504.02732v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2504.02732v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2504.02732v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4730,13 +4730,13 @@
                     <strong>Summary:</strong> Large Language Models (LLMs) have revolutionized natural language processing, but their application to speech-based tasks remains challenging due to the complexities of integrating audio and text modalities. This paper introduces Ichigo, a mixed-modal model that seamlessly processes interleaved sequences of speech and text. Utilizing a tokenized early-fusion approach, Ichigo quantizes speech into discrete tokens and employs a uniform transformer-based architecture for both speech and text modalities. This method enables joint reasoning and generation across modalities without the need for separate adapters. We present a comprehensive training methodology, including pre-training on multilingual speech recognition datasets and fine-tuning on a curated instruction dataset. Ichigo demonstrates state-of-the-art performance on speech question-answering benchmarks, outperforming existing open-source speech language models and achieving comparable results to cascaded systems. Notably, Ichigo exhibits a latency of just 111 ms to first token generation, significantly lower than current models. Our approach not only advances the field of multimodal AI but also provides a framework for smaller research teams to contribute effectively to open-source speech-language models.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-04-03T13:57:22Z
+                    <strong>Updated:</strong> 2025-04-04T08:29:19Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.SD</span><span>eess.AS</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2410.15316v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2410.15316v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2410.15316v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2410.15316v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
