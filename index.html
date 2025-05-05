@@ -2354,13 +2354,13 @@
                     <strong>Summary:</strong> Preference alignment in Large Language Models (LLMs) has significantly improved their ability to adhere to human instructions and intentions. However, existing direct alignment algorithms primarily focus on relative preferences and often overlook the qualitative aspects of responses, despite having access to preference data that includes reward scores from judge models during AI feedback. Striving to maximize the implicit reward gap between the chosen and the slightly inferior rejected responses can cause overfitting and unnecessary unlearning of the high-quality rejected responses. The unawareness of the reward scores also drives the LLM to indiscriminately favor the low-quality chosen responses and fail to generalize to optimal responses that are sparse in data. To overcome these shortcomings, our study introduces reward-conditioned LLM policies that discern and learn from the entire spectrum of response quality within the dataset, helping extrapolate to more optimal regions. We propose an effective yet simple data relabeling method that conditions the preference pairs on quality scores to construct a reward-augmented dataset. The experiments across various benchmarks and diverse models demonstrate that our approach consistently boosts DPO by a considerable margin. Through comprehensive ablation studies, we demonstrate that our method not only maximizes the utility of preference data but also mitigates the issue of unlearning, demonstrating its broad effectiveness beyond mere data expansion. Our code is available at https://github.com/shenao-zhang/reward-augmented-preference.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-01T16:20:11Z
+                    <strong>Updated:</strong> 2025-05-02T01:10:28Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2410.08067v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2410.08067v4' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2410.08067v5' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2410.08067v5' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3534,13 +3534,13 @@
                     <strong>Summary:</strong> The classical sparse parameter identification methods are usually based on the iterative basis selection such as greedy algorithms, or the numerical optimization of regularized cost functions such as LASSO and Bayesian posterior probability distribution, etc., which, however, are not suitable for online sparsity inference when data arrive sequentially. This paper presents recursive algorithms for sparse parameter identification of multivariate stochastic systems with non-stationary observations. First, a new bivariate criterion function is presented by introducing an auxiliary variable matrix into a weighted $L_1$ regularization criterion. The new criterion function is subsequently decomposed into two solvable subproblems via alternating optimization of the two variable matrices, for which the optimizers can be explicitly formulated into recursive equations. Second, under the non-stationary and non-persistent excitation conditions on the systems, theoretical properties of the recursive algorithms are established. That is, the estimates are proved to be with (i) set convergence, i.e., the accurate estimation of the sparse index set of the unknown parameter matrix, and (ii) parameter convergence, i.e., the consistent estimation for values of the non-zero elements of the unknown parameter matrix. Finally, numerical examples are given to support the theoretical analysis.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-01T05:47:17Z
+                    <strong>Updated:</strong> 2025-05-02T06:14:29Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>eess.SY</span><span>cs.SY</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2505.00323v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.00323v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2505.00323v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.00323v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4241,13 +4241,13 @@
                     <strong>Summary:</strong> Preference alignment in Large Language Models (LLMs) has significantly improved their ability to adhere to human instructions and intentions. However, existing direct alignment algorithms primarily focus on relative preferences and often overlook the qualitative aspects of responses, despite having access to preference data that includes reward scores from judge models during AI feedback. Striving to maximize the implicit reward gap between the chosen and the slightly inferior rejected responses can cause overfitting and unnecessary unlearning of the high-quality rejected responses. The unawareness of the reward scores also drives the LLM to indiscriminately favor the low-quality chosen responses and fail to generalize to optimal responses that are sparse in data. To overcome these shortcomings, our study introduces reward-conditioned LLM policies that discern and learn from the entire spectrum of response quality within the dataset, helping extrapolate to more optimal regions. We propose an effective yet simple data relabeling method that conditions the preference pairs on quality scores to construct a reward-augmented dataset. The experiments across various benchmarks and diverse models demonstrate that our approach consistently boosts DPO by a considerable margin. Through comprehensive ablation studies, we demonstrate that our method not only maximizes the utility of preference data but also mitigates the issue of unlearning, demonstrating its broad effectiveness beyond mere data expansion. Our code is available at https://github.com/shenao-zhang/reward-augmented-preference.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-01T16:20:11Z
+                    <strong>Updated:</strong> 2025-05-02T01:10:28Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2410.08067v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2410.08067v4' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2410.08067v5' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2410.08067v5' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5464,13 +5464,13 @@
                     <strong>Summary:</strong> Many methods for improving Large Language Model (LLM) agents for sequential decision-making tasks depend on task-specific knowledge engineering--such as prompt tuning, curated in-context examples, or customized observation and action spaces. Using these approaches, agent performance improves with the quality or amount of knowledge engineering invested. Instead, we investigate how LLM agents can automatically improve their performance by learning in-context from their own successful experiences on similar tasks. Rather than relying on task-specific knowledge engineering, we focus on constructing and refining a database of self-generated examples. We demonstrate that even a naive accumulation of successful trajectories across training tasks boosts test performance on three benchmarks: ALFWorld (73% to 89%), Wordcraft (55% to 64%), and InterCode-SQL (75% to 79%)--matching the performance the initial agent achieves if allowed two to three attempts per task. We then introduce two extensions: (1) database-level selection through population-based training to identify high-performing example collections, and (2) exemplar-level selection that retains individual trajectories based on their empirical utility as in-context examples. These extensions further enhance performance, achieving 91% on ALFWorld--matching more complex approaches that employ task-specific components and prompts. Our results demonstrate that automatic trajectory database construction offers a compelling alternative to labor-intensive knowledge engineering.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-01T00:48:12Z
+                    <strong>Updated:</strong> 2025-05-02T16:44:02Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2505.00234v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.00234v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2505.00234v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.00234v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
