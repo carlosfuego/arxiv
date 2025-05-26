@@ -104,13 +104,13 @@
                     <strong>Summary:</strong> Modern Vision-Language Models (VLMs) can solve a wide range of tasks requiring visual reasoning. In real-world scenarios, desirable properties for VLMs include fast inference and controllable generation (e.g., constraining outputs to adhere to a desired format). However, existing autoregressive (AR) VLMs like LLaVA struggle in these aspects. Discrete diffusion models (DMs) offer a promising alternative, enabling parallel decoding for faster inference and bidirectional context for controllable generation through text-infilling. While effective in language-only settings, DMs' potential for multimodal tasks is underexplored. We introduce LaViDa, a family of VLMs built on DMs. We build LaViDa by equipping DMs with a vision encoder and jointly fine-tune the combined parts for multimodal instruction following. To address challenges encountered, LaViDa incorporates novel techniques such as complementary masking for effective training, prefix KV cache for efficient inference, and timestep shifting for high-quality sampling. Experiments show that LaViDa achieves competitive or superior performance to AR VLMs on multi-modal benchmarks such as MMMU, while offering unique advantages of DMs, including flexible speed-quality tradeoff, controllability, and bidirectional reasoning. On COCO captioning, LaViDa surpasses Open-LLaVa-Next-8B by +4.1 CIDEr with 1.92x speedup. On bidirectional tasks, it achieves +59% improvement on Constrained Poem Completion. These results demonstrate LaViDa as a strong alternative to AR VLMs. Code and models will be released in the camera-ready version.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-22T16:07:12Z
+                    <strong>Updated:</strong> 2025-05-23T07:07:29Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CV</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2505.16839v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.16839v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2505.16839v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.16839v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -342,13 +342,13 @@
                     <strong>Summary:</strong> While Chain-of-Thought (CoT) prompting improves reasoning in large language models (LLMs), the excessive length of reasoning tokens increases latency and KV cache memory usage, and may even truncate final answers under context limits. We propose ThinkLess, an inference-efficient framework that terminates reasoning generation early and maintains output quality without modifying the model. Atttention analysis reveals that answer tokens focus minimally on earlier reasoning steps and primarily attend to the reasoning terminator token, due to information migration under causal masking. Building on this insight, ThinkLess inserts the terminator token at earlier positions to skip redundant reasoning while preserving the underlying knowledge transfer. To prevent format discruption casued by early termination, ThinkLess employs a lightweight post-regulation mechanism, relying on the model's natural instruction-following ability to produce well-structured answers. Without fine-tuning or auxiliary data, ThinkLess achieves comparable accuracy to full-length CoT decoding while greatly reducing decoding time and memory consumption.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-21T15:58:16Z
+                    <strong>Updated:</strong> 2025-05-23T11:59:22Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2505.15684v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.15684v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2505.15684v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.15684v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -1224,13 +1224,13 @@
                     <strong>Summary:</strong> In this paper, we propose a novel learning paradigm, termed Chain-of-Model (CoM), which incorporates the causal relationship into the hidden states of each layer as a chain style, thereby introducing great scaling efficiency in model training and inference flexibility in deployment. We introduce the concept of Chain-of-Representation (CoR), which formulates the hidden states at each layer as a combination of multiple sub-representations (i.e., chains) at the hidden dimension level. In each layer, each chain from the output representations can only view all of its preceding chains in the input representations. Consequently, the model built upon CoM framework can progressively scale up the model size by increasing the chains based on the previous models (i.e., chains), and offer multiple sub-models at varying sizes for elastic inference by using different chain numbers. Based on this principle, we devise Chain-of-Language-Model (CoLM), which incorporates the idea of CoM into each layer of Transformer architecture. Based on CoLM, we further introduce CoLM-Air by introducing a KV sharing mechanism, that computes all keys and values within the first chain and then shares across all chains. This design demonstrates additional extensibility, such as enabling seamless LM switching, prefilling acceleration and so on. Experimental results demonstrate our CoLM family can achieve comparable performance to the standard Transformer, while simultaneously enabling greater flexiblity, such as progressive scaling to improve training efficiency and offer multiple varying model sizes for elastic inference, paving a a new way toward building language models. Our code will be released in the future at: https://github.com/microsoft/CoLM.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-17T04:06:12Z
+                    <strong>Updated:</strong> 2025-05-23T08:12:10Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2505.11820v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.11820v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2505.11820v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.11820v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2205,16 +2205,16 @@
                     <strong>Authors:</strong> Shwai He, Weilin Cai, Jiayi Huang, Ang Li
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> The Mixture of Experts (MoE) is an effective architecture for scaling large language models by leveraging sparse expert activation, optimizing the trade-off between performance and efficiency. However, under expert parallelism, MoE suffers from inference inefficiencies due to imbalanced token-to-expert assignment, where some experts are overloaded while others remain underutilized. This imbalance leads to poor resource utilization and increased latency, as the most burdened expert dictates the overall delay, a phenomenon we define as the \textbf{\textit{Straggler Effect}}. To mitigate this, we propose Capacity-Aware Inference, including two key techniques: (1) \textbf{\textit{Capacity-Aware Token Drop}}, which discards overloaded tokens to regulate the maximum latency of MoE, and (2) \textbf{\textit{Capacity-Aware Token Reroute}}, which reallocates overflowed tokens to underutilized experts, balancing the token distribution. These techniques collectively optimize both high-load and low-load expert utilization, leading to a more efficient MoE inference pipeline. Extensive experiments demonstrate the effectiveness of our methods, showing significant improvements in inference efficiency, e.g., 0.2\% average performance increase and a 1.94$\times$ inference speedup on Mixtral-8$\times$7B-Instruct.
+                    <strong>Summary:</strong> The Mixture of Experts (MoE) is an effective architecture for scaling large language models by leveraging sparse expert activation to balance performance and efficiency. However, under expert parallelism, MoE suffers from inference inefficiencies due to imbalanced token-to-expert assignment, where underloaded experts complete computations early but must wait for overloaded experts, leading to global delays. We define this phenomenon as the \textbf{\textit{Straggler Effect}}, as the most burdened experts dictate the overall inference latency. To address this, we first propose \textit{\textbf{Capacity-Aware Token Drop}}, which enforces expert capacity limits by discarding excess tokens from overloaded experts, effectively reducing load imbalance with minimal performance impact (e.g., $30\%$ speedup with only $0.9\%$ degradation on OLMoE). Next, given the presence of low-load experts remaining well below the capacity threshold, we introduce \textit{\textbf{Capacity-Aware Expanded Drop}}, which allows tokens to include additional local experts in their candidate set before enforcing strict local capacity constraints, thereby improving load balance and enhancing the utilization of underused experts. Extensive experiments on both language and multimodal MoE models demonstrate the effectiveness of our approach, yielding substantial gains in expert utilization, model performance, and inference efficiency, e.g., applying Expanded Drop to Mixtral-8$\times$7B-Instruct yields a {0.2\%} average performance improvement and a {1.85$\times$} inference speedup.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-22T17:55:58Z
+                    <strong>Updated:</strong> 2025-05-23T02:33:27Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span><span>cs.AI</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2503.05066v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.05066v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2503.05066v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2503.05066v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2759,13 +2759,13 @@
                     <strong>Summary:</strong> This work develops the underpinnings of self-supervised placement-aware representation learning given spatially-distributed (multi-view and multimodal) sensor observations, motivated by the need to represent external environmental state in multi-sensor IoT systems in a manner that correctly distills spatial phenomena from the distributed multi-vantage observations. The objective of sensing in IoT systems is, in general, to collectively represent an externally observed environment given multiple vantage points from which sensory observations occur. Pretraining of models that help interpret sensor data must therefore encode the relation between signals observed by sensors and the observers' vantage points in order to attain a representation that encodes the observed spatial phenomena in a manner informed by the specific placement of the measuring instruments, while allowing arbitrary placement. The work significantly advances self-supervised model pretraining from IoT signals beyond current solutions that often overlook the distinctive spatial nature of IoT data. Our framework explicitly learns the dependencies between measurements and geometric observer layouts and structural characteristics, guided by a core design principle: the duality between signals and observer positions. We further provide theoretical analyses from the perspectives of information theory and occlusion-invariant representation learning to offer insight into the rationale behind our design. Experiments on three real-world datasets--covering vehicle monitoring, human activity recognition, and earthquake localization--demonstrate the superior generalizability and robustness of our method across diverse modalities, sensor placements, application-level inference tasks, and spatial scales.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-22T17:26:23Z
+                    <strong>Updated:</strong> 2025-05-23T05:14:24Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2505.16936v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.16936v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2505.16936v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.16936v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3267,13 +3267,13 @@
                     <strong>Summary:</strong> Modern Vision-Language Models (VLMs) can solve a wide range of tasks requiring visual reasoning. In real-world scenarios, desirable properties for VLMs include fast inference and controllable generation (e.g., constraining outputs to adhere to a desired format). However, existing autoregressive (AR) VLMs like LLaVA struggle in these aspects. Discrete diffusion models (DMs) offer a promising alternative, enabling parallel decoding for faster inference and bidirectional context for controllable generation through text-infilling. While effective in language-only settings, DMs' potential for multimodal tasks is underexplored. We introduce LaViDa, a family of VLMs built on DMs. We build LaViDa by equipping DMs with a vision encoder and jointly fine-tune the combined parts for multimodal instruction following. To address challenges encountered, LaViDa incorporates novel techniques such as complementary masking for effective training, prefix KV cache for efficient inference, and timestep shifting for high-quality sampling. Experiments show that LaViDa achieves competitive or superior performance to AR VLMs on multi-modal benchmarks such as MMMU, while offering unique advantages of DMs, including flexible speed-quality tradeoff, controllability, and bidirectional reasoning. On COCO captioning, LaViDa surpasses Open-LLaVa-Next-8B by +4.1 CIDEr with 1.92x speedup. On bidirectional tasks, it achieves +59% improvement on Constrained Poem Completion. These results demonstrate LaViDa as a strong alternative to AR VLMs. Code and models will be released in the camera-ready version.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-22T16:07:12Z
+                    <strong>Updated:</strong> 2025-05-23T07:07:29Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CV</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2505.16839v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.16839v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2505.16839v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.16839v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4496,19 +4496,19 @@
                 <h2>#27 Position: We Need An Adaptive Interpretation of Helpful, Honest, and
   Harmless Principles</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Yue Huang, Chujie Gao, Yujun Zhou, Kehan Guo, Xiangqi Wang, Or Cohen-Sasson, Max Lamparth, Dawn Song, Xiangliang Zhang
+                    <strong>Authors:</strong> Yue Huang, Chujie Gao, Yujun Zhou, Kehan Guo, Xiangqi Wang, Or Cohen-Sasson, Max Lamparth, Xiangliang Zhang
                 </div>
                 <div class="summary">
                     <strong>Summary:</strong> The Helpful, Honest, and Harmless (HHH) principle is a foundational framework for aligning AI systems with human values. However, existing interpretations of the HHH principle often overlook contextual variability and conflicting requirements across applications. In this paper, we argue for an adaptive interpretation of the HHH principle and propose a reference framework for its adaptation to diverse scenarios. We first examine the principle's foundational significance and identify ambiguities and conflicts through case studies of its dimensions. To address these challenges, we introduce the concept of priority order, which provides a structured approach for balancing trade-offs among helpfulness, honesty, and harmlessness. Further, we explore the interrelationships between these dimensions, demonstrating how harmlessness and helpfulness can be jointly enhanced and analyzing their interdependencies in high-risk evaluations. Building on these insights, we propose a reference framework that integrates context definition, value prioritization, risk assessment, and benchmarking standards to guide the adaptive application of the HHH principle. This work offers practical insights for improving AI alignment, ensuring that HHH principles remain both ethically grounded and operationally effective in real-world AI deployment.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-22T17:33:50Z
+                    <strong>Updated:</strong> 2025-05-23T11:54:42Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CY</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2502.06059v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2502.06059v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2502.06059v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2502.06059v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5309,13 +5309,13 @@
                     <strong>Summary:</strong> Offline reinforcement learning (RL) has gained traction as a powerful paradigm for learning control policies from pre-collected data, eliminating the need for costly or risky online interactions. While many open-source libraries offer robust implementations of offline RL algorithms, they all rely on datasets composed of experience tuples consisting of state, action, next state, and reward. Managing, curating, and distributing such datasets requires suitable infrastructure. Although static datasets exist for established benchmark problems, no standardized or scalable solution supports developing and sharing datasets for novel or user-defined benchmarks. To address this gap, we introduce PyTupli, a Python-based tool to streamline the creation, storage, and dissemination of benchmark environments and their corresponding tuple datasets. PyTupli includes a lightweight client library with defined interfaces for uploading and retrieving benchmarks and data. It supports fine-grained filtering at both the episode and tuple level, allowing researchers to curate high-quality, task-specific datasets. A containerized server component enables production-ready deployment with authentication, access control, and automated certificate provisioning for secure use. By addressing key barriers in dataset infrastructure, PyTupli facilitates more collaborative, reproducible, and scalable offline RL research.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-22T14:59:20Z
+                    <strong>Updated:</strong> 2025-05-23T07:39:36Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2505.16754v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.16754v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2505.16754v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.16754v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5853,19 +5853,19 @@
                 <h2>#96 SMART: Self-Generating and Self-Validating Multi-Dimensional Assessment
   for LLMs' Mathematical Problem Solving</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Yujie Hou, Ting Zhang, Mei Wang, Xuetao Ma, Hu Huang
+                    <strong>Authors:</strong> Yujie Hou, Ting Zhang, Mei Wang, Xuetao Ma, Hua Huang
                 </div>
                 <div class="summary">
                     <strong>Summary:</strong> Large Language Models have achieved remarkable results on a variety of mathematical benchmarks. However, concerns remain as to whether these successes reflect genuine mathematical reasoning or superficial pattern recognition. Common evaluation metrics, such as final answer accuracy, fail to disentangle the underlying competencies involved, offering limited diagnostic value. To address these limitations, we introduce SMART: a Self-Generating and Self-Validating Multi-Dimensional Assessment Framework. SMART decomposes mathematical problem solving into four distinct dimensions: understanding, reasoning, arithmetic, and reflection \& refinement. Each dimension is evaluated independently through tailored tasks, enabling interpretable and fine-grained analysis of LLM behavior. Crucially, SMART integrates an automated self-generating and self-validating mechanism to produce and verify benchmark data, ensuring both scalability and reliability. We apply SMART to 21 state-of-the-art open- and closed-source LLMs, uncovering significant discrepancies in their abilities across different dimensions. Our findings demonstrate the inadequacy of final answer accuracy as a sole metric and motivate a new holistic metric to better capture true problem-solving capabilities. Code and benchmarks will be released upon acceptance.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-22T13:18:24Z
+                    <strong>Updated:</strong> 2025-05-23T11:29:12Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2505.16646v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.16646v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2505.16646v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.16646v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
