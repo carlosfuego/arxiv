@@ -2204,13 +2204,13 @@
                     <strong>Summary:</strong> Feed-forward 3D Gaussian Splatting (3DGS) models have recently emerged as a promising solution for novel view synthesis, enabling one-pass inference without the need for per-scene 3DGS optimization. However, their scalability is fundamentally constrained by the limited capacity of their encoders, leading to degraded performance or excessive memory consumption as the number of input views increases. In this work, we analyze feed-forward 3DGS frameworks through the lens of the Information Bottleneck principle and introduce ZPressor, a lightweight architecture-agnostic module that enables efficient compression of multi-view inputs into a compact latent state $Z$ that retains essential scene information while discarding redundancy. Concretely, ZPressor enables existing feed-forward 3DGS models to scale to over 100 input views at 480P resolution on an 80GB GPU, by partitioning the views into anchor and support sets and using cross attention to compress the information from the support views into anchor views, forming the compressed latent state $Z$. We show that integrating ZPressor into several state-of-the-art feed-forward 3DGS models consistently improves performance under moderate input views and enhances robustness under dense view settings on two large-scale benchmarks DL3DV-10K and RealEstate10K. The video results, code and trained models are available on our project page: https://lhmd.top/zpressor.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-29T17:57:04Z
+                    <strong>Updated:</strong> 2025-05-30T06:57:49Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CV</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2505.23734v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.23734v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2505.23734v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.23734v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3109,13 +3109,13 @@
                     <strong>Summary:</strong> Lifelong learning is essential for intelligent agents operating in dynamic environments. Current large language model (LLM)-based agents, however, remain stateless and unable to accumulate or transfer knowledge over time. Existing benchmarks treat agents as static systems and fail to evaluate lifelong learning capabilities. We present LifelongAgentBench, the first unified benchmark designed to systematically assess the lifelong learning ability of LLM agents. It provides skill-grounded, interdependent tasks across three interactive environments, Database, Operating System, and Knowledge Graph, with automatic label verification, reproducibility, and modular extensibility. Extensive experiments reveal that conventional experience replay has limited effectiveness for LLM agents due to irrelevant information and context length constraints. We further introduce a group self-consistency mechanism that significantly improves lifelong learning performance. We hope LifelongAgentBench will advance the development of adaptive, memory-capable LLM agents.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-29T16:16:26Z
+                    <strong>Updated:</strong> 2025-05-30T02:28:21Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2505.11942v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.11942v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2505.11942v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.11942v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3498,16 +3498,16 @@
                     <strong>Authors:</strong> Xu Chu, Xinrong Chen, Guanyu Wang, Zhijie Tan, Kui Huang, Wenyu Lv, Tong Mo, Weiping Li
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Inference time scaling drives extended reasoning to enhance the performance of Vision-Language Models (VLMs), thus forming powerful Vision-Language Reasoning Models (VLRMs). However, long reasoning dilutes visual tokens, causing visual information to receive less attention and may trigger hallucinations. Although introducing text-only reflection processes shows promise in language models, we demonstrate that it is insufficient to suppress hallucinations in VLMs. To address this issue, we introduce Qwen-LookAgain (Qwen-LA), a novel VLRM designed to mitigate hallucinations by incorporating a vision-text reflection process that guides the model to re-attention visual information during reasoning. We first propose a reinforcement learning method Balanced Reflective Policy Optimization (BRPO), which guides the model to decide when to generate vision-text reflection on its own and balance the number and length of reflections. Then, we formally prove that VLRMs lose attention to visual tokens as reasoning progresses, and demonstrate that supplementing visual information during reflection enhances visual attention. Therefore, during training and inference, Visual Token COPY and Visual Token ROUTE are introduced to force the model to re-attention visual information at the visual level, addressing the limitations of text-only reflection. Experiments on multiple visual QA datasets and hallucination metrics indicate that Qwen-LA achieves leading accuracy performance while reducing hallucinations. Our code is available at: https://github.com/Liar406/Look_Again.
+                    <strong>Summary:</strong> Inference time scaling drives extended reasoning to enhance the performance of Vision-Language Models (VLMs), thus forming powerful Vision-Language Reasoning Models (VLRMs). However, long reasoning dilutes visual tokens, causing visual information to receive less attention and may trigger hallucinations. Although introducing text-only reflection processes shows promise in language models, we demonstrate that it is insufficient to suppress hallucinations in VLMs. To address this issue, we introduce Qwen-LookAgain (Qwen-LA), a novel VLRM designed to mitigate hallucinations by incorporating a vision-text reflection process that guides the model to re-attention visual information during reasoning. We first propose a reinforcement learning method Balanced Reflective Policy Optimization (BRPO), which guides the model to decide when to generate vision-text reflection on its own and balance the number and length of reflections. Then, we formally prove that VLRMs lose attention to visual tokens as reasoning progresses, and demonstrate that supplementing visual information during reflection enhances visual attention. Therefore, during training and inference, Visual Token COPY and Visual Token ROUTE are introduced to force the model to re-attention visual information at the visual level, addressing the limitations of text-only reflection. Experiments on multiple visual QA datasets and hallucination metrics indicate that Qwen-LA achieves leading accuracy performance while reducing hallucinations. Our code is available at: https://github.com/Liar406/Look_Again
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-29T15:34:15Z
+                    <strong>Updated:</strong> 2025-05-30T07:37:34Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CV</span><span>cs.LG</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2505.23558v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.23558v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2505.23558v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.23558v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4718,13 +4718,13 @@
                     <strong>Summary:</strong> Lifelong learning is essential for intelligent agents operating in dynamic environments. Current large language model (LLM)-based agents, however, remain stateless and unable to accumulate or transfer knowledge over time. Existing benchmarks treat agents as static systems and fail to evaluate lifelong learning capabilities. We present LifelongAgentBench, the first unified benchmark designed to systematically assess the lifelong learning ability of LLM agents. It provides skill-grounded, interdependent tasks across three interactive environments, Database, Operating System, and Knowledge Graph, with automatic label verification, reproducibility, and modular extensibility. Extensive experiments reveal that conventional experience replay has limited effectiveness for LLM agents due to irrelevant information and context length constraints. We further introduce a group self-consistency mechanism that significantly improves lifelong learning performance. We hope LifelongAgentBench will advance the development of adaptive, memory-capable LLM agents.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-05-29T16:16:26Z
+                    <strong>Updated:</strong> 2025-05-30T02:28:21Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2505.11942v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.11942v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2505.11942v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.11942v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
