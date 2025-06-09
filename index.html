@@ -2577,13 +2577,13 @@
                     <strong>Summary:</strong> Large reasoning models (LRMs) achieve higher performance on challenging reasoning tasks by generating more tokens at inference time, but this verbosity often wastes computation on easy problems. Existing solutions, including supervised finetuning on shorter traces, user-controlled budgets, or RL with uniform penalties, either require data curation, manual configuration, or treat all problems alike regardless of difficulty. We introduce Adaptive Length Penalty (ALP), a reinforcement learning objective tailoring generation length to per-prompt solve rate. During training, ALP monitors each prompt's online solve rate through multiple rollouts and adds a differentiable penalty whose magnitude scales inversely with that rate, so confident (easy) prompts incur a high cost for extra tokens while hard prompts remain unhindered. Posttraining DeepScaleR-1.5B with ALP cuts average token usage by 50\% without significantly dropping performance. Relative to fixed-budget and uniform penalty baselines, ALP redistributes its reduced budget more intelligently by cutting compute on easy prompts and reallocating saved tokens to difficult ones, delivering higher accuracy on the hardest problems with higher cost.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-05T17:17:05Z
+                    <strong>Updated:</strong> 2025-06-06T02:38:39Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span><span>cs.LG</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.05256v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05256v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.05256v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05256v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2770,16 +2770,16 @@
                     <strong>Authors:</strong> Jiahe Jin, Yanheng He, Mingyan Yang
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> In this work, we identify the "2D-Cheating" problem in 3D LLM evaluation, where these tasks might be easily solved by VLMs with rendered images of point clouds, exposing ineffective evaluation of 3D LLMs' unique 3D capabilities. We test VLM performance across multiple 3D LLM benchmarks and, using this as a reference, propose principles for better assessing genuine 3D understanding. We also advocate explicitly separating 3D abilities from 1D or 2D aspects when evaluating 3D LLMs. Code and data are available at https://github.com/LLM-class-group/Revisiting-3D-LLM-Benchmarks .
+                    <strong>Summary:</strong> In this work, we identify the "2D-Cheating" problem in 3D LLM evaluation, where these tasks might be easily solved by VLMs with rendered images of point clouds, exposing ineffective evaluation of 3D LLMs' unique 3D capabilities. We test VLM performance across multiple 3D LLM benchmarks and, using this as a reference, propose principles for better assessing genuine 3D understanding. We also advocate explicitly separating 3D abilities from 1D or 2D aspects when evaluating 3D LLMs. Code and data are available at https://github.com/LLM-class-group/Revisiting-3D-LLM-Benchmarks
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-05T16:35:34Z
+                    <strong>Updated:</strong> 2025-06-06T01:51:44Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2502.08503v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2502.08503v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2502.08503v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2502.08503v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2924,19 +2924,19 @@
             <div class="paper">
                 <h2>#47 Causal Effect Identification in lvLiNGAM from Higher-Order Cumulants</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Daniele Tramontano, Yaroslav Kivva, Saber Salehkaleybar Mathias Drton, Negar Kiyavash
+                    <strong>Authors:</strong> Daniele Tramontano, Yaroslav Kivva, Saber Salehkaleybar, Mathias Drton, Negar Kiyavash
                 </div>
                 <div class="summary">
                     <strong>Summary:</strong> This paper investigates causal effect identification in latent variable Linear Non-Gaussian Acyclic Models (lvLiNGAM) using higher-order cumulants, addressing two prominent setups that are challenging in the presence of latent confounding: (1) a single proxy variable that may causally influence the treatment and (2) underspecified instrumental variable cases where fewer instruments exist than treatments. We prove that causal effects are identifiable with a single proxy or instrument and provide corresponding estimation methods. Experimental results demonstrate the accuracy and robustness of our approaches compared to existing methods, advancing the theoretical and practical understanding of causal inference in linear systems with latent confounders.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-05T16:14:35Z
+                    <strong>Updated:</strong> 2025-06-06T07:46:59Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>stat.ML</span><span>cs.LG</span><span>stat.ME</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.05202v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05202v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.05202v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05202v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3140,16 +3140,16 @@
                     <strong>Authors:</strong> Yeonseok Jeong, Jinsu Kim, Dohyeon Lee, Seung-won Hwang
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Large Language Models (LLMs) have shown remarkable performance in Open-Domain Question Answering (ODQA) by leveraging external documents through Retrieval-Augmented Generation (RAG). To reduce RAG overhead, from longer context, context compression is necessary. However, prior compression methods do not focus on filtering out non-evidential information, which limit the performance in LLM-based RAG. We thus propose Evidentiality-guided RAG, or \textbf{ECoRAG} framework. ECoRAG improves LLM performance by compressing retrieved documents based on evidentiality, ensuring whether answer generation is supported by the correct evidence. As an additional step, ECoRAG reflects whether the compressed content provides sufficient evidence, and if not, retrieves more until sufficient. Experiments show that ECoRAG improves LLM performance on ODQA tasks, outperforming existing compression methods. Furthermore, ECoRAG is highly cost-efficient, as it not only reduces latency but also minimizes token usage by retaining only the necessary information to generate the correct answer. Code is available at https://github.com/ldilab/ECoRAG.
+                    <strong>Summary:</strong> Large Language Models (LLMs) have shown remarkable performance in Open-Domain Question Answering (ODQA) by leveraging external documents through Retrieval-Augmented Generation (RAG). To reduce RAG overhead, from longer context, context compression is necessary. However, prior compression methods do not focus on filtering out non-evidential information, which limit the performance in LLM-based RAG. We thus propose Evidentiality-guided RAG, or ECoRAG framework. ECoRAG improves LLM performance by compressing retrieved documents based on evidentiality, ensuring whether answer generation is supported by the correct evidence. As an additional step, ECoRAG reflects whether the compressed content provides sufficient evidence, and if not, retrieves more until sufficient. Experiments show that ECoRAG improves LLM performance on ODQA tasks, outperforming existing compression methods. Furthermore, ECoRAG is highly cost-efficient, as it not only reduces latency but also minimizes token usage by retaining only the necessary information to generate the correct answer. Code is available at https://github.com/ldilab/ECoRAG.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-05T15:43:49Z
+                    <strong>Updated:</strong> 2025-06-06T07:57:28Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span><span>cs.IR</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.05167v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05167v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.05167v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05167v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3162,13 +3162,13 @@
                     <strong>Summary:</strong> Large Language Models (LLMs) are known to exhibit social, demographic, and gender biases, often as a consequence of the data on which they are trained. In this work, we adopt a mechanistic interpretability approach to analyze how such biases are structurally represented within models such as GPT-2 and Llama2. Focusing on demographic and gender biases, we explore different metrics to identify the internal edges responsible for biased behavior. We then assess the stability, localization, and generalizability of these components across dataset and linguistic variations. Through systematic ablations, we demonstrate that bias-related computations are highly localized, often concentrated in a small subset of layers. Moreover, the identified components change across fine-tuning settings, including those unrelated to bias. Finally, we show that removing these components not only reduces biased outputs but also affects other NLP tasks, such as named entity recognition and linguistic acceptability judgment because of the sharing of important components with these tasks.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-05T15:43:34Z
+                    <strong>Updated:</strong> 2025-06-06T01:35:43Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.05166v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05166v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.05166v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05166v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3471,13 +3471,13 @@
                     <strong>Summary:</strong> Video diffusion transformers (vDiTs) have made impressive progress in text-to-video generation, but their high computational demands present major challenges for practical deployment. While existing acceleration methods reduce workload at various granularities, they often rely on heuristics, limiting their applicability.   We introduce ASTRAEA, an automatic framework that searches for near-optimal configurations for vDiT-based video generation. At its core, ASTRAEA proposes a lightweight token selection mechanism and a memory-efficient, GPU-parallel sparse attention strategy, enabling linear reductions in execution time with minimal impact on generation quality. To determine optimal token reduction for different timesteps, we further design a search framework that leverages a classic evolutionary algorithm to automatically determine the distribution of the token budget effectively. Together, ASTRAEA achieves up to 2.4x inference speedup on a single GPU with great scalability (up to 13.2x speedup on 8 GPUs) while retaining better video quality compared to the state-of-the-art methods (<0.5% loss on the VBench score compared to the baseline vDiT models).
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-05T14:41:38Z
+                    <strong>Updated:</strong> 2025-06-06T04:46:57Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CV</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.05096v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05096v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.05096v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05096v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3698,19 +3698,19 @@
             <div class="paper">
                 <h2>#87 Does It Make Sense to Speak of Introspection in Large Language Models?</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Iulia Comşa, Murray Shanahan
+                    <strong>Authors:</strong> Iulia M. Comsa, Murray Shanahan
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Large language models (LLMs) exhibit compelling linguistic behaviour, and sometimes offer self-reports, that is to say statements about their own nature, inner workings, or behaviour. In humans, such reports are often attributed to a faculty of introspection and are typically linked to consciousness. This raises the question of how to interpret self-reports produced by LLMs, given their increasing linguistic fluency and cognitive capabilities. To what extent (if any) can the concept of introspection be meaningfully applied to LLMs? Here, we present and critique two examples of apparent introspective self-report from LLMs. In the first example, an LLM attempts to describe the process behind its own ``creative'' writing, and we argue this is not a valid example of introspection. In the second example, an LLM correctly infers the value of its own temperature parameter, and we argue that this can be legitimately considered a minimal example of introspection, albeit one that is (presumably) not accompanied by conscious experience.
+                    <strong>Summary:</strong> Large language models (LLMs) exhibit compelling linguistic behaviour, and sometimes offer self-reports, that is to say statements about their own nature, inner workings, or behaviour. In humans, such reports are often attributed to a faculty of introspection and are typically linked to consciousness. This raises the question of how to interpret self-reports produced by LLMs, given their increasing linguistic fluency and cognitive capabilities. To what extent (if any) can the concept of introspection be meaningfully applied to LLMs? Here, we present and critique two examples of apparent introspective self-report from LLMs. In the first example, an LLM attempts to describe the process behind its own "creative" writing, and we argue this is not a valid example of introspection. In the second example, an LLM correctly infers the value of its own temperature parameter, and we argue that this can be legitimately considered a minimal example of introspection, albeit one that is (presumably) not accompanied by conscious experience.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-05T14:13:54Z
+                    <strong>Updated:</strong> 2025-06-06T11:26:38Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.05068v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05068v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.05068v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05068v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4548,16 +4548,16 @@
                     <strong>Authors:</strong> Jiahe Jin, Yanheng He, Mingyan Yang
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> In this work, we identify the "2D-Cheating" problem in 3D LLM evaluation, where these tasks might be easily solved by VLMs with rendered images of point clouds, exposing ineffective evaluation of 3D LLMs' unique 3D capabilities. We test VLM performance across multiple 3D LLM benchmarks and, using this as a reference, propose principles for better assessing genuine 3D understanding. We also advocate explicitly separating 3D abilities from 1D or 2D aspects when evaluating 3D LLMs. Code and data are available at https://github.com/LLM-class-group/Revisiting-3D-LLM-Benchmarks .
+                    <strong>Summary:</strong> In this work, we identify the "2D-Cheating" problem in 3D LLM evaluation, where these tasks might be easily solved by VLMs with rendered images of point clouds, exposing ineffective evaluation of 3D LLMs' unique 3D capabilities. We test VLM performance across multiple 3D LLM benchmarks and, using this as a reference, propose principles for better assessing genuine 3D understanding. We also advocate explicitly separating 3D abilities from 1D or 2D aspects when evaluating 3D LLMs. Code and data are available at https://github.com/LLM-class-group/Revisiting-3D-LLM-Benchmarks
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-05T16:35:34Z
+                    <strong>Updated:</strong> 2025-06-06T01:51:44Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2502.08503v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2502.08503v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2502.08503v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2502.08503v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4847,7 +4847,7 @@
                     <strong>Updated:</strong> 2025-06-05T15:46:25Z
                 </div>
                 <div class="tags">
-                    <strong>Tags:</strong> <span>eess.SY</span><span>cs.SY</span>
+                    <strong>Tags:</strong> <span>eess.SY</span><span>cs.AI</span><span>cs.SY</span>
                 </div>
                 <div class="links">
                     <a href='http://arxiv.org/abs/2506.05171v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05171v1' target='_blank'>pdf</a>
@@ -4860,16 +4860,16 @@
                     <strong>Authors:</strong> Yeonseok Jeong, Jinsu Kim, Dohyeon Lee, Seung-won Hwang
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Large Language Models (LLMs) have shown remarkable performance in Open-Domain Question Answering (ODQA) by leveraging external documents through Retrieval-Augmented Generation (RAG). To reduce RAG overhead, from longer context, context compression is necessary. However, prior compression methods do not focus on filtering out non-evidential information, which limit the performance in LLM-based RAG. We thus propose Evidentiality-guided RAG, or \textbf{ECoRAG} framework. ECoRAG improves LLM performance by compressing retrieved documents based on evidentiality, ensuring whether answer generation is supported by the correct evidence. As an additional step, ECoRAG reflects whether the compressed content provides sufficient evidence, and if not, retrieves more until sufficient. Experiments show that ECoRAG improves LLM performance on ODQA tasks, outperforming existing compression methods. Furthermore, ECoRAG is highly cost-efficient, as it not only reduces latency but also minimizes token usage by retaining only the necessary information to generate the correct answer. Code is available at https://github.com/ldilab/ECoRAG.
+                    <strong>Summary:</strong> Large Language Models (LLMs) have shown remarkable performance in Open-Domain Question Answering (ODQA) by leveraging external documents through Retrieval-Augmented Generation (RAG). To reduce RAG overhead, from longer context, context compression is necessary. However, prior compression methods do not focus on filtering out non-evidential information, which limit the performance in LLM-based RAG. We thus propose Evidentiality-guided RAG, or ECoRAG framework. ECoRAG improves LLM performance by compressing retrieved documents based on evidentiality, ensuring whether answer generation is supported by the correct evidence. As an additional step, ECoRAG reflects whether the compressed content provides sufficient evidence, and if not, retrieves more until sufficient. Experiments show that ECoRAG improves LLM performance on ODQA tasks, outperforming existing compression methods. Furthermore, ECoRAG is highly cost-efficient, as it not only reduces latency but also minimizes token usage by retaining only the necessary information to generate the correct answer. Code is available at https://github.com/ldilab/ECoRAG.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-05T15:43:49Z
+                    <strong>Updated:</strong> 2025-06-06T07:57:28Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span><span>cs.IR</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.05167v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05167v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.05167v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05167v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4882,13 +4882,13 @@
                     <strong>Summary:</strong> Large Language Models (LLMs) are known to exhibit social, demographic, and gender biases, often as a consequence of the data on which they are trained. In this work, we adopt a mechanistic interpretability approach to analyze how such biases are structurally represented within models such as GPT-2 and Llama2. Focusing on demographic and gender biases, we explore different metrics to identify the internal edges responsible for biased behavior. We then assess the stability, localization, and generalizability of these components across dataset and linguistic variations. Through systematic ablations, we demonstrate that bias-related computations are highly localized, often concentrated in a small subset of layers. Moreover, the identified components change across fine-tuning settings, including those unrelated to bias. Finally, we show that removing these components not only reduces biased outputs but also affects other NLP tasks, such as named entity recognition and linguistic acceptability judgment because of the sharing of important components with these tasks.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-05T15:43:34Z
+                    <strong>Updated:</strong> 2025-06-06T01:35:43Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.05166v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05166v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.05166v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05166v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5115,13 +5115,13 @@
                     <strong>Summary:</strong> Video diffusion transformers (vDiTs) have made impressive progress in text-to-video generation, but their high computational demands present major challenges for practical deployment. While existing acceleration methods reduce workload at various granularities, they often rely on heuristics, limiting their applicability.   We introduce ASTRAEA, an automatic framework that searches for near-optimal configurations for vDiT-based video generation. At its core, ASTRAEA proposes a lightweight token selection mechanism and a memory-efficient, GPU-parallel sparse attention strategy, enabling linear reductions in execution time with minimal impact on generation quality. To determine optimal token reduction for different timesteps, we further design a search framework that leverages a classic evolutionary algorithm to automatically determine the distribution of the token budget effectively. Together, ASTRAEA achieves up to 2.4x inference speedup on a single GPU with great scalability (up to 13.2x speedup on 8 GPUs) while retaining better video quality compared to the state-of-the-art methods (<0.5% loss on the VBench score compared to the baseline vDiT models).
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-05T14:41:38Z
+                    <strong>Updated:</strong> 2025-06-06T04:46:57Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CV</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.05096v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05096v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.05096v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05096v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5343,19 +5343,19 @@
             <div class="paper">
                 <h2>#71 Does It Make Sense to Speak of Introspection in Large Language Models?</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Iulia Comşa, Murray Shanahan
+                    <strong>Authors:</strong> Iulia M. Comsa, Murray Shanahan
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Large language models (LLMs) exhibit compelling linguistic behaviour, and sometimes offer self-reports, that is to say statements about their own nature, inner workings, or behaviour. In humans, such reports are often attributed to a faculty of introspection and are typically linked to consciousness. This raises the question of how to interpret self-reports produced by LLMs, given their increasing linguistic fluency and cognitive capabilities. To what extent (if any) can the concept of introspection be meaningfully applied to LLMs? Here, we present and critique two examples of apparent introspective self-report from LLMs. In the first example, an LLM attempts to describe the process behind its own ``creative'' writing, and we argue this is not a valid example of introspection. In the second example, an LLM correctly infers the value of its own temperature parameter, and we argue that this can be legitimately considered a minimal example of introspection, albeit one that is (presumably) not accompanied by conscious experience.
+                    <strong>Summary:</strong> Large language models (LLMs) exhibit compelling linguistic behaviour, and sometimes offer self-reports, that is to say statements about their own nature, inner workings, or behaviour. In humans, such reports are often attributed to a faculty of introspection and are typically linked to consciousness. This raises the question of how to interpret self-reports produced by LLMs, given their increasing linguistic fluency and cognitive capabilities. To what extent (if any) can the concept of introspection be meaningfully applied to LLMs? Here, we present and critique two examples of apparent introspective self-report from LLMs. In the first example, an LLM attempts to describe the process behind its own "creative" writing, and we argue this is not a valid example of introspection. In the second example, an LLM correctly infers the value of its own temperature parameter, and we argue that this can be legitimately considered a minimal example of introspection, albeit one that is (presumably) not accompanied by conscious experience.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-05T14:13:54Z
+                    <strong>Updated:</strong> 2025-06-06T11:26:38Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.05068v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05068v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.05068v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.05068v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5919,16 +5919,16 @@
                     <strong>Authors:</strong> Deniz Simsek, Aryaz Eghbali, Michael Pradel
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Security vulnerabilities in software packages are a significant concern for developers and users alike. Patching these vulnerabilities in a timely manner is crucial to restoring the integrity and security of software systems. However, previous work has shown that vulnerability reports often lack proof-of-concept (PoC) exploits, which are essential for fixing the vulnerability, testing patches, and avoiding regressions. Creating a PoC exploit is challenging because vulnerability reports are informal and often incomplete, and because it requires a detailed understanding of how inputs passed to potentially vulnerable APIs may reach security-relevant sinks. In this paper, we present PoCGen, a novel approach to autonomously generate and validate PoC exploits for vulnerabilities in npm packages. This is the first fully autonomous approach to use large language models (LLMs) in tandem with static and dynamic analysis techniques for PoC exploit generation. PoCGen leverages an LLM for understanding vulnerability reports, for generating candidate PoC exploits, and for validating and refining them. Our approach successfully generates exploits for 77% of the vulnerabilities in the SecBench.js dataset and 39% in a new, more challenging dataset of 794 recent vulnerabilities. This success rate significantly outperforms a recent baseline (by 45 absolute percentage points), while imposing an average cost of $0.02 per generated exploit.
+                    <strong>Summary:</strong> Security vulnerabilities in software packages are a significant concern for developers and users alike. Patching these vulnerabilities in a timely manner is crucial to restoring the integrity and security of software systems. However, previous work has shown that vulnerability reports often lack proof-of-concept (PoC) exploits, which are essential for fixing the vulnerability, testing patches, and avoiding regressions. Creating a PoC exploit is challenging because vulnerability reports are informal and often incomplete, and because it requires a detailed understanding of how inputs passed to potentially vulnerable APIs may reach security-relevant sinks. In this paper, we present PoCGen, a novel approach to autonomously generate and validate PoC exploits for vulnerabilities in npm packages. This is the first fully autonomous approach to use large language models (LLMs) in tandem with static and dynamic analysis techniques for PoC exploit generation. PoCGen leverages an LLM for understanding vulnerability reports, for generating candidate PoC exploits, and for validating and refining them. Our approach successfully generates exploits for 77% of the vulnerabilities in the SecBench$.$js dataset and 39% in a new, more challenging dataset of 794 recent vulnerabilities. This success rate significantly outperforms a recent baseline (by 45 absolute percentage points), while imposing an average cost of $0.02 per generated exploit.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-05T12:37:33Z
+                    <strong>Updated:</strong> 2025-06-06T07:49:53Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CR</span><span>cs.SE</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.04962v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.04962v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.04962v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.04962v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
