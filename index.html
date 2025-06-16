@@ -56,8 +56,8 @@
     <h1>Keyword: kv cache</h1>
 
             <div class="paper">
-                <h2>#1 Accelerating Diffusion Large Language Models with SlowFast: The Three
-  Golden Principles</h2>
+                <h2>#1 Accelerating Diffusion Large Language Models with SlowFast Sampling: The
+  Three Golden Principles</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Qingyan Wei, Yaojie Zhang, Zhiyuan Liu, Dongrui Liu, Linfeng Zhang
                 </div>
@@ -65,13 +65,13 @@
                     <strong>Summary:</strong> Diffusion-based language models (dLLMs) have emerged as a promising alternative to traditional autoregressive LLMs by enabling parallel token generation and significantly reducing inference latency. However, existing sampling strategies for dLLMs, such as confidence-based or semi-autoregressive decoding, often suffer from static behavior, leading to suboptimal efficiency and limited flexibility. In this paper, we propose SlowFast Sampling, a novel dynamic sampling strategy that adaptively alternates between exploratory and accelerated decoding stages. Our method is guided by three golden principles: certainty principle, convergence principle, and positional principle, which govern when and where tokens can be confidently and efficiently decoded. We further integrate our strategy with dLLM-Cache to reduce redundant computation. Extensive experiments across benchmarks and models show that SlowFast Sampling achieves up to 15.63$\times$ speedup on LLaDA with minimal accuracy drop, and up to 34.22$\times$ when combined with caching. Notably, our approach outperforms strong autoregressive baselines like LLaMA3 8B in throughput, demonstrating that well-designed sampling can unlock the full potential of dLLMs for fast and high-quality generation.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-12T16:08:28Z
+                    <strong>Updated:</strong> 2025-06-13T02:28:47Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span><span>cs.LG</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.10848v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10848v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.10848v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10848v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -104,13 +104,13 @@
                     <strong>Summary:</strong> The third-order nonlinear Hall effect (NLHE) serves as a sensitive probe of energy band geometric property, providing a new paradigm for revealing the Berry curvature distribution and topological response of quantum materials. In the Weyl semimetal TaIrTe4, we report for the first time that the sign of the third-order NLHE reverses with decreasing temperature. Through scaling law analysis, we think that the third-order NLHE at high (T > 23 K) and low (T < 23 K) temperatures is dominated by Berry-connection polarizability (BCP) and impurity scattering, respectively. The third-order NLHE response strength can be effectively modulated by an additional applied in-plane constant electric field. At the high temperature region, the BCP reduction induced by the electric field leads to a decrease in the third-order NLHE response strength, while at the low temperature region, the electric field cause both BCP and impurity scattering effects to weaken, resulting in a more significant modulation of the third-order NLHE response strength. At 4 K and an electric field strength of 0.3 kV/cm, the modulated relative response strength could reach up to 65.3%. This work provides a new means to explore the third-order NLHE and a valuable reference for the development of novel electronic devices.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-12T12:46:49Z
+                    <strong>Updated:</strong> 2025-06-13T02:54:42Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cond-mat.mes-hall</span><span>cond-mat.mtrl-sci</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.10657v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10657v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.10657v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10657v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2144,16 +2144,16 @@
                     <strong>Authors:</strong> Yuxuan Luo, Yuhui Yuan, Junwen Chen, Haonan Cai, Ziyi Yue, Yuwei Yang, Fatima Zohra Daha, Ji Li, Zhouhui Lian
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> In this paper, we introduce knowledge image generation as a new task, alongside the Massive Multi-Discipline Multi-Tier Knowledge-Image Generation Benchmark (MMMG) to probe the reasoning capability of image generation models. Knowledge images have been central to human civilization and to the mechanisms of human learning--a fact underscored by dual-coding theory and the picture-superiority effect. Generating such images is challenging, demanding multimodal reasoning that fuses world knowledge with pixel-level grounding into clear explanatory visuals. To enable comprehensive evaluation, MMMG offers 4,456 expert-validated (knowledge) image-prompt pairs spanning 10 disciplines, 6 educational levels, and diverse knowledge formats such as charts, diagrams, and mind maps. To eliminate confounding complexity during evaluation, we adopt a unified Knowledge Graph (KG) representation. Each KG explicitly delineates a target image's core entities and their dependencies. We further introduce MMMG-Score to evaluate generated knowledge images. This metric combines factual fidelity, measured by graph-edit distance between KGs, with visual clarity assessment. Comprehensive evaluations of 16 state-of-the-art text-to-image generation models expose serious reasoning deficits--low entity fidelity, weak relations, and clutter--with GPT-4o achieving an MMMG-Score of only 50.20, underscoring the benchmark's difficulty. To spur further progress, we release FLUX-Reason (MMMG-Score of 34.45), an effective and open baseline that combines a reasoning LLM with diffusion models and is trained on 16,000 curated knowledge image-prompt pairs.
+                    <strong>Summary:</strong> In this paper, we introduce knowledge image generation as a new task, alongside the Massive Multi-Discipline Multi-Tier Knowledge-Image Generation Benchmark (MMMG) to probe the reasoning capability of image generation models. Knowledge images have been central to human civilization and to the mechanisms of human learning -- a fact underscored by dual-coding theory and the picture-superiority effect. Generating such images is challenging, demanding multimodal reasoning that fuses world knowledge with pixel-level grounding into clear explanatory visuals. To enable comprehensive evaluation, MMMG offers 4,456 expert-validated (knowledge) image-prompt pairs spanning 10 disciplines, 6 educational levels, and diverse knowledge formats such as charts, diagrams, and mind maps. To eliminate confounding complexity during evaluation, we adopt a unified Knowledge Graph (KG) representation. Each KG explicitly delineates a target image's core entities and their dependencies. We further introduce MMMG-Score to evaluate generated knowledge images. This metric combines factual fidelity, measured by graph-edit distance between KGs, with visual clarity assessment. Comprehensive evaluations of 16 state-of-the-art text-to-image generation models expose serious reasoning deficits -- low entity fidelity, weak relations, and clutter -- with GPT-4o achieving an MMMG-Score of only 50.20, underscoring the benchmark's difficulty. To spur further progress, we release FLUX-Reason (MMMG-Score of 34.45), an effective and open baseline that combines a reasoning LLM with diffusion models and is trained on 16,000 curated knowledge image-prompt pairs.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-12T17:58:09Z
+                    <strong>Updated:</strong> 2025-06-13T04:39:54Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CV</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.10963v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10963v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.10963v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10963v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2940,8 +2940,8 @@
             </div>
             
             <div class="paper">
-                <h2>#48 Accelerating Diffusion Large Language Models with SlowFast: The Three
-  Golden Principles</h2>
+                <h2>#48 Accelerating Diffusion Large Language Models with SlowFast Sampling: The
+  Three Golden Principles</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Qingyan Wei, Yaojie Zhang, Zhiyuan Liu, Dongrui Liu, Linfeng Zhang
                 </div>
@@ -2949,13 +2949,13 @@
                     <strong>Summary:</strong> Diffusion-based language models (dLLMs) have emerged as a promising alternative to traditional autoregressive LLMs by enabling parallel token generation and significantly reducing inference latency. However, existing sampling strategies for dLLMs, such as confidence-based or semi-autoregressive decoding, often suffer from static behavior, leading to suboptimal efficiency and limited flexibility. In this paper, we propose SlowFast Sampling, a novel dynamic sampling strategy that adaptively alternates between exploratory and accelerated decoding stages. Our method is guided by three golden principles: certainty principle, convergence principle, and positional principle, which govern when and where tokens can be confidently and efficiently decoded. We further integrate our strategy with dLLM-Cache to reduce redundant computation. Extensive experiments across benchmarks and models show that SlowFast Sampling achieves up to 15.63$\times$ speedup on LLaDA with minimal accuracy drop, and up to 34.22$\times$ when combined with caching. Notably, our approach outperforms strong autoregressive baselines like LLaMA3 8B in throughput, demonstrating that well-designed sampling can unlock the full potential of dLLMs for fast and high-quality generation.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-12T16:08:28Z
+                    <strong>Updated:</strong> 2025-06-13T02:28:47Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span><span>cs.LG</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.10848v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10848v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.10848v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10848v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3102,13 +3102,13 @@
                     <strong>Summary:</strong> Monitoring is an important aspect of safely deploying Large Language Models (LLMs). This paper examines activation probes for detecting "high-stakes" interactions -- where the text indicates that the interaction might lead to significant harm -- as a critical, yet underexplored, target for such monitoring. We evaluate several probe architectures trained on synthetic data, and find them to exhibit robust generalization to diverse, out-of-distribution, real-world data. Probes' performance is comparable to that of prompted or finetuned medium-sized LLM monitors, while offering computational savings of six orders-of-magnitude. Our experiments also highlight the potential of building resource-aware hierarchical monitoring systems, where probes serve as an efficient initial filter and flag cases for more expensive downstream analysis. We release our novel synthetic dataset and codebase to encourage further study.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-12T15:20:33Z
+                    <strong>Updated:</strong> 2025-06-13T09:04:48Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.10805v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10805v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.10805v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10805v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4040,16 +4040,16 @@
                     <strong>Authors:</strong> Yuxuan Luo, Yuhui Yuan, Junwen Chen, Haonan Cai, Ziyi Yue, Yuwei Yang, Fatima Zohra Daha, Ji Li, Zhouhui Lian
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> In this paper, we introduce knowledge image generation as a new task, alongside the Massive Multi-Discipline Multi-Tier Knowledge-Image Generation Benchmark (MMMG) to probe the reasoning capability of image generation models. Knowledge images have been central to human civilization and to the mechanisms of human learning--a fact underscored by dual-coding theory and the picture-superiority effect. Generating such images is challenging, demanding multimodal reasoning that fuses world knowledge with pixel-level grounding into clear explanatory visuals. To enable comprehensive evaluation, MMMG offers 4,456 expert-validated (knowledge) image-prompt pairs spanning 10 disciplines, 6 educational levels, and diverse knowledge formats such as charts, diagrams, and mind maps. To eliminate confounding complexity during evaluation, we adopt a unified Knowledge Graph (KG) representation. Each KG explicitly delineates a target image's core entities and their dependencies. We further introduce MMMG-Score to evaluate generated knowledge images. This metric combines factual fidelity, measured by graph-edit distance between KGs, with visual clarity assessment. Comprehensive evaluations of 16 state-of-the-art text-to-image generation models expose serious reasoning deficits--low entity fidelity, weak relations, and clutter--with GPT-4o achieving an MMMG-Score of only 50.20, underscoring the benchmark's difficulty. To spur further progress, we release FLUX-Reason (MMMG-Score of 34.45), an effective and open baseline that combines a reasoning LLM with diffusion models and is trained on 16,000 curated knowledge image-prompt pairs.
+                    <strong>Summary:</strong> In this paper, we introduce knowledge image generation as a new task, alongside the Massive Multi-Discipline Multi-Tier Knowledge-Image Generation Benchmark (MMMG) to probe the reasoning capability of image generation models. Knowledge images have been central to human civilization and to the mechanisms of human learning -- a fact underscored by dual-coding theory and the picture-superiority effect. Generating such images is challenging, demanding multimodal reasoning that fuses world knowledge with pixel-level grounding into clear explanatory visuals. To enable comprehensive evaluation, MMMG offers 4,456 expert-validated (knowledge) image-prompt pairs spanning 10 disciplines, 6 educational levels, and diverse knowledge formats such as charts, diagrams, and mind maps. To eliminate confounding complexity during evaluation, we adopt a unified Knowledge Graph (KG) representation. Each KG explicitly delineates a target image's core entities and their dependencies. We further introduce MMMG-Score to evaluate generated knowledge images. This metric combines factual fidelity, measured by graph-edit distance between KGs, with visual clarity assessment. Comprehensive evaluations of 16 state-of-the-art text-to-image generation models expose serious reasoning deficits -- low entity fidelity, weak relations, and clutter -- with GPT-4o achieving an MMMG-Score of only 50.20, underscoring the benchmark's difficulty. To spur further progress, we release FLUX-Reason (MMMG-Score of 34.45), an effective and open baseline that combines a reasoning LLM with diffusion models and is trained on 16,000 curated knowledge image-prompt pairs.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-12T17:58:09Z
+                    <strong>Updated:</strong> 2025-06-13T04:39:54Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CV</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.10963v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10963v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.10963v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10963v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4720,8 +4720,8 @@
             </div>
             
             <div class="paper">
-                <h2>#39 Accelerating Diffusion Large Language Models with SlowFast: The Three
-  Golden Principles</h2>
+                <h2>#39 Accelerating Diffusion Large Language Models with SlowFast Sampling: The
+  Three Golden Principles</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Qingyan Wei, Yaojie Zhang, Zhiyuan Liu, Dongrui Liu, Linfeng Zhang
                 </div>
@@ -4729,13 +4729,13 @@
                     <strong>Summary:</strong> Diffusion-based language models (dLLMs) have emerged as a promising alternative to traditional autoregressive LLMs by enabling parallel token generation and significantly reducing inference latency. However, existing sampling strategies for dLLMs, such as confidence-based or semi-autoregressive decoding, often suffer from static behavior, leading to suboptimal efficiency and limited flexibility. In this paper, we propose SlowFast Sampling, a novel dynamic sampling strategy that adaptively alternates between exploratory and accelerated decoding stages. Our method is guided by three golden principles: certainty principle, convergence principle, and positional principle, which govern when and where tokens can be confidently and efficiently decoded. We further integrate our strategy with dLLM-Cache to reduce redundant computation. Extensive experiments across benchmarks and models show that SlowFast Sampling achieves up to 15.63$\times$ speedup on LLaDA with minimal accuracy drop, and up to 34.22$\times$ when combined with caching. Notably, our approach outperforms strong autoregressive baselines like LLaMA3 8B in throughput, demonstrating that well-designed sampling can unlock the full potential of dLLMs for fast and high-quality generation.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-12T16:08:28Z
+                    <strong>Updated:</strong> 2025-06-13T02:28:47Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span><span>cs.LG</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.10848v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10848v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.10848v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10848v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4780,19 +4780,19 @@
             <div class="paper">
                 <h2>#42 RationalVLA: A Rational Vision-Language-Action Model with Dual System</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Wenxuan Song, Jiayi Chen, Wenxue Li, Xu He, Han Zhao, Pengxiang Ding Shiyan Su, Feilong Tang, Xuelian Cheng, Donglin Wang, Zongyuan Ge, Xinhu Zheng, Zhe Liu, Hesheng Wang, Yunhui Liu, Haoang Li
+                    <strong>Authors:</strong> Wenxuan Song, Jiayi Chen, Wenxue Li, Xu He, Han Zhao, Can Cui, Pengxiang Ding Shiyan Su, Feilong Tang, Xuelian Cheng, Donglin Wang, Zongyuan Ge, Xinhu Zheng, Zhe Liu, Hesheng Wang, Haoang Li
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> A fundamental requirement for real-world robotic deployment is the ability to understand and respond to natural language instructions. Existing language-conditioned manipulation tasks typically assume that instructions are perfectly aligned with the environment. This assumption limits robustness and generalization in realistic scenarios where instructions may be ambiguous, irrelevant, or infeasible. To address this problem, we introduce RAtional MAnipulation (RAMA), a new benchmark that challenges models with both unseen executable instructions and defective ones that should be rejected. In RAMA, we construct a dataset with over 14,000 samples, including diverse defective instructions spanning six dimensions: visual, physical, semantic, motion, safety, and out-of-context. We further propose the Rational Vision-Language-Action model (RationalVLA). It is a dual system for robotic arms that integrates the high-level vision-language model with the low-level manipulation policy by introducing learnable latent space embeddings. This design enables RationalVLA to reason over instructions, reject infeasible commands, and execute manipulation effectively. Experiments demonstrate that RationalVLA outperforms state-of-the-art baselines on RAMA by a 14.5% higher success rate and 0.94 average task length, while maintaining competitive performance on standard manipulation tasks. Real-world trials further validate its effectiveness and robustness in practical applications. Our project page is https://irpn-eai.github.io/rationalvla.
+                    <strong>Summary:</strong> A fundamental requirement for real-world robotic deployment is the ability to understand and respond to natural language instructions. Existing language-conditioned manipulation tasks typically assume that instructions are perfectly aligned with the environment. This assumption limits robustness and generalization in realistic scenarios where instructions may be ambiguous, irrelevant, or infeasible. To address this problem, we introduce RAtional MAnipulation (RAMA), a new benchmark that challenges models with both unseen executable instructions and defective ones that should be rejected. In RAMA, we construct a dataset with over 14,000 samples, including diverse defective instructions spanning six dimensions: visual, physical, semantic, motion, safety, and out-of-context. We further propose the Rational Vision-Language-Action model (RationalVLA). It is a dual system for robotic arms that integrates the high-level vision-language model with the low-level manipulation policy by introducing learnable latent space embeddings. This design enables RationalVLA to reason over instructions, reject infeasible commands, and execute manipulation effectively. Experiments demonstrate that RationalVLA outperforms state-of-the-art baselines on RAMA by a 14.5% higher success rate and 0.94 average task length, while maintaining competitive performance on standard manipulation tasks. Real-world trials further validate its effectiveness and robustness in practical applications. Our project page is https://irpn-eai.github.io/RationalVLA.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-12T15:44:51Z
+                    <strong>Updated:</strong> 2025-06-13T12:14:44Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.RO</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.10826v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10826v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.10826v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10826v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4883,13 +4883,13 @@
                     <strong>Summary:</strong> Monitoring is an important aspect of safely deploying Large Language Models (LLMs). This paper examines activation probes for detecting "high-stakes" interactions -- where the text indicates that the interaction might lead to significant harm -- as a critical, yet underexplored, target for such monitoring. We evaluate several probe architectures trained on synthetic data, and find them to exhibit robust generalization to diverse, out-of-distribution, real-world data. Probes' performance is comparable to that of prompted or finetuned medium-sized LLM monitors, while offering computational savings of six orders-of-magnitude. Our experiments also highlight the potential of building resource-aware hierarchical monitoring systems, where probes serve as an efficient initial filter and flag cases for more expensive downstream analysis. We release our novel synthetic dataset and codebase to encourage further study.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-06-12T15:20:33Z
+                    <strong>Updated:</strong> 2025-06-13T09:04:48Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.10805v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10805v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.10805v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.10805v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
