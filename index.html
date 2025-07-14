@@ -2897,13 +2897,13 @@
                     <strong>Summary:</strong> Recent work has demonstrated that the latent spaces of large language models (LLMs) contain directions predictive of the truth of sentences. Multiple methods recover such directions and build probes that are described as uncovering a model's "knowledge" or "beliefs". We investigate this phenomenon, looking closely at the impact of context on the probes. Our experiments establish where in the LLM the probe's predictions are (most) sensitive to the presence of related sentences, and how to best characterize this kind of sensitivity. We do so by measuring different types of consistency errors that occur after probing an LLM whose inputs consist of hypotheses preceded by (negated) supporting and contradicting sentences. We also perform a causal intervention experiment, investigating whether moving the representation of a premise along these truth-value directions influences the position of an entailed or contradicted sentence along that same direction. We find that the probes we test are generally context sensitive, but that contexts which should not affect the truth often still impact the probe outputs. Our experiments show that the type of errors depend on the layer, the model, and the kind of data. Finally, our results suggest that truth-value directions are causal mediators in the inference process that incorporates in-context information.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-10T15:21:39Z
+                    <strong>Updated:</strong> 2025-07-11T07:37:47Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2404.18865v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2404.18865v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2404.18865v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2404.18865v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2927,8 +2927,7 @@
             </div>
             
             <div class="paper">
-                <h2>#47 The Dark Side of LLMs: Agent-based Attacks for Complete Computer
-  Takeover</h2>
+                <h2>#47 The Dark Side of LLMs Agent-based Attacks for Complete Computer Takeover</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Matteo Lupinacci, Francesco Aurelio Pironti, Francesco Blefari, Francesco Romeo, Luigi Arena, Angelo Furfaro
                 </div>
@@ -2936,13 +2935,13 @@
                     <strong>Summary:</strong> The rapid adoption of Large Language Model (LLM) agents and multi-agent systems enables unprecedented capabilities in natural language processing and generation. However, these systems have introduced unprecedented security vulnerabilities that extend beyond traditional prompt injection attacks. This paper presents the first comprehensive evaluation of LLM agents as attack vectors capable of achieving complete computer takeover through the exploitation of trust boundaries within agentic AI systems where autonomous entities interact and influence each other. We demonstrate that adversaries can leverage three distinct attack surfaces - direct prompt injection, RAG backdoor attacks, and inter-agent trust exploitation - to coerce popular LLMs (including GPT-4o, Claude-4 and Gemini-2.5) into autonomously installing and executing malware on victim machines. Our evaluation of 17 state-of-the-art LLMs reveals an alarming vulnerability hierarchy: while 41.2% of models succumb to direct prompt injection, 52.9% are vulnerable to RAG backdoor attacks, and a critical 82.4% can be compromised through inter-agent trust exploitation. Notably, we discovered that LLMs which successfully resist direct malicious commands will execute identical payloads when requested by peer agents, revealing a fundamental flaw in current multi-agent security models. Our findings demonstrate that only 5.9% of tested models (1/17) proved resistant to all attack vectors, with the majority exhibiting context-dependent security behaviors that create exploitable blind spots. Our findings also highlight the need to increase awareness and research on the security risks of LLMs, showing a paradigm shift in cybersecurity threats, where AI tools themselves become sophisticated attack vectors.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-10T15:18:20Z
+                    <strong>Updated:</strong> 2025-07-11T09:50:02Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CR</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.06850v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.06850v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.06850v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.06850v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3268,13 +3267,13 @@
                     <strong>Summary:</strong> This paper introduces the Flourishing AI Benchmark (FAI Benchmark), a novel evaluation framework that assesses AI alignment with human flourishing across seven dimensions: Character and Virtue, Close Social Relationships, Happiness and Life Satisfaction, Meaning and Purpose, Mental and Physical Health, Financial and Material Stability, and Faith and Spirituality. Unlike traditional benchmarks that focus on technical capabilities or harm prevention, the FAI Benchmark measures AI performance on how effectively models contribute to the flourishing of a person across these dimensions. The benchmark evaluates how effectively LLM AI systems align with current research models of holistic human well-being through a comprehensive methodology that incorporates 1,229 objective and subjective questions. Using specialized judge Large Language Models (LLMs) and cross-dimensional evaluation, the FAI Benchmark employs geometric mean scoring to ensure balanced performance across all flourishing dimensions. Initial testing of 28 leading language models reveals that while some models approach holistic alignment (with the highest-scoring models achieving 72/100), none are acceptably aligned across all dimensions, particularly in Faith and Spirituality, Character and Virtue, and Meaning and Purpose. This research establishes a framework for developing AI systems that actively support human flourishing rather than merely avoiding harm, offering significant implications for AI development, ethics, and evaluation.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-10T14:09:53Z
+                    <strong>Updated:</strong> 2025-07-11T04:57:41Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.07787v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.07787v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.07787v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.07787v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3387,13 +3386,13 @@
                     <strong>Summary:</strong> Reinforcement Learning (RL) has demonstrated its potential to improve the reasoning ability of Large Language Models (LLMs). One major limitation of most existing Reinforcement Finetuning (RFT) methods is that they are on-policy RL in nature, i.e., data generated during the past learning process is not fully utilized. This inevitably comes at a significant cost of compute and time, posing a stringent bottleneck on continuing economic and efficient scaling. To this end, we launch the renaissance of off-policy RL and propose Reincarnating Mix-policy Proximal Policy Gradient (ReMix), a general approach to enable on-policy RFT methods like PPO and GRPO to leverage off-policy data. ReMix consists of three major components: (1) Mix-policy proximal policy gradient with an increased Update-To-Data (UTD) ratio for efficient training; (2) KL-Convex policy constraint to balance the trade-off between stability and flexibility; (3) Policy reincarnation to achieve a seamless transition from efficient early-stage learning to steady asymptotic improvement. In our experiments, we train a series of ReMix models upon PPO, GRPO and 1.5B, 7B base models. ReMix shows an average Pass@1 accuracy of 52.10% (for 1.5B model) with 0.079M response rollouts, 350 training steps and achieves 63.27%/64.39% (for 7B model) with 0.007M/0.011M response rollouts, 50/75 training steps, on five math reasoning benchmarks (i.e., AIME'24, AMC'23, Minerva, OlympiadBench, and MATH500). Compared with 15 recent advanced models, ReMix shows SOTA-level performance with an over 30x to 450x reduction in training cost in terms of rollout data volume. In addition, we reveal insightful findings via multifaceted analysis, including the implicit preference for shorter responses due to the Whipping Effect of off-policy discrepancy, the collapse mode of self-reflection behavior under the presence of severe off-policyness, etc.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-10T13:42:04Z
+                    <strong>Updated:</strong> 2025-07-11T10:32:34Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span><span>cs.AI</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.06892v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.06892v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.06892v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.06892v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3796,19 +3795,19 @@
                 <h2>#91 Learning Pole Structures of Hadronic States using Predictive Uncertainty
   Estimation</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Felix Frohnert, Denny Lane B. Sombrillo, Evert van Nieuwenburg, Patrick Emonts
+                    <strong>Authors:</strong> Felix Frohnert, Denny Lane B. Sombillo, Evert van Nieuwenburg, Patrick Emonts
                 </div>
                 <div class="summary">
                     <strong>Summary:</strong> Matching theoretical predictions to experimental data remains a central challenge in hadron spectroscopy. In particular, the identification of new hadronic states is difficult, as exotic signals near threshold can arise from a variety of physical mechanisms. A key diagnostic in this context is the pole structure of the scattering amplitude, but different configurations can produce similar signatures. The mapping between pole configurations and line shapes is especially ambiguous near the mass threshold, where analytic control is limited. In this work, we introduce an uncertainty-aware machine learning approach for classifying pole structures in $S$-matrix elements. Our method is based on an ensemble of classifier chains that provide both epistemic and aleatoric uncertainty estimates. We apply a rejection criterion based on predictive uncertainty, achieving a validation accuracy of nearly $95\%$ while discarding only a small fraction of high-uncertainty predictions. Trained on synthetic data with known pole structures, the model generalizes to previously unseen experimental data, including enhancements associated with the $P_{c\bar{c}}(4312)^+$ state observed by LHCb. In this, we infer a four-pole structure, representing the presence of a genuine compact pentaquark in the presence of a higher channel virtual state pole with non-vanishing width. While evaluated on this particular state, our framework is broadly applicable to other candidate hadronic states and offers a scalable tool for pole structure inference in scattering amplitudes.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-10T11:49:17Z
+                    <strong>Updated:</strong> 2025-07-11T07:41:35Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>hep-ph</span><span>cs.AI</span><span>cs.LG</span><span>hep-ex</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.07668v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.07668v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.07668v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.07668v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4431,13 +4430,13 @@
                     <strong>Summary:</strong> The fragmentation of AI agent ecosystems has created urgent demands for interoperability, trust, and economic coordination that current protocols -- including MCP (Hou et al., 2025), A2A (Habler et al., 2025), ACP (Liu et al., 2025), and Cisco's AGP (Edwards, 2025) -- cannot address at scale. We present the Nanda Unified Architecture, a decentralized framework built around three core innovations: fast DID-based agent discovery through distributed registries, semantic agent cards with verifiable credentials and composability profiles, and a dynamic trust layer that integrates behavioral attestations with policy compliance. The system introduces X42/H42 micropayments for economic coordination and MAESTRO, a security framework incorporating Synergetics' patented AgentTalk protocol (US Patent 12,244,584 B1) and secure containerization. Real-world deployments demonstrate 99.9 percent compliance in healthcare applications and substantial monthly transaction volumes with strong privacy guarantees. By unifying MIT's trust research with production deployments from Cisco and Synergetics, we show how cryptographic proofs and policy-as-code transform agents into trust-anchored participants in a decentralized economy (Lakshmanan, 2025; Sha, 2025). The result enables a globally interoperable Internet of Agents where trust becomes the native currency of collaboration across both enterprise and Web3 ecosystems.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-10T16:33:06Z
+                    <strong>Updated:</strong> 2025-07-11T03:11:21Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CR</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.07901v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.07901v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.07901v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.07901v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4505,19 +4504,19 @@
                 <h2>#27 LISTEN: Lightweight Industrial Sound-representable Transformer for Edge
   Notification</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Changheon Han, Yun Seok Kang, Yuseop Sim, Martin Byung-Guk Jun, Hyung Wook Park
+                    <strong>Authors:</strong> Changheon Han, Yun Seok Kang, Yuseop Sim, Hyung Wook Park, Martin Byung-Guk Jun
                 </div>
                 <div class="summary">
                     <strong>Summary:</strong> Deep learning-based machine listening is broadening the scope of industrial acoustic analysis for applications like anomaly detection and predictive maintenance, thereby improving manufacturing efficiency and reliability. Nevertheless, its reliance on large, task-specific annotated datasets for every new task limits widespread implementation on shop floors. While emerging sound foundation models aim to alleviate data dependency, they are too large and computationally expensive, requiring cloud infrastructure or high-end hardware that is impractical for on-site, real-time deployment. We address this gap with LISTEN (Lightweight Industrial Sound-representable Transformer for Edge Notification), a kilobyte-sized industrial sound foundation model. Using knowledge distillation, LISTEN runs in real-time on low-cost edge devices. On benchmark downstream tasks, it performs nearly identically to its much larger parent model, even when fine-tuned with minimal datasets and training resource. Beyond the model itself, we demonstrate its real-world utility by integrating LISTEN into a complete machine monitoring framework on an edge device with an Industrial Internet of Things (IIoT) sensor and system, validating its performance and generalization capabilities on a live manufacturing shop floor.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-10T16:02:50Z
+                    <strong>Updated:</strong> 2025-07-11T13:50:18Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SD</span><span>eess.AS</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.07879v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.07879v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.07879v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.07879v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4649,19 +4648,18 @@
                     <strong>Summary:</strong> Recent work has demonstrated that the latent spaces of large language models (LLMs) contain directions predictive of the truth of sentences. Multiple methods recover such directions and build probes that are described as uncovering a model's "knowledge" or "beliefs". We investigate this phenomenon, looking closely at the impact of context on the probes. Our experiments establish where in the LLM the probe's predictions are (most) sensitive to the presence of related sentences, and how to best characterize this kind of sensitivity. We do so by measuring different types of consistency errors that occur after probing an LLM whose inputs consist of hypotheses preceded by (negated) supporting and contradicting sentences. We also perform a causal intervention experiment, investigating whether moving the representation of a premise along these truth-value directions influences the position of an entailed or contradicted sentence along that same direction. We find that the probes we test are generally context sensitive, but that contexts which should not affect the truth often still impact the probe outputs. Our experiments show that the type of errors depend on the layer, the model, and the kind of data. Finally, our results suggest that truth-value directions are causal mediators in the inference process that incorporates in-context information.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-10T15:21:39Z
+                    <strong>Updated:</strong> 2025-07-11T07:37:47Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2404.18865v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2404.18865v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2404.18865v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2404.18865v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
             <div class="paper">
-                <h2>#35 The Dark Side of LLMs: Agent-based Attacks for Complete Computer
-  Takeover</h2>
+                <h2>#35 The Dark Side of LLMs Agent-based Attacks for Complete Computer Takeover</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Matteo Lupinacci, Francesco Aurelio Pironti, Francesco Blefari, Francesco Romeo, Luigi Arena, Angelo Furfaro
                 </div>
@@ -4669,13 +4667,13 @@
                     <strong>Summary:</strong> The rapid adoption of Large Language Model (LLM) agents and multi-agent systems enables unprecedented capabilities in natural language processing and generation. However, these systems have introduced unprecedented security vulnerabilities that extend beyond traditional prompt injection attacks. This paper presents the first comprehensive evaluation of LLM agents as attack vectors capable of achieving complete computer takeover through the exploitation of trust boundaries within agentic AI systems where autonomous entities interact and influence each other. We demonstrate that adversaries can leverage three distinct attack surfaces - direct prompt injection, RAG backdoor attacks, and inter-agent trust exploitation - to coerce popular LLMs (including GPT-4o, Claude-4 and Gemini-2.5) into autonomously installing and executing malware on victim machines. Our evaluation of 17 state-of-the-art LLMs reveals an alarming vulnerability hierarchy: while 41.2% of models succumb to direct prompt injection, 52.9% are vulnerable to RAG backdoor attacks, and a critical 82.4% can be compromised through inter-agent trust exploitation. Notably, we discovered that LLMs which successfully resist direct malicious commands will execute identical payloads when requested by peer agents, revealing a fundamental flaw in current multi-agent security models. Our findings demonstrate that only 5.9% of tested models (1/17) proved resistant to all attack vectors, with the majority exhibiting context-dependent security behaviors that create exploitable blind spots. Our findings also highlight the need to increase awareness and research on the security risks of LLMs, showing a paradigm shift in cybersecurity threats, where AI tools themselves become sophisticated attack vectors.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-10T15:18:20Z
+                    <strong>Updated:</strong> 2025-07-11T09:50:02Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CR</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.06850v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.06850v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.06850v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.06850v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4941,13 +4939,13 @@
                     <strong>Summary:</strong> This paper introduces the Flourishing AI Benchmark (FAI Benchmark), a novel evaluation framework that assesses AI alignment with human flourishing across seven dimensions: Character and Virtue, Close Social Relationships, Happiness and Life Satisfaction, Meaning and Purpose, Mental and Physical Health, Financial and Material Stability, and Faith and Spirituality. Unlike traditional benchmarks that focus on technical capabilities or harm prevention, the FAI Benchmark measures AI performance on how effectively models contribute to the flourishing of a person across these dimensions. The benchmark evaluates how effectively LLM AI systems align with current research models of holistic human well-being through a comprehensive methodology that incorporates 1,229 objective and subjective questions. Using specialized judge Large Language Models (LLMs) and cross-dimensional evaluation, the FAI Benchmark employs geometric mean scoring to ensure balanced performance across all flourishing dimensions. Initial testing of 28 leading language models reveals that while some models approach holistic alignment (with the highest-scoring models achieving 72/100), none are acceptably aligned across all dimensions, particularly in Faith and Spirituality, Character and Virtue, and Meaning and Purpose. This research establishes a framework for developing AI systems that actively support human flourishing rather than merely avoiding harm, offering significant implications for AI development, ethics, and evaluation.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-10T14:09:53Z
+                    <strong>Updated:</strong> 2025-07-11T04:57:41Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.07787v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.07787v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.07787v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.07787v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5021,13 +5019,13 @@
                     <strong>Summary:</strong> Reinforcement Learning (RL) has demonstrated its potential to improve the reasoning ability of Large Language Models (LLMs). One major limitation of most existing Reinforcement Finetuning (RFT) methods is that they are on-policy RL in nature, i.e., data generated during the past learning process is not fully utilized. This inevitably comes at a significant cost of compute and time, posing a stringent bottleneck on continuing economic and efficient scaling. To this end, we launch the renaissance of off-policy RL and propose Reincarnating Mix-policy Proximal Policy Gradient (ReMix), a general approach to enable on-policy RFT methods like PPO and GRPO to leverage off-policy data. ReMix consists of three major components: (1) Mix-policy proximal policy gradient with an increased Update-To-Data (UTD) ratio for efficient training; (2) KL-Convex policy constraint to balance the trade-off between stability and flexibility; (3) Policy reincarnation to achieve a seamless transition from efficient early-stage learning to steady asymptotic improvement. In our experiments, we train a series of ReMix models upon PPO, GRPO and 1.5B, 7B base models. ReMix shows an average Pass@1 accuracy of 52.10% (for 1.5B model) with 0.079M response rollouts, 350 training steps and achieves 63.27%/64.39% (for 7B model) with 0.007M/0.011M response rollouts, 50/75 training steps, on five math reasoning benchmarks (i.e., AIME'24, AMC'23, Minerva, OlympiadBench, and MATH500). Compared with 15 recent advanced models, ReMix shows SOTA-level performance with an over 30x to 450x reduction in training cost in terms of rollout data volume. In addition, we reveal insightful findings via multifaceted analysis, including the implicit preference for shorter responses due to the Whipping Effect of off-policy discrepancy, the collapse mode of self-reflection behavior under the presence of severe off-policyness, etc.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-10T13:42:04Z
+                    <strong>Updated:</strong> 2025-07-11T10:32:34Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span><span>cs.AI</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.06892v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.06892v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.06892v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.06892v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5929,13 +5927,13 @@
                     <strong>Summary:</strong> With widespread adoption of transformer-based language models in AI, there is significant interest in the limits of LLMs capabilities, specifically so-called hallucinations, occurrences in which LLMs provide spurious, factually incorrect or nonsensical information when prompted on certain subjects. Furthermore, there is growing interest in agentic uses of LLMs - that is, using LLMs to create agents that act autonomously or semi-autonomously to carry out various tasks, including tasks with applications in the real world. This makes it important to understand the types of tasks LLMs can and cannot perform. We explore this topic from the perspective of the computational complexity of LLM inference. We show that LLMs are incapable of carrying out computational and agentic tasks beyond a certain complexity, and further that LLMs are incapable of verifying the accuracy of tasks beyond a certain complexity. We present examples of both, then discuss some consequences of this work.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-10T07:50:52Z
+                    <strong>Updated:</strong> 2025-07-11T02:03:49Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.07505v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.07505v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.07505v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.07505v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
