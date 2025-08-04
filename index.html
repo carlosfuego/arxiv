@@ -95,22 +95,22 @@
             </div>
             
             <div class="paper">
-                <h2>#3 H2SGEMM: Emulating FP32 GEMM on Ascend NPUs using FP16 Units with
-  Precision Recovery and Cache-Aware Optimization</h2>
+                <h2>#3 SGEMM-cube: Emulating FP32 GEMM on Ascend NPUs Using FP16 Cube Units
+  with Precision Recovery</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Weicheng Xue, Baisong Xu, Kai Yang, Yongxiang Liu, Dengdeng Fan, Pengxiang Xu, Yonghong Tian
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Low-precision matrix engines, such as FP16 cube, offer high throughput but lack support for full-precision computation. In this work, we propose H2SGEMM, a high-performance algorithm for emulating FP32 general matrix-matrix multiplication (GEMM) using only FP16 computation units on a representative AI accelerator. The method decomposes each FP32 operand into two FP16 values and compensates for numerical errors through a tunable scaling strategy. A detailed analysis of numerical errors, including underflow conditions and precision loss, guides the selection of scaling parameters to preserve up to 22 bits of mantissa accuracy. We further investigate the effect of computation order on accuracy and demonstrate that a term-wise accumulation scheme improves numerical stability over conventional FP32 GEMM in low-exponent regimes. Finally, a cache-aware blocking strategy and double-buffered pipeline are introduced to overlap memory transfers with computation, enabling H2SGEMM to achieve up to 77% of the theoretical FP32-equivalent peak performance on Ascend 910A NPU lacking native FP32 support. Extensive numerical experiments confirm that our method not only recovers the accuracy of native FP32 GEMM but also exhibits superior numerical stability under certain conditions, due to its structured and error-aware computation order.
+                    <strong>Summary:</strong> Low-precision matrix engines, such as FP16 cube, offer high throughput but lack support for full-precision computation. In this work, we propose SGEMM-cube, a high-performance algorithm for emulating FP32 general matrix-matrix multiplication (GEMM) using only FP16 computation units on a representative AI accelerator. The method decomposes each FP32 operand into two FP16 values and compensates for numerical errors through a tunable scaling strategy. A detailed analysis of numerical errors, including underflow conditions and precision loss, guides the selection of scaling parameters to preserve up to 22 bits of mantissa accuracy. We further investigate the effect of computation order on accuracy and demonstrate that a term-wise accumulation scheme improves numerical stability over conventional FP32 GEMM in low-exponent regimes. Finally, a cache-aware blocking strategy and double-buffered pipeline are introduced to overlap memory transfers with computation, enabling SGEMM-cube to achieve up to 77\% of the theoretical FP32-equivalent peak performance on Ascend 910A NPU lacking native FP32 support. Extensive numerical experiments confirm that our method not only recovers the accuracy of native FP32 GEMM but also exhibits superior numerical stability under certain conditions, due to its structured and error-aware computation order.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-31T10:02:26Z
+                    <strong>Updated:</strong> 2025-08-01T03:43:24Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.DC</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.23387v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.23387v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.23387v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.23387v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -219,16 +219,16 @@
                     <strong>Authors:</strong> Yanqing Liu, Ruiqing Xue, Chong Zhang, Yufei Liu, Gang Wang, Bohan Li, Yao Qian, Lei He, Shujie Liu, Sheng Zhao
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> While diffusion and autoregressive (AR) models have significantly advanced generative modeling, they each present distinct limitations. AR models, which rely on causal attention, cannot exploit future context and suffer from slow generation speeds. Conversely, diffusion models struggle with key-value (KV) caching. To overcome these challenges, we introduce Dragon-FM, a novel text-to-speech (TTS) design that unifies AR and flow-matching. This model processes 48 kHz audio codec tokens in chunks at a compact 12.5 tokens per second rate. This design enables AR modeling across chunks, ensuring global coherence, while parallel flow-matching within chunks facilitates fast iterative denoising. Consequently, the proposed model can utilize KV-cache across chunks and incorporate future context within each chunk. Furthermore, it bridges continuous and discrete feature modeling, demonstrating that continuous AR flow-matching can predict discrete tokens with finite scalar quantizers. This efficient codec and fast chunk-autoregressive architecture also makes the proposed model particularly effective for generating extended content. Experiment for demos of our work} on podcast datasets demonstrate its capability to efficiently generate high-quality zero-shot podcasts.
+                    <strong>Summary:</strong> While diffusion and autoregressive (AR) models have significantly advanced generative modeling, they each present distinct limitations. AR models, which rely on causal attention, cannot exploit future context and suffer from slow generation speeds. Conversely, diffusion models struggle with key-value (KV) caching. To overcome these challenges, we introduce Dragon-FM, a novel text-to-speech (TTS) design that unifies AR and flow-matching. This model processes 48 kHz audio codec tokens in chunks at a compact rate of 12.5 tokens per second. This design enables AR modeling across chunks, ensuring global coherence, while parallel flow-matching within chunks facilitates fast iterative denoising. Thus, the model leverages KV-cache across chunks and utilizes bidirectional context within each chunk. Furthermore, it bridges continuous and discrete feature modeling, demonstrating that continuous AR flow-matching can predict discrete tokens with finite scalar quantizers. This efficient codec and fast chunk-autoregressive architecture also make the model highly effective for generating long-form content, such as podcasts. Experiments on podcast datasets demonstrate its capability to efficiently generate high-quality zero-shot podcasts.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-30T15:03:36Z
+                    <strong>Updated:</strong> 2025-08-01T03:37:42Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SD</span><span>cs.CL</span><span>eess.AS</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.22746v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.22746v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.22746v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.22746v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2341,13 +2341,13 @@
                     <strong>Summary:</strong> LLMs have demonstrated strong mathematical reasoning abilities by leveraging reinforcement learning with long chain-of-thought, yet they continue to struggle with theorem proving due to the lack of clear supervision signals when solely using natural language. Dedicated domain-specific languages like Lean provide clear supervision via formal verification of proofs, enabling effective training through reinforcement learning. In this work, we propose \textbf{Seed-Prover}, a lemma-style whole-proof reasoning model. Seed-Prover can iteratively refine its proof based on Lean feedback, proved lemmas, and self-summarization. To solve IMO-level contest problems, we design three test-time inference strategies that enable both deep and broad reasoning. Seed-Prover proves $78.1\%$ of formalized past IMO problems, saturates MiniF2F, and achieves over 50\% on PutnamBench, outperforming the previous state-of-the-art by a large margin. To address the lack of geometry support in Lean, we introduce a geometry reasoning engine \textbf{Seed-Geometry}, which outperforms previous formal geometry engines. We use these two systems to participate in IMO 2025 and fully prove 5 out of 6 problems. This work represents a significant advancement in automated mathematical reasoning, demonstrating the effectiveness of formal verification with long chain-of-thought reasoning.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-31T17:00:30Z
+                    <strong>Updated:</strong> 2025-08-01T03:36:47Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.23726v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.23726v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.23726v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.23726v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2537,13 +2537,13 @@
                     <strong>Summary:</strong> We show that global properties of an unknown quantum network, such as the average degree, hub density, and the number of closed paths of fixed length, can be inferred from strictly local quantum measurements. In particular, we demonstrate that a malicious agent with access to only a small subset of nodes can initialize quantum states locally and, through repeated short-time measurements, extract sensitive structural information about the entire network. The intrusion strategy is inspired by extreme learning and quantum reservoir computing and combines short-time quantum evolution with a non-iterative linear readout with trainable weights. These results suggest new strategies for intrusion detection and structural diagnostics in future quantum Internet infrastructures.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-31T16:06:45Z
+                    <strong>Updated:</strong> 2025-08-01T09:52:43Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>quant-ph</span><span>cond-mat.dis-nn</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.23689v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.23689v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.23689v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.23689v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3793,13 +3793,13 @@
                     <strong>Summary:</strong> Many epidemic models are naturally defined as individual-based models: where we track the state of each individual within a susceptible population. Inference for individual-based models is challenging due to the high-dimensional state-space of such models, which increases exponentially with population size. We consider sequential Monte Carlo algorithms for inference for individual-based epidemic models where we make direct observations of the state of a sample of individuals. Standard implementations, such as the bootstrap filter or the auxiliary particle filter are inefficient due to mismatch between the proposal distribution of the state and future observations. We develop new efficient proposal distributions that take account of future observations, leveraging the properties that (i) we can analytically calculate the optimal proposal distribution for a single individual given future observations and the future infection rate of that individual; and (ii) the dynamics of individuals are independent if we condition on their infection rates. Thus we construct estimates of the future infection rate for each individual, and then use an independent proposal for the state of each individual given this estimate. Empirical results show order of magnitude improvement in efficiency of the sequential Monte Carlo sampler for both SIS and SEIR models.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-31T09:38:34Z
+                    <strong>Updated:</strong> 2025-08-01T12:11:18Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>stat.ME</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2206.05161v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2206.05161v3' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2206.05161v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2206.05161v4' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4186,13 +4186,13 @@
                     <strong>Summary:</strong> LLMs have demonstrated strong mathematical reasoning abilities by leveraging reinforcement learning with long chain-of-thought, yet they continue to struggle with theorem proving due to the lack of clear supervision signals when solely using natural language. Dedicated domain-specific languages like Lean provide clear supervision via formal verification of proofs, enabling effective training through reinforcement learning. In this work, we propose \textbf{Seed-Prover}, a lemma-style whole-proof reasoning model. Seed-Prover can iteratively refine its proof based on Lean feedback, proved lemmas, and self-summarization. To solve IMO-level contest problems, we design three test-time inference strategies that enable both deep and broad reasoning. Seed-Prover proves $78.1\%$ of formalized past IMO problems, saturates MiniF2F, and achieves over 50\% on PutnamBench, outperforming the previous state-of-the-art by a large margin. To address the lack of geometry support in Lean, we introduce a geometry reasoning engine \textbf{Seed-Geometry}, which outperforms previous formal geometry engines. We use these two systems to participate in IMO 2025 and fully prove 5 out of 6 problems. This work represents a significant advancement in automated mathematical reasoning, demonstrating the effectiveness of formal verification with long chain-of-thought reasoning.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-31T17:00:30Z
+                    <strong>Updated:</strong> 2025-08-01T03:36:47Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.23726v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.23726v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.23726v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.23726v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4461,13 +4461,13 @@
                     <strong>Summary:</strong> Spiking Neural Networks (SNNs) offer a biologically plausible framework for energy-efficient neuromorphic computing. However, it is a challenge to train SNNs due to their non-differentiability, efficiently. Existing gradient approximation approaches frequently sacrifice accuracy and face deployment limitations on edge devices due to the substantial computational requirements of backpropagation. To address these challenges, we propose a Forward-Forward (FF) based gradient approximation-free training framework for Spiking Neural Networks, which treats spiking activations as black-box modules, thereby eliminating the need for gradient approximation while significantly reducing computational complexity. Furthermore, we introduce a class-aware complexity adaptation mechanism that dynamically optimizes the loss function based on inter-class difficulty metrics, enabling efficient allocation of network resources across different categories. Experimental results demonstrate that our proposed training framework achieves test accuracies of 99.58%, 92.13%, and 75.64% on the MNIST, Fashion-MNIST, and CIFAR-10 datasets, respectively, surpassing all existing FF-based SNN approaches. Additionally, our proposed method exhibits significant advantages in terms of memory access and computational power consumption.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-31T15:22:23Z
+                    <strong>Updated:</strong> 2025-08-01T10:34:09Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CV</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.23643v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.23643v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.23643v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.23643v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5658,16 +5658,16 @@
                     <strong>Authors:</strong> Jiaxin Bai, Wei Fan, Qi Hu, Qing Zong, Chunyang Li, Hong Ting Tsang, Hongyu Luo, Yauwai Yim, Haoyu Huang, Xiao Zhou, Feng Qin, Tianshi Zheng, Xi Peng, Xin Yao, Huiwen Yang, Leijie Wu, Yi Ji, Gong Zhang, Renhai Chen, Yangqiu Song
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> We present AutoSchemaKG, a framework for fully autonomous knowledge graph construction that eliminates the need for predefined schemas. Our system leverages large language models to simultaneously extract knowledge triples and induce comprehensive schemas directly from text, modeling both entities and events while employing conceptualization to organize instances into semantic categories. Processing over 50 million documents, we construct ATLAS (Automated Triple Linking And Schema induction), a family of knowledge graphs with 900+ million nodes and 5.9 billion edges. This approach outperforms state-of-the-art baselines on multi-hop QA tasks and enhances LLM factuality. Notably, our schema induction achieves 95\% semantic alignment with human-crafted schemas with zero manual intervention, demonstrating that billion-scale knowledge graphs with dynamically induced schemas can effectively complement parametric knowledge in large language models.
+                    <strong>Summary:</strong> We present AutoSchemaKG, a framework for fully autonomous knowledge graph construction that eliminates the need for predefined schemas. Our system leverages large language models to simultaneously extract knowledge triples and induce comprehensive schemas directly from text, modeling both entities and events while employing conceptualization to organize instances into semantic categories. Processing over 50 million documents, we construct ATLAS (Automated Triple Linking And Schema induction), a family of knowledge graphs with 900+ million nodes and 5.9 billion edges. This approach outperforms state-of-the-art baselines on multi-hop QA tasks and enhances LLM factuality. Notably, our schema induction achieves 92\% semantic alignment with human-crafted schemas with zero manual intervention, demonstrating that billion-scale knowledge graphs with dynamically induced schemas can effectively complement parametric knowledge in large language models.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-31T06:40:31Z
+                    <strong>Updated:</strong> 2025-08-01T06:39:45Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2505.23628v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.23628v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2505.23628v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2505.23628v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5699,13 +5699,13 @@
                     <strong>Summary:</strong> The emergence of large language models (LLMs) is propelling automated scientific discovery to the next level, with LLM-based Artificial Intelligence (AI) Scientist systems now taking the lead in scientific research. Several influential works have already appeared in the field of AI Scientist systems, with AI-generated research papers having been accepted at the ICLR 2025 workshop, suggesting that a human-level AI Scientist capable of uncovering phenomena previously unknown to humans, may soon become a reality. In this survey, we focus on the central question: How far are AI scientists from changing the world and reshaping the scientific research paradigm? To answer this question, we provide a prospect-driven review that comprehensively analyzes the current achievements of AI Scientist systems, identifying key bottlenecks and the critical components required for the emergence of a scientific agent capable of producing ground-breaking discoveries that solve grand challenges. We hope this survey will contribute to a clearer understanding of limitations of current AI Scientist systems, showing where we are, what is missing, and what the ultimate goals for scientific AI should be.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-07-31T06:32:06Z
+                    <strong>Updated:</strong> 2025-08-01T12:49:36Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2507.23276v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.23276v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2507.23276v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2507.23276v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
