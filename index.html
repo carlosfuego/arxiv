@@ -2385,13 +2385,13 @@
                     <strong>Summary:</strong> Vertical Federated Learning (VFL) enables collaborative learning by integrating disjoint feature subsets from multiple clients/parties. However, VFL typically faces two key challenges: i) the requirement for perfectly aligned data samples across all clients (missing features are not allowed); ii) the requirement for joint collaborative inference/prediction involving all clients (it does not support locally independent inference on a single client). To address these challenges, we propose X-VFL, a new VFL framework designed to deal with the non-aligned data samples with (partially) missing features and to support locally independent inference of new data samples for each client. In particular, we design two novel modules in X-VFL: Cross Completion (XCom) and Decision Subspace Alignment (DS-Align). XCom can complete/reconstruct missing features for non-aligned data samples by leveraging information from other clients. DS-Align aligns local features with completed and global features across all clients within the decision subspace, thus enabling locally independent inference at each client. Moreover, we provide convergence theorems for different algorithms used in training X-VFL, showing an $O(1/\sqrt{T})$ convergence rate for SGD-type algorithms and an $O(1/T)$ rate for PAGE-type algorithms, where $T$ denotes the number of training update steps. Extensive experiments on real-world datasets demonstrate that X-VFL significantly outperforms existing methods, e.g., achieving a 15% improvement in accuracy on the image CIFAR-10 dataset and a 43% improvement on the medical MIMIC-III dataset. These results validate the practical effectiveness and superiority of X-VFL, particularly in scenarios involving partially missing features and locally independent inference.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-07T17:00:47Z
+                    <strong>Updated:</strong> 2025-08-08T10:51:19Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span><span>cs.CV</span><span>cs.DC</span><span>math.OC</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2508.05568v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.05568v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2508.05568v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.05568v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3169,16 +3169,16 @@
                     <strong>Authors:</strong> Matteo Prandi, Vincenzo Suriani, Federico Pierucci, Marcello Galisai, Daniele Nardi, Piercosma Bisconti
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> The rapid advancement of General Purpose AI (GPAI) models necessitates robust evaluation frameworks, especially with emerging regulations like the EU AI Act and its associated Code of Practice (CoP). Current AI evaluation practices depend heavily on established benchmarks, but these tools were not designed to measure the systemic risks that are the focus of the new regulatory landscape. This research addresses the urgent need to quantify this "benchmark-regulation gap." We introduce Bench-2-CoP, a novel, systematic framework that uses validated LLM-as-judge analysis to map the coverage of 194,955 questions from widely-used benchmarks against the EU AI Act's taxonomy of model capabilities and propensities. Our findings reveal a profound misalignment: the evaluation ecosystem is overwhelmingly focused on a narrow set of behavioral propensities, such as "Tendency to hallucinate" (53.7% of the corpus) and "Discriminatory bias" (28.9%), while critical functional capabilities are dangerously neglected. Crucially, capabilities central to loss-of-control scenarios, including evading human oversight, self-replication, and autonomous AI development, receive zero coverage in the entire benchmark corpus. This translates to a near-total evaluation gap for systemic risks like "Loss of Control" (0.4% coverage) and "Cyber Offence" (0.8% coverage). This study provides the first comprehensive, quantitative analysis of this gap, offering critical insights for policymakers to refine the CoP and for developers to build the next generation of evaluation tools, ultimately fostering safer and more compliant AI.
+                    <strong>Summary:</strong> The rapid advancement of General Purpose AI (GPAI) models necessitates robust evaluation frameworks, especially with emerging regulations like the EU AI Act and its associated Code of Practice (CoP). Current AI evaluation practices depend heavily on established benchmarks, but these tools were not designed to measure the systemic risks that are the focus of the new regulatory landscape. This research addresses the urgent need to quantify this "benchmark-regulation gap." We introduce Bench-2-CoP, a novel, systematic framework that uses validated LLM-as-judge analysis to map the coverage of 194,955 questions from widely-used benchmarks against the EU AI Act's taxonomy of model capabilities and propensities. Our findings reveal a profound misalignment: the evaluation ecosystem dedicates the vast majority of its focus to a narrow set of behavioral propensities. On average, benchmarks devote 61.6% of their regulatory-relevant questions to "Tendency to hallucinate" and 31.2% to "Lack of performance reliability", while critical functional capabilities are dangerously neglected. Crucially, capabilities central to loss-of-control scenarios, including evading human oversight, self-replication, and autonomous AI development, receive zero coverage in the entire benchmark corpus. This study provides the first comprehensive, quantitative analysis of this gap, demonstrating that current public benchmarks are insufficient, on their own, for providing the evidence of comprehensive risk assessment required for regulatory compliance and offering critical insights for the development of next-generation evaluation tools.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-07T15:03:39Z
+                    <strong>Updated:</strong> 2025-08-08T14:16:34Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2508.05464v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.05464v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2508.05464v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.05464v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3324,19 +3324,19 @@
                 <h2>#67 MyCulture: Exploring Malaysia's Diverse Culture under Low-Resource
   Language Constraints</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Zhong Ken Hew, Jia Xin Low, Sze Jue Yang, Chee Seng chan
+                    <strong>Authors:</strong> Zhong Ken Hew, Jia Xin Low, Sze Jue Yang, Chee Seng Chan
                 </div>
                 <div class="summary">
                     <strong>Summary:</strong> Large Language Models (LLMs) often exhibit cultural biases due to training data dominated by high-resource languages like English and Chinese. This poses challenges for accurately representing and evaluating diverse cultural contexts, particularly in low-resource language settings. To address this, we introduce MyCulture, a benchmark designed to comprehensively evaluate LLMs on Malaysian culture across six pillars: arts, attire, customs, entertainment, food, and religion presented in Bahasa Melayu. Unlike conventional benchmarks, MyCulture employs a novel open-ended multiple-choice question format without predefined options, thereby reducing guessing and mitigating format bias. We provide a theoretical justification for the effectiveness of this open-ended structure in improving both fairness and discriminative power. Furthermore, we analyze structural bias by comparing model performance on structured versus free-form outputs, and assess language bias through multilingual prompt variations. Our evaluation across a range of regional and international LLMs reveals significant disparities in cultural comprehension, highlighting the urgent need for culturally grounded and linguistically inclusive benchmarks in the development and assessment of LLMs.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-07T14:17:43Z
+                    <strong>Updated:</strong> 2025-08-08T01:24:20Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2508.05429v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.05429v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2508.05429v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.05429v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4848,16 +4848,16 @@
                     <strong>Authors:</strong> Matteo Prandi, Vincenzo Suriani, Federico Pierucci, Marcello Galisai, Daniele Nardi, Piercosma Bisconti
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> The rapid advancement of General Purpose AI (GPAI) models necessitates robust evaluation frameworks, especially with emerging regulations like the EU AI Act and its associated Code of Practice (CoP). Current AI evaluation practices depend heavily on established benchmarks, but these tools were not designed to measure the systemic risks that are the focus of the new regulatory landscape. This research addresses the urgent need to quantify this "benchmark-regulation gap." We introduce Bench-2-CoP, a novel, systematic framework that uses validated LLM-as-judge analysis to map the coverage of 194,955 questions from widely-used benchmarks against the EU AI Act's taxonomy of model capabilities and propensities. Our findings reveal a profound misalignment: the evaluation ecosystem is overwhelmingly focused on a narrow set of behavioral propensities, such as "Tendency to hallucinate" (53.7% of the corpus) and "Discriminatory bias" (28.9%), while critical functional capabilities are dangerously neglected. Crucially, capabilities central to loss-of-control scenarios, including evading human oversight, self-replication, and autonomous AI development, receive zero coverage in the entire benchmark corpus. This translates to a near-total evaluation gap for systemic risks like "Loss of Control" (0.4% coverage) and "Cyber Offence" (0.8% coverage). This study provides the first comprehensive, quantitative analysis of this gap, offering critical insights for policymakers to refine the CoP and for developers to build the next generation of evaluation tools, ultimately fostering safer and more compliant AI.
+                    <strong>Summary:</strong> The rapid advancement of General Purpose AI (GPAI) models necessitates robust evaluation frameworks, especially with emerging regulations like the EU AI Act and its associated Code of Practice (CoP). Current AI evaluation practices depend heavily on established benchmarks, but these tools were not designed to measure the systemic risks that are the focus of the new regulatory landscape. This research addresses the urgent need to quantify this "benchmark-regulation gap." We introduce Bench-2-CoP, a novel, systematic framework that uses validated LLM-as-judge analysis to map the coverage of 194,955 questions from widely-used benchmarks against the EU AI Act's taxonomy of model capabilities and propensities. Our findings reveal a profound misalignment: the evaluation ecosystem dedicates the vast majority of its focus to a narrow set of behavioral propensities. On average, benchmarks devote 61.6% of their regulatory-relevant questions to "Tendency to hallucinate" and 31.2% to "Lack of performance reliability", while critical functional capabilities are dangerously neglected. Crucially, capabilities central to loss-of-control scenarios, including evading human oversight, self-replication, and autonomous AI development, receive zero coverage in the entire benchmark corpus. This study provides the first comprehensive, quantitative analysis of this gap, demonstrating that current public benchmarks are insufficient, on their own, for providing the evidence of comprehensive risk assessment required for regulatory compliance and offering critical insights for the development of next-generation evaluation tools.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-07T15:03:39Z
+                    <strong>Updated:</strong> 2025-08-08T14:16:34Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2508.05464v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.05464v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2508.05464v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.05464v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5003,19 +5003,19 @@
                 <h2>#52 MyCulture: Exploring Malaysia's Diverse Culture under Low-Resource
   Language Constraints</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Zhong Ken Hew, Jia Xin Low, Sze Jue Yang, Chee Seng chan
+                    <strong>Authors:</strong> Zhong Ken Hew, Jia Xin Low, Sze Jue Yang, Chee Seng Chan
                 </div>
                 <div class="summary">
                     <strong>Summary:</strong> Large Language Models (LLMs) often exhibit cultural biases due to training data dominated by high-resource languages like English and Chinese. This poses challenges for accurately representing and evaluating diverse cultural contexts, particularly in low-resource language settings. To address this, we introduce MyCulture, a benchmark designed to comprehensively evaluate LLMs on Malaysian culture across six pillars: arts, attire, customs, entertainment, food, and religion presented in Bahasa Melayu. Unlike conventional benchmarks, MyCulture employs a novel open-ended multiple-choice question format without predefined options, thereby reducing guessing and mitigating format bias. We provide a theoretical justification for the effectiveness of this open-ended structure in improving both fairness and discriminative power. Furthermore, we analyze structural bias by comparing model performance on structured versus free-form outputs, and assess language bias through multilingual prompt variations. Our evaluation across a range of regional and international LLMs reveals significant disparities in cultural comprehension, highlighting the urgent need for culturally grounded and linguistically inclusive benchmarks in the development and assessment of LLMs.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-07T14:17:43Z
+                    <strong>Updated:</strong> 2025-08-08T01:24:20Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2508.05429v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.05429v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2508.05429v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.05429v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5437,19 +5437,19 @@
                 <h2>#74 GhostShell: Streaming LLM Function Calls for Concurrent Embodied
   Programming</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Jian Gong, Youwei Huang, Bo Yuan, Ming Zhu, Juncheng Zhan, Jinke Wang, Hang Shu, Mingyue Xiong, Yanjun Ye, Yufan Zu, Yang Zhou, Yihan Ding, Xuannian Chen, Xingyu Lu, Runjie Ban, Bingchao Huang, Fusen Liu
+                    <strong>Authors:</strong> Jian Gong, Youwei Huang, Bo Yuan, Ming Zhu, Zhou Liao, Jianhang Liang, Juncheng Zhan, Jinke Wang, Hang Shu, Mingyue Xiong, Yanjun Ye, Yufan Zu, Yang Zhou, Yihan Ding, Xuannian Chen, Xingyu Lu, Runjie Ban, Bingchao Huang, Fusen Liu
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> We present GhostShell, a novel approach that leverages Large Language Models (LLMs) to enable streaming and concurrent behavioral programming for embodied systems. In contrast to conventional methods that rely on pre-scheduled action sequences or behavior trees, GhostShell drives embodied systems to act on-the-fly by issuing function calls incrementally as tokens are streamed from the LLM. GhostShell features a streaming XML function token parser, a dynamic function interface mapper, and a multi-channel scheduler that orchestrates intra-channel synchronous and inter-channel asynchronous function calls, thereby coordinating serial-parallel embodied actions across multiple robotic components as directed by the LLM. We evaluate GhostShell on our robot prototype COCO through comprehensive grounded experiments across 34 real-world interaction tasks and multiple LLMs. The results demonstrate that our approach achieves state-of-the-art Behavioral Correctness Metric of 0.85 with Claude-4 Sonnet and up to 66X faster response times compared to LLM native function calling APIs. GhostShell also proves effective in long-horizon multimodal tasks, demonstrating strong robustness and generalization.
+                    <strong>Summary:</strong> We present GhostShell, a novel approach that leverages Large Language Models (LLMs) to enable streaming and concurrent behavioral programming for embodied systems. In contrast to conventional methods that rely on pre-scheduled action sequences or behavior trees, GhostShell drives embodied systems to act on-the-fly by issuing function calls incrementally as tokens are streamed from the LLM. GhostShell features a streaming XML function token parser, a dynamic function interface mapper, and a multi-channel scheduler that orchestrates intra-channel synchronous and inter-channel asynchronous function calls, thereby coordinating serial-parallel embodied actions across multiple robotic components under LLM guidance. We evaluate GhostShell on our robotic prototype COCO through comprehensive grounded experiments across 34 real-world interaction tasks and multiple LLM backends. The results demonstrate that our approach achieves a state-of-the-art Behavioral Correctness Metric of 0.85 with Claude-4-Sonnet, and up to 66X faster response times compared to native LLM function calling APIs. GhostShell also proves effective in long-horizon multimodal tasks, exhibiting strong robustness and generalization capabilities.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-07T11:55:46Z
+                    <strong>Updated:</strong> 2025-08-08T04:36:40Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.RO</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2508.05298v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.05298v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2508.05298v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.05298v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5719,13 +5719,13 @@
                     <strong>Summary:</strong> Robust 3D occupancy prediction is essential for autonomous driving, particularly under adverse weather conditions where traditional vision-only systems struggle. While the fusion of surround-view 4D radar and cameras offers a promising low-cost solution, effectively extracting and integrating features from these heterogeneous sensors remains challenging. This paper introduces MetaOcc, a novel multi-modal framework for omnidirectional 3D occupancy prediction that leverages both multi-view 4D radar and images. To address the limitations of directly applying LiDAR-oriented encoders to sparse radar data, we propose a Radar Height Self-Attention module that enhances vertical spatial reasoning and feature extraction. Additionally, a Hierarchical Multi-scale Multi-modal Fusion strategy is developed to perform adaptive local-global fusion across modalities and time, mitigating spatio-temporal misalignments and enriching fused feature representations. To reduce reliance on expensive point cloud annotations, we further propose a pseudo-label generation pipeline based on an open-set segmentor. This enables a semi-supervised strategy that achieves 90% of the fully supervised performance using only 50% of the ground truth labels, offering an effective trade-off between annotation cost and accuracy. Extensive experiments demonstrate that MetaOcc under full supervision achieves state-of-the-art performance, outperforming previous methods by +0.47 SC IoU and +4.02 mIoU on the OmniHD-Scenes dataset, and by +1.16 SC IoU and +1.24 mIoU on the SurroundOcc-nuScenes dataset. These results demonstrate the scalability and robustness of MetaOcc across sensor domains and training conditions, paving the way for practical deployment in real-world autonomous systems. Code and data are available at https://github.com/LucasYang567/MetaOcc.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-07T10:39:28Z
+                    <strong>Updated:</strong> 2025-08-08T02:34:29Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CV</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2501.15384v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2501.15384v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2501.15384v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2501.15384v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
