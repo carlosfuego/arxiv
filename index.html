@@ -2485,13 +2485,13 @@
                     <strong>Summary:</strong> Modern configurable systems offer customization via intricate configuration spaces, yet such flexibility introduces pervasive configuration-related issues such as misconfigurations and latent softwarebugs. Existing diagnosability supports focus on post-failure analysis of software behavior to identify configuration issues, but none of these approaches look into whether the software clue sufficient failure information for diagnosis. To fill in the blank, we propose the idea of configuration logging to enhance existing logging practices at the source code level. We develop ConfLogger, the first tool that unifies configuration-aware static taint analysis with LLM-based log generation to enhance software configuration diagnosability. Specifically, our method 1) identifies configuration-sensitive code segments by tracing configuration-related data flow in the whole project, and 2) generates diagnostic log statements by analyzing configuration code contexts. Evaluation results on eight popular software systems demonstrate the effectiveness of ConfLogger to enhance configuration diagnosability. Specifically, ConfLogger-enhanced logs successfully aid a log-based misconfiguration diagnosis tool to achieve 100% accuracy on error localization in 30 silent misconfiguration scenarios, with 80% directly resolvable through explicit configuration information exposed. In addition, ConfLogger achieves 74% coverage of existing logging points, outperforming baseline LLM-based loggers by 12% and 30%. It also gains 8.6% higher in precision, 79.3% higher in recall, and 26.2% higher in F1 compared to the state-of-the-art baseline in terms of variable logging while also augmenting diagnostic value. A controlled user study on 22 cases further validated its utility, speeding up diagnostic time by 1.25x and improving troubleshooting accuracy by 251.4%.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-28T16:31:08Z
+                    <strong>Updated:</strong> 2025-08-29T01:33:26Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SE</span>
                 </div>
                 <div class="links">
-                    <a href='http://dx.doi.org/10.1145/3744916.3764570' target='_blank'>doi</a><a href='http://arxiv.org/abs/2508.20977v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.20977v1' target='_blank'>pdf</a>
+                    <a href='http://dx.doi.org/10.1145/3744916.3764570' target='_blank'>doi</a><a href='http://arxiv.org/abs/2508.20977v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.20977v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2995,13 +2995,13 @@
                     <strong>Summary:</strong> Large Language Models (LLMs) are increasingly being integrated into the scientific peer-review process, raising new questions about their reliability and resilience to manipulation. In this work, we investigate the potential for hidden prompt injection attacks, where authors embed adversarial text within a paper's PDF to influence the LLM-generated review. We begin by formalising three distinct threat models that envision attackers with different motivations -- not all of which implying malicious intent. For each threat model, we design adversarial prompts that remain invisible to human readers yet can steer an LLM's output toward the author's desired outcome. Using a user study with domain scholars, we derive four representative reviewing prompts used to elicit peer reviews from LLMs. We then evaluate the robustness of our adversarial prompts across (i) different reviewing prompts, (ii) different commercial LLM-based systems, and (iii) different peer-reviewed papers. Our results show that adversarial prompts can reliably mislead the LLM, sometimes in ways that adversely affect a "honest-but-lazy" reviewer. Finally, we propose and empirically assess methods to reduce detectability of adversarial prompts under automated content checks.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-28T14:57:04Z
+                    <strong>Updated:</strong> 2025-08-29T09:37:59Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CR</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2508.20863v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.20863v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2508.20863v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.20863v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3317,7 +3317,7 @@
                     <strong>Tags:</strong> <span>astro-ph.CO</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2508.20769v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.20769v1' target='_blank'>pdf</a>
+                    <a href='http://dx.doi.org/10.1038/s41598-025-13426-0' target='_blank'>doi</a><a href='http://arxiv.org/abs/2508.20769v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.20769v1' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3761,7 +3761,27 @@
             </div>
             
             <div class="paper">
-                <h2>#89 Prediction of EDS Maps from 4DSTEM Diffraction Patterns Using
+                <h2>#89 Extreme Learning Machine for the Characterization of Anomalous Diffusion
+  from Single Trajectories (AnDi-ELM)</h2>
+                <div class="authors">
+                    <strong>Authors:</strong> Carlo Manzo
+                </div>
+                <div class="summary">
+                    <strong>Summary:</strong> The study of the dynamics of natural and artificial systems has provided several examples of deviations from Brownian behavior, generally defined as anomalous diffusion. The investigation of these dynamics can provide a better understanding of diffusing objects and their surrounding media, but a quantitative characterization from individual trajectories is often challenging. Efforts devoted to improving anomalous diffusion detection using classical statistics and machine learning have produced several new methods. Recently, the anomalous diffusion challenge (AnDi, www.andi-challenge.org) was launched to objectively assess these approaches on a common dataset, focusing on three aspects of anomalous diffusion: the inference of the anomalous diffusion exponent; the classification of the diffusion model; and the segmentation of trajectories. In this article, I describe a simple approach to tackle the tasks of the AnDi challenge by combining extreme learning machine and feature engineering (AnDi-ELM). The method reaches satisfactory performance while offering a straightforward implementation and fast training time with limited computing resources, making it a suitable tool for fast preliminary screening of anomalous diffusion.
+                </div>
+                <div class="updated">
+                    <strong>Updated:</strong> 2025-08-28T11:03:40Z
+                </div>
+                <div class="tags">
+                    <strong>Tags:</strong> <span>physics.data-an</span><span>physics.bio-ph</span><span>q-bio.QM</span><span>stat.ML</span>
+                </div>
+                <div class="links">
+                    <a href='http://dx.doi.org/10.1088/1751-8121/ac13dd' target='_blank'>doi</a><a href='http://arxiv.org/abs/2105.02597v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2105.02597v2' target='_blank'>pdf</a>
+                </div>
+            </div>
+            
+            <div class="paper">
+                <h2>#90 Prediction of EDS Maps from 4DSTEM Diffraction Patterns Using
   Convolutional Neural Networks</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Mridul Kumar, Yevgeny Rakita
@@ -3781,7 +3801,7 @@
             </div>
             
             <div class="paper">
-                <h2>#90 Compositionality in Time Series: A Proof of Concept using Symbolic
+                <h2>#91 Compositionality in Time Series: A Proof of Concept using Symbolic
   Dynamics and Compositional Data Augmentation</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Michael Hagmann, Michael Staniek, Stefan Riezler
@@ -3801,7 +3821,7 @@
             </div>
             
             <div class="paper">
-                <h2>#91 Improving Alignment in LVLMs with Debiased Self-Judgment</h2>
+                <h2>#92 Improving Alignment in LVLMs with Debiased Self-Judgment</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Sihan Yang, Chenhang Cui, Zihao Zhao, Yiyang Zhou, Weilong Yan, Ying Wei, Huaxiu Yao
                 </div>
@@ -3820,27 +3840,27 @@
             </div>
             
             <div class="paper">
-                <h2>#92 Refining Text Generation for Realistic Conversational Recommendation via
+                <h2>#93 Refining Text Generation for Realistic Conversational Recommendation via
   Direct Preference Optimization</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Manato Tajiri, Michimasa Inaba
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Conversational Recommender Systems (CRSs) aim to elicit user preferences via natural dialogue to provide suitable item recommendations. However, current CRSs often deviate from realistic human interactions by rapidly recommending items in brief sessions. This work addresses this gap by leveraging Large Language Models (LLMs) to generate dialogue summaries from dialogue history and item recommendation information from item description. This approach enables the extraction of both explicit user statements and implicit preferences inferred from the dialogue context. We introduce a method using Direct Preference Optimization (DPO) to ensure dialogue summary and item recommendation information are rich in information crucial for effective recommendations. Experiments on two public datasets validate our method's effectiveness in fostering more natural and realistic conversational recommendation processes.Our implementation is publicly available at: https://github.com/UEC-InabaLab/Refining-LLM-Text
+                    <strong>Summary:</strong> Conversational Recommender Systems (CRSs) aim to elicit user preferences via natural dialogue to provide suitable item recommendations. However, current CRSs often deviate from realistic human interactions by rapidly recommending items in brief sessions. This work addresses this gap by leveraging Large Language Models (LLMs) to generate dialogue summaries from dialogue history and item recommendation information from item description. This approach enables the extraction of both explicit user statements and implicit preferences inferred from the dialogue context. We introduce a method using Direct Preference Optimization (DPO) to ensure dialogue summary and item recommendation information are rich in information crucial for effective recommendations. Experiments on two public datasets validate our method's effectiveness in fostering more natural and realistic conversational recommendation processes. Our implementation is publicly available at: https://github.com/UEC-InabaLab/Refining-LLM-Text
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-28T10:57:36Z
+                    <strong>Updated:</strong> 2025-08-29T02:12:05Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.IR</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2508.19918v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.19918v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2508.19918v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.19918v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
             <div class="paper">
-                <h2>#93 CyberSleuth: Autonomous Blue-Team LLM Agent for Web Attack Forensics</h2>
+                <h2>#94 CyberSleuth: Autonomous Blue-Team LLM Agent for Web Attack Forensics</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Stefano Fumero, Kai Huang, Matteo Boffa, Danilo Giordano, Marco Mellia, Zied Ben Houidi, Dario Rossi
                 </div>
@@ -3859,7 +3879,7 @@
             </div>
             
             <div class="paper">
-                <h2>#94 Emergent dynamics of active elastic microbeams</h2>
+                <h2>#95 Emergent dynamics of active elastic microbeams</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Q. Martinet, Y. Li, A. Aubret, E. Hannezo, J. Palacci
                 </div>
@@ -3878,7 +3898,7 @@
             </div>
             
             <div class="paper">
-                <h2>#95 GDS Agent: A Graph Algorithmic Reasoning Agent</h2>
+                <h2>#96 GDS Agent: A Graph Algorithmic Reasoning Agent</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Borun Shi, Ioannis Panagiotas
                 </div>
@@ -3897,7 +3917,7 @@
             </div>
             
             <div class="paper">
-                <h2>#96 Schema-Guided Response Generation using Multi-Frame Dialogue State for
+                <h2>#97 Schema-Guided Response Generation using Multi-Frame Dialogue State for
   Motivational Interviewing Systems</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Jie Zeng, Yukiko I. Nakano
@@ -3917,7 +3937,7 @@
             </div>
             
             <div class="paper">
-                <h2>#97 Continuously Steering LLMs Sensitivity to Contextual Knowledge with
+                <h2>#98 Continuously Steering LLMs Sensitivity to Contextual Knowledge with
   Proxy Models</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Yilin Wang, Heng Wang, Yuyang Bai, Minnan Luo
@@ -3937,7 +3957,7 @@
             </div>
             
             <div class="paper">
-                <h2>#98 Revisiting the Privacy Risks of Split Inference: A GAN-Based Data
+                <h2>#99 Revisiting the Privacy Risks of Split Inference: A GAN-Based Data
   Reconstruction Attack via Progressive Feature Optimization</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Yixiang Qiu, Yanhan Liu, Hongyao Yu, Hao Fang, Bin Chen, Shu-Tao Xia, Ke Xu
@@ -3957,7 +3977,7 @@
             </div>
             
             <div class="paper">
-                <h2>#99 DART: Distilling Autoregressive Reasoning to Silent Thought</h2>
+                <h2>#100 DART: Distilling Autoregressive Reasoning to Silent Thought</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Nan Jiang, Ziming Wu, De-Chuan Zhan, Fuming Lai, Shaobing Lian
                 </div>
@@ -3972,26 +3992,6 @@
                 </div>
                 <div class="links">
                     <a href='http://arxiv.org/abs/2506.11752v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.11752v2' target='_blank'>pdf</a>
-                </div>
-            </div>
-            
-            <div class="paper">
-                <h2>#100 VLMEvalKit: An Open-Source Toolkit for Evaluating Large Multi-Modality
-  Models</h2>
-                <div class="authors">
-                    <strong>Authors:</strong> Haodong Duan, Xinyu Fang, Junming Yang, Xiangyu Zhao, Yuxuan Qiao, Mo Li, Amit Agarwal, Zhe Chen, Lin Chen, Yuan Liu, Yubo Ma, Hailong Sun, Yifan Zhang, Shiyin Lu, Tack Hwa Wong, Weiyun Wang, Peiheng Zhou, Xiaozhe Li, Chaoyou Fu, Junbo Cui, Jixuan Chen, Enxin Song, Song Mao, Shengyuan Ding, Tianhao Liang, Zicheng Zhang, Xiaoyi Dong, Yuhang Zang, Pan Zhang, Jiaqi Wang, Dahua Lin, Kai Chen
-                </div>
-                <div class="summary">
-                    <strong>Summary:</strong> We present VLMEvalKit: an open-source toolkit for evaluating large multi-modality models based on PyTorch. The toolkit aims to provide a user-friendly and comprehensive framework for researchers and developers to evaluate existing multi-modality models and publish reproducible evaluation results. In VLMEvalKit, we implement over 200+ different large multi-modality models, including both proprietary APIs and open-source models, as well as more than 80 different multi-modal benchmarks. By implementing a single interface, new models can be easily added to the toolkit, while the toolkit automatically handles the remaining workloads, including data preparation, distributed inference, prediction post-processing, and metric calculation. Although the toolkit is currently mainly used for evaluating large vision-language models, its design is compatible with future updates that incorporate additional modalities, such as audio and video. Based on the evaluation results obtained with the toolkit, we host OpenVLM Leaderboard, a comprehensive leaderboard to track the progress of multi-modality learning research. The toolkit is released on https://github.com/open-compass/VLMEvalKit and is actively maintained.
-                </div>
-                <div class="updated">
-                    <strong>Updated:</strong> 2025-08-28T09:40:49Z
-                </div>
-                <div class="tags">
-                    <strong>Tags:</strong> <span>cs.CV</span>
-                </div>
-                <div class="links">
-                    <a href='http://arxiv.org/abs/2407.11691v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2407.11691v4' target='_blank'>pdf</a>
                 </div>
             </div>
             <h1>Keyword: LLM Deployment</h1>
@@ -4337,13 +4337,13 @@
                     <strong>Summary:</strong> Modern configurable systems offer customization via intricate configuration spaces, yet such flexibility introduces pervasive configuration-related issues such as misconfigurations and latent softwarebugs. Existing diagnosability supports focus on post-failure analysis of software behavior to identify configuration issues, but none of these approaches look into whether the software clue sufficient failure information for diagnosis. To fill in the blank, we propose the idea of configuration logging to enhance existing logging practices at the source code level. We develop ConfLogger, the first tool that unifies configuration-aware static taint analysis with LLM-based log generation to enhance software configuration diagnosability. Specifically, our method 1) identifies configuration-sensitive code segments by tracing configuration-related data flow in the whole project, and 2) generates diagnostic log statements by analyzing configuration code contexts. Evaluation results on eight popular software systems demonstrate the effectiveness of ConfLogger to enhance configuration diagnosability. Specifically, ConfLogger-enhanced logs successfully aid a log-based misconfiguration diagnosis tool to achieve 100% accuracy on error localization in 30 silent misconfiguration scenarios, with 80% directly resolvable through explicit configuration information exposed. In addition, ConfLogger achieves 74% coverage of existing logging points, outperforming baseline LLM-based loggers by 12% and 30%. It also gains 8.6% higher in precision, 79.3% higher in recall, and 26.2% higher in F1 compared to the state-of-the-art baseline in terms of variable logging while also augmenting diagnostic value. A controlled user study on 22 cases further validated its utility, speeding up diagnostic time by 1.25x and improving troubleshooting accuracy by 251.4%.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-28T16:31:08Z
+                    <strong>Updated:</strong> 2025-08-29T01:33:26Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SE</span>
                 </div>
                 <div class="links">
-                    <a href='http://dx.doi.org/10.1145/3744916.3764570' target='_blank'>doi</a><a href='http://arxiv.org/abs/2508.20977v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.20977v1' target='_blank'>pdf</a>
+                    <a href='http://dx.doi.org/10.1145/3744916.3764570' target='_blank'>doi</a><a href='http://arxiv.org/abs/2508.20977v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.20977v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4826,13 +4826,13 @@
                     <strong>Summary:</strong> Large Language Models (LLMs) are increasingly being integrated into the scientific peer-review process, raising new questions about their reliability and resilience to manipulation. In this work, we investigate the potential for hidden prompt injection attacks, where authors embed adversarial text within a paper's PDF to influence the LLM-generated review. We begin by formalising three distinct threat models that envision attackers with different motivations -- not all of which implying malicious intent. For each threat model, we design adversarial prompts that remain invisible to human readers yet can steer an LLM's output toward the author's desired outcome. Using a user study with domain scholars, we derive four representative reviewing prompts used to elicit peer reviews from LLMs. We then evaluate the robustness of our adversarial prompts across (i) different reviewing prompts, (ii) different commercial LLM-based systems, and (iii) different peer-reviewed papers. Our results show that adversarial prompts can reliably mislead the LLM, sometimes in ways that adversely affect a "honest-but-lazy" reviewer. Finally, we propose and empirically assess methods to reduce detectability of adversarial prompts under automated content checks.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-28T14:57:04Z
+                    <strong>Updated:</strong> 2025-08-29T09:37:59Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CR</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2508.20863v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.20863v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2508.20863v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.20863v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5440,13 +5440,13 @@
                     <strong>Summary:</strong> Traversing narrow beams is challenging for humanoids due to sparse, safety-critical contacts and the fragility of purely learned policies. We propose a physically grounded, two-stage framework that couples an XCoM/LIPM footstep template with a lightweight residual planner and a simple low-level tracker. Stage-1 is trained on flat ground: the tracker learns to robustly follow footstep targets by adding small random perturbations to heuristic footsteps, without any hand-crafted centerline locking, so it acquires stable contact scheduling and strong target-tracking robustness. Stage-2 is trained in simulation on a beam: a high-level planner predicts a body-frame residual (Delta x, Delta y, Delta psi) for the swing foot only, refining the template step to prioritize safe, precise placement under narrow support while preserving interpretability. To ease deployment, sensing is kept minimal and consistent between simulation and hardware: the planner consumes compact, forward-facing elevation cues together with onboard IMU and joint signals. On a Unitree G1, our system reliably traverses a 0.2 m-wide, 3 m-long beam. Across simulation and real-world studies, residual refinement consistently outperforms template-only and monolithic baselines in success rate, centerline adherence, and safety margins, while the structured footstep interface enables transparent analysis and low-friction sim-to-real transfer.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-28T11:09:19Z
+                    <strong>Updated:</strong> 2025-08-29T11:00:18Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.RO</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2508.20661v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.20661v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2508.20661v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.20661v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5496,16 +5496,16 @@
                     <strong>Authors:</strong> Manato Tajiri, Michimasa Inaba
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Conversational Recommender Systems (CRSs) aim to elicit user preferences via natural dialogue to provide suitable item recommendations. However, current CRSs often deviate from realistic human interactions by rapidly recommending items in brief sessions. This work addresses this gap by leveraging Large Language Models (LLMs) to generate dialogue summaries from dialogue history and item recommendation information from item description. This approach enables the extraction of both explicit user statements and implicit preferences inferred from the dialogue context. We introduce a method using Direct Preference Optimization (DPO) to ensure dialogue summary and item recommendation information are rich in information crucial for effective recommendations. Experiments on two public datasets validate our method's effectiveness in fostering more natural and realistic conversational recommendation processes.Our implementation is publicly available at: https://github.com/UEC-InabaLab/Refining-LLM-Text
+                    <strong>Summary:</strong> Conversational Recommender Systems (CRSs) aim to elicit user preferences via natural dialogue to provide suitable item recommendations. However, current CRSs often deviate from realistic human interactions by rapidly recommending items in brief sessions. This work addresses this gap by leveraging Large Language Models (LLMs) to generate dialogue summaries from dialogue history and item recommendation information from item description. This approach enables the extraction of both explicit user statements and implicit preferences inferred from the dialogue context. We introduce a method using Direct Preference Optimization (DPO) to ensure dialogue summary and item recommendation information are rich in information crucial for effective recommendations. Experiments on two public datasets validate our method's effectiveness in fostering more natural and realistic conversational recommendation processes. Our implementation is publicly available at: https://github.com/UEC-InabaLab/Refining-LLM-Text
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-28T10:57:36Z
+                    <strong>Updated:</strong> 2025-08-29T02:12:05Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.IR</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2508.19918v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.19918v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2508.19918v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2508.19918v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5952,13 +5952,13 @@
                     <strong>Summary:</strong> Retrieval-Augmented Generation (RAG) enriches the input to LLMs by retrieving information from the relevant knowledge database, enabling them to produce responses that are more accurate and contextually appropriate. It is worth noting that the knowledge database, being sourced from publicly available channels such as Wikipedia, inevitably introduces a new attack surface. RAG poisoning involves injecting malicious texts into the knowledge database, ultimately leading to the generation of the attacker's target response (also called poisoned response). However, there are currently limited methods available for detecting such poisoning attacks. We aim to bridge the gap in this work. Particularly, we introduce RevPRAG, a flexible and automated detection pipeline that leverages the activations of LLMs for poisoned response detection. Our investigation uncovers distinct patterns in LLMs' activations when generating correct responses versus poisoned responses. Our results on multiple benchmark datasets and RAG architectures show our approach could achieve 98% true positive rate, while maintaining false positive rates close to 1%.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-08-28T08:03:54Z
+                    <strong>Updated:</strong> 2025-08-29T06:03:42Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CR</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2411.18948v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2411.18948v4' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2411.18948v5' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2411.18948v5' target='_blank'>pdf</a>
                 </div>
             </div>
             
