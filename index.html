@@ -2295,13 +2295,13 @@
                     <strong>Summary:</strong> Zero-shot Text-to-Speech (TTS) aims to synthesize high-quality speech that mimics the voice of an unseen speaker using only a short reference sample, requiring not only speaker adaptation but also accurate modeling of prosodic attributes. Recent approaches based on language models, diffusion, and flow matching have shown promising results in zero-shot TTS, but still suffer from slow inference and repetition artifacts. Discrete codec representations have been widely adopted for speech synthesis, and recent works have begun to explore diffusion models in purely discrete settings, suggesting the potential of discrete generative modeling for speech synthesis. However, existing flow-matching methods typically embed these discrete tokens into a continuous space and apply continuous flow matching, which may not fully leverage the advantages of discrete representations. To address these challenges, we introduce DiFlow-TTS, which, to the best of our knowledge, is the first model to explore purely Discrete Flow Matching for speech synthesis. DiFlow-TTS explicitly models factorized speech attributes within a compact and unified architecture. It leverages in-context learning by conditioning on textual content, along with prosodic and acoustic attributes extracted from a reference speech, enabling effective attribute cloning in a zero-shot setting. In addition, the model employs a factorized flow prediction mechanism with distinct heads for prosody and acoustic details, allowing it to learn aspect-specific distributions. Experimental results demonstrate that DiFlow-TTS achieves promising performance in several key metrics, including naturalness, prosody, preservation of speaker style, and energy control. It also maintains a compact model size and achieves low-latency inference, generating speech up to 25.8 times faster than the latest existing baselines.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-11T17:16:52Z
+                    <strong>Updated:</strong> 2025-09-12T01:59:18Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SD</span><span>cs.CL</span><span>cs.CV</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.09631v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.09631v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.09631v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.09631v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2625,19 +2625,19 @@
                 <h2>#31 Finite Scalar Quantization Enables Redundant and Transmission-Robust
   Neural Audio Compression at Low Bit-rates</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Harry Julia, Rachel Beeson, Lohith Konathala, Johanna Ulin, Jiameng Gao
+                    <strong>Authors:</strong> Harry Julian, Rachel Beeson, Lohith Konathala, Johanna Ulin, Jiameng Gao
                 </div>
                 <div class="summary">
                     <strong>Summary:</strong> Neural Audio Codecs (NACs) have become increasingly adopted in speech processing tasks due to their excellent rate-distortion performance and compatibility with Large Language Models (LLMs) as discrete feature representations for audio generation. While most existing codecs rely on Residual Vector Quantization (RVQ), Finite Scalar Quantization (FSQ) has recently emerged as a compelling alternative that simplifies training and natively supports single codebooks. We introduce NeuCodec, an FSQ-based NAC, and show that FSQ encodes baked-in redundancy which produces an encoding which is robust when transmitted through noisy channels. First, through an encoder distillation experiment, we show that two different encoders can learn to encode identical audio into vastly different code sequences whilst maintaining comparable reconstruction quality with the same quantizer and decoder. Second, we demonstrate that FSQ has vastly superior bit-level perturbation robustness by comparing the performance of RVQ and FSQ codecs when simulating the transmission of code sequences through a noisy channel.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-11T15:39:59Z
+                    <strong>Updated:</strong> 2025-09-12T06:43:25Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SD</span><span>cs.LG</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.09550v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.09550v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.09550v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.09550v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3129,13 +3129,13 @@
                     <strong>Summary:</strong> The approaches that guide Large Language Models (LLMs) to emulate human reasoning during response generation have emerged as an effective method for enabling them to solve complex problems in a step-by-step manner, thereby achieving superior performance. However, most existing approaches using few-shot prompts to generate responses heavily depend on the provided examples, limiting the utilization of the model's inherent reasoning capabilities. Moreover, constructing task-specific few-shot prompts is often costly and may lead to inconsistencies across different tasks. In this work, we introduce Template-Oriented Reasoning (TORSO), which elicits the model to utilize internal reasoning abilities to generate proper responses across various tasks without the need for manually crafted few-shot examples. Our experimental results demonstrate that TORSO achieves strong performance on diverse LLMs benchmarks with reasonable rationales.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-11T13:31:35Z
+                    <strong>Updated:</strong> 2025-09-12T14:00:08Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.09448v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.09448v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.09448v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.09448v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3174,7 +3174,7 @@
                     <strong>Tags:</strong> <span>astro-ph.IM</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2504.06174v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2504.06174v3' target='_blank'>pdf</a>
+                    <a href='http://dx.doi.org/10.33232/001c.144313' target='_blank'>doi</a><a href='http://arxiv.org/abs/2504.06174v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2504.06174v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3846,13 +3846,13 @@
                     <strong>Summary:</strong> Large language models (LLMs) possess broad world knowledge and strong general-purpose reasoning ability, yet they struggle to learn from many in-context examples on standard machine learning (ML) tasks, that is, to leverage many-shot demonstrations purely via in-context learning (ICL) without gradient descent. We introduce MachineLearningLM, a portable continued-pretraining framework that equips a general-purpose LLM with robust in-context ML capability while preserving its general knowledge and reasoning for broader chat workflows.   Our pretraining procedure synthesizes ML tasks from millions of structural causal models (SCMs), spanning shot counts up to 1,024. We begin with a random-forest teacher, distilling tree-based decision strategies into the LLM to strengthen robustness in numerical modeling. All tasks are serialized with a token-efficient prompt, enabling 3x to 6x more examples per context window and delivering up to 50x amortized throughput via batch inference.   Despite a modest setup (Qwen-2.5-7B-Instruct with LoRA rank 8), MachineLearningLM outperforms strong LLM baselines (e.g., GPT-5-mini) by an average of about 15% on out-of-distribution tabular classification across finance, physics, biology, and healthcare domains. It exhibits a striking many-shot scaling law: accuracy increases monotonically as in-context demonstrations grow from 8 to 1,024. Without any task-specific training, it attains random-forest-level accuracy across hundreds of shots. General chat capabilities, including knowledge and reasoning, are preserved: it achieves 75.4% on MMLU.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-11T09:37:46Z
+                    <strong>Updated:</strong> 2025-09-12T13:11:51Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.06806v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.06806v3' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.06806v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.06806v4' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4476,19 +4476,19 @@
                 <h2>#24 Finite Scalar Quantization Enables Redundant and Transmission-Robust
   Neural Audio Compression at Low Bit-rates</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Harry Julia, Rachel Beeson, Lohith Konathala, Johanna Ulin, Jiameng Gao
+                    <strong>Authors:</strong> Harry Julian, Rachel Beeson, Lohith Konathala, Johanna Ulin, Jiameng Gao
                 </div>
                 <div class="summary">
                     <strong>Summary:</strong> Neural Audio Codecs (NACs) have become increasingly adopted in speech processing tasks due to their excellent rate-distortion performance and compatibility with Large Language Models (LLMs) as discrete feature representations for audio generation. While most existing codecs rely on Residual Vector Quantization (RVQ), Finite Scalar Quantization (FSQ) has recently emerged as a compelling alternative that simplifies training and natively supports single codebooks. We introduce NeuCodec, an FSQ-based NAC, and show that FSQ encodes baked-in redundancy which produces an encoding which is robust when transmitted through noisy channels. First, through an encoder distillation experiment, we show that two different encoders can learn to encode identical audio into vastly different code sequences whilst maintaining comparable reconstruction quality with the same quantizer and decoder. Second, we demonstrate that FSQ has vastly superior bit-level perturbation robustness by comparing the performance of RVQ and FSQ codecs when simulating the transmission of code sequences through a noisy channel.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-11T15:39:59Z
+                    <strong>Updated:</strong> 2025-09-12T06:43:25Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SD</span><span>cs.LG</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.09550v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.09550v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.09550v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.09550v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4861,13 +4861,13 @@
                     <strong>Summary:</strong> The approaches that guide Large Language Models (LLMs) to emulate human reasoning during response generation have emerged as an effective method for enabling them to solve complex problems in a step-by-step manner, thereby achieving superior performance. However, most existing approaches using few-shot prompts to generate responses heavily depend on the provided examples, limiting the utilization of the model's inherent reasoning capabilities. Moreover, constructing task-specific few-shot prompts is often costly and may lead to inconsistencies across different tasks. In this work, we introduce Template-Oriented Reasoning (TORSO), which elicits the model to utilize internal reasoning abilities to generate proper responses across various tasks without the need for manually crafted few-shot examples. Our experimental results demonstrate that TORSO achieves strong performance on diverse LLMs benchmarks with reasonable rationales.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-11T13:31:35Z
+                    <strong>Updated:</strong> 2025-09-12T14:00:08Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.09448v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.09448v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.09448v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.09448v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5436,13 +5436,13 @@
                     <strong>Summary:</strong> Large language models (LLMs) possess broad world knowledge and strong general-purpose reasoning ability, yet they struggle to learn from many in-context examples on standard machine learning (ML) tasks, that is, to leverage many-shot demonstrations purely via in-context learning (ICL) without gradient descent. We introduce MachineLearningLM, a portable continued-pretraining framework that equips a general-purpose LLM with robust in-context ML capability while preserving its general knowledge and reasoning for broader chat workflows.   Our pretraining procedure synthesizes ML tasks from millions of structural causal models (SCMs), spanning shot counts up to 1,024. We begin with a random-forest teacher, distilling tree-based decision strategies into the LLM to strengthen robustness in numerical modeling. All tasks are serialized with a token-efficient prompt, enabling 3x to 6x more examples per context window and delivering up to 50x amortized throughput via batch inference.   Despite a modest setup (Qwen-2.5-7B-Instruct with LoRA rank 8), MachineLearningLM outperforms strong LLM baselines (e.g., GPT-5-mini) by an average of about 15% on out-of-distribution tabular classification across finance, physics, biology, and healthcare domains. It exhibits a striking many-shot scaling law: accuracy increases monotonically as in-context demonstrations grow from 8 to 1,024. Without any task-specific training, it attains random-forest-level accuracy across hundreds of shots. General chat capabilities, including knowledge and reasoning, are preserved: it achieves 75.4% on MMLU.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-11T09:37:46Z
+                    <strong>Updated:</strong> 2025-09-12T13:11:51Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.06806v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.06806v3' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.06806v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.06806v4' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5916,7 +5916,7 @@
                     <strong>Updated:</strong> 2025-09-11T06:27:10Z
                 </div>
                 <div class="tags">
-                    <strong>Tags:</strong> <span>cs.LG</span>
+                    <strong>Tags:</strong> <span>cs.LG</span><span>cs.AI</span><span>cs.CL</span>
                 </div>
                 <div class="links">
                     <a href='http://arxiv.org/abs/2509.09177v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.09177v1' target='_blank'>pdf</a>
