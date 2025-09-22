@@ -3043,13 +3043,13 @@
                     <strong>Summary:</strong> The ultimate goal of embodied agents is to create collaborators that can interact with humans, not mere executors that passively follow instructions. This requires agents to communicate, coordinate, and adapt their actions based on human feedback. Recently, advances in VLAs have offered a path toward this goal. However, most current VLA-based embodied agents operate in a one-way mode: they receive an instruction and execute it without feedback. This approach fails in real-world scenarios where instructions are often ambiguous. In this paper, we address this problem with the Ask-to-Clarify framework. Our framework first resolves ambiguous instructions by asking questions in a multi-turn dialogue. Then it generates low-level actions end-to-end. Specifically, the Ask-to-Clarify framework consists of two components, one VLM for collaboration and one diffusion for action. We also introduce a connection module that generates conditions for the diffusion based on the output of the VLM. This module adjusts the observation by instructions to create reliable conditions. We train our framework with a two-stage knowledge-insulation strategy. First, we fine-tune the collaboration component using ambiguity-solving dialogue data to handle ambiguity. Then, we integrate the action component while freezing the collaboration one. This preserves the interaction abilities while fine-tuning the diffusion to generate actions. The training strategy guarantees our framework can first ask questions, then generate actions. During inference, a signal detector functions as a router that helps our framework switch between asking questions and taking actions. We evaluate the Ask-to-Clarify framework in 8 real-world tasks, where it outperforms existing state-of-the-art VLAs. The results suggest that our proposed framework, along with the training strategy, provides a path toward collaborative embodied agents.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-18T15:25:31Z
+                    <strong>Updated:</strong> 2025-09-19T04:16:06Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.RO</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.15061v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.15061v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.15061v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.15061v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3280,13 +3280,13 @@
                     <strong>Summary:</strong> Using Large Language Models (LLMs) to generate semantic features has been demonstrated as a powerful paradigm for enhancing Sequential Recommender Systems (SRS). This typically involves three stages: processing item text, extracting features with LLMs, and adapting them for downstream models. However, existing methods vary widely in prompting, architecture, and adaptation strategies, making it difficult to fairly compare design choices and identify what truly drives performance. In this work, we propose RecXplore, a modular analytical framework that decomposes the LLM-as-feature-extractor pipeline into four modules: data processing, semantic feature extraction, feature adaptation, and sequential modeling. Instead of proposing new techniques, RecXplore revisits and organizes established methods, enabling systematic exploration of each module in isolation. Experiments on four public datasets show that simply combining the best designs from existing techniques without exhaustive search yields up to 18.7% relative improvement in NDCG@5 and 12.7% in HR@5 over strong baselines. These results underscore the utility of modular benchmarking for identifying effective design patterns and promoting standardized research in LLM-enhanced recommendation.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-18T14:08:45Z
+                    <strong>Updated:</strong> 2025-09-19T04:12:05Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.IR</span><span>H.3.3; I.2.6; I.2.7</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.14979v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14979v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.14979v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14979v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3791,13 +3791,13 @@
                     <strong>Summary:</strong> Advances in self-supervised encoders have improved Visual Speech Recognition (VSR). Recent approaches integrating these encoders with LLM decoders improves transcription accuracy; however, it remains unclear whether these gains stem from visual understanding or stronger language modeling. In this work, we systematically evaluate LLM decoders by freezing or selectively updating the visual encoder, scaling decoder size, comparing adaptation strategies and architectures, and varying training data across LRS2, LRS3, and their combination. Evaluation on LRS2, LRS3, and WildVSR shows that scaling and adaptation yield limited improvements, while combining datasets enhances generalization. Semantic analysis reveals that gains arise primarily from lexical rather than semantic processing. Our Llama-2-13B model trained on the combined set achieves 24.7\% WER on LRS3 and 47.0\% on WildVSR, establishing SOTA among models trained without additional supervision. Our findings indicate LLM decoders refine contextual reasoning rather than visual features, emphasizing the need for stronger visual encoders to drive meaningful progress.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-18T11:51:20Z
+                    <strong>Updated:</strong> 2025-09-19T09:56:48Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SD</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.14880v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14880v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.14880v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14880v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3908,16 +3908,16 @@
                     <strong>Authors:</strong> Duojia Li, Shenghui Lu, Hongchen Pan, Zongyi Zhan, Qingyang Hong, Lin Li
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Multistep inference is a bottleneck for real-time generative speech enhancement because flow- and diffusion-based systems learn an instantaneous velocity field and therefore rely on iterative ordinary differential equation (ODE) solvers. We introduce MeanFlowSE, a conditional generative model that learns the average velocity over finite intervals along a trajectory. Using a Jacobian-vector product (JVP) to instantiate the MeanFlow identity, we derive a local training objective that directly supervises finite-interval displacement while remaining consistent with the instantaneous-field constraint on the diagonal. At inference, MeanFlowSE performs single-step generation via a backward-in-time displacement, removing the need for multistep solvers; an optional few-step variant offers additional refinement. On VoiceBank-DEMAND, the single-step model achieves strong intelligibility, fidelity, and perceptual quality with substantially lower computational cost than multistep baselines. The method requires no knowledge distillation or external teachers, providing an efficient, high-fidelity framework for real-time generative speech enhancement.
+                    <strong>Summary:</strong> Multistep inference is a bottleneck for real-time generative speech enhancement because flow- and diffusion-based systems learn an instantaneous velocity field and therefore rely on iterative ordinary differential equation (ODE) solvers. We introduce MeanFlowSE, a conditional generative model that learns the average velocity over finite intervals along a trajectory. Using a Jacobian-vector product (JVP) to instantiate the MeanFlow identity, we derive a local training objective that directly supervises finite-interval displacement while remaining consistent with the instantaneous-field constraint on the diagonal. At inference, MeanFlowSE performs single-step generation via a backward-in-time displacement, removing the need for multistep solvers; an optional few-step variant offers additional refinement. On VoiceBank-DEMAND, the single-step model achieves strong intelligibility, fidelity, and perceptual quality with substantially lower computational cost than multistep baselines. The method requires no knowledge distillation or external teachers, providing an efficient, high-fidelity framework for real-time generative speech enhancement. The proposed method is open-sourced at https://github.com/liduojia1/MeanFlowSE.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-18T11:24:47Z
+                    <strong>Updated:</strong> 2025-09-19T02:25:58Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SD</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.14858v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14858v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.14858v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14858v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3951,13 +3951,13 @@
                     <strong>Summary:</strong> Empathy is critical for effective mental health support, especially when addressing Long Counseling Texts (LCTs). However, existing Large Language Models (LLMs) often generate replies that are semantically fluent but lack the structured reasoning necessary for genuine psychological support, particularly in a Chinese context. To bridge this gap, we introduce Empathy-R1, a novel framework that integrates a Chain-of-Empathy (CoE) reasoning process with Reinforcement Learning (RL) to enhance response quality for LCTs. Inspired by cognitive-behavioral therapy, our CoE paradigm guides the model to sequentially reason about a help-seeker's emotions, causes, and intentions, making its thinking process both transparent and interpretable. Our framework is empowered by a new large-scale Chinese dataset, Empathy-QA, and a two-stage training process. First, Supervised Fine-Tuning instills the CoE's reasoning structure. Subsequently, RL, guided by a dedicated reward model, refines the therapeutic relevance and contextual appropriateness of the final responses. Experiments show that Empathy-R1 achieves strong performance on key automatic metrics. More importantly, human evaluations confirm its superiority, showing a clear preference over strong baselines and achieving a Win@1 rate of 44.30% on our new benchmark. By enabling interpretable and contextually nuanced responses, Empathy-R1 represents a significant advancement in developing responsible and genuinely beneficial AI for mental health support.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-18T11:16:09Z
+                    <strong>Updated:</strong> 2025-09-19T07:24:59Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.14851v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14851v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.14851v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14851v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4898,13 +4898,13 @@
                     <strong>Summary:</strong> Using Large Language Models (LLMs) to generate semantic features has been demonstrated as a powerful paradigm for enhancing Sequential Recommender Systems (SRS). This typically involves three stages: processing item text, extracting features with LLMs, and adapting them for downstream models. However, existing methods vary widely in prompting, architecture, and adaptation strategies, making it difficult to fairly compare design choices and identify what truly drives performance. In this work, we propose RecXplore, a modular analytical framework that decomposes the LLM-as-feature-extractor pipeline into four modules: data processing, semantic feature extraction, feature adaptation, and sequential modeling. Instead of proposing new techniques, RecXplore revisits and organizes established methods, enabling systematic exploration of each module in isolation. Experiments on four public datasets show that simply combining the best designs from existing techniques without exhaustive search yields up to 18.7% relative improvement in NDCG@5 and 12.7% in HR@5 over strong baselines. These results underscore the utility of modular benchmarking for identifying effective design patterns and promoting standardized research in LLM-enhanced recommendation.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-18T14:08:45Z
+                    <strong>Updated:</strong> 2025-09-19T04:12:05Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.IR</span><span>H.3.3; I.2.6; I.2.7</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.14979v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14979v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.14979v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14979v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5254,13 +5254,13 @@
                     <strong>Summary:</strong> Advances in self-supervised encoders have improved Visual Speech Recognition (VSR). Recent approaches integrating these encoders with LLM decoders improves transcription accuracy; however, it remains unclear whether these gains stem from visual understanding or stronger language modeling. In this work, we systematically evaluate LLM decoders by freezing or selectively updating the visual encoder, scaling decoder size, comparing adaptation strategies and architectures, and varying training data across LRS2, LRS3, and their combination. Evaluation on LRS2, LRS3, and WildVSR shows that scaling and adaptation yield limited improvements, while combining datasets enhances generalization. Semantic analysis reveals that gains arise primarily from lexical rather than semantic processing. Our Llama-2-13B model trained on the combined set achieves 24.7\% WER on LRS3 and 47.0\% on WildVSR, establishing SOTA among models trained without additional supervision. Our findings indicate LLM decoders refine contextual reasoning rather than visual features, emphasizing the need for stronger visual encoders to drive meaningful progress.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-18T11:51:20Z
+                    <strong>Updated:</strong> 2025-09-19T09:56:48Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SD</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.14880v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14880v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.14880v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14880v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5354,13 +5354,13 @@
                     <strong>Summary:</strong> Empathy is critical for effective mental health support, especially when addressing Long Counseling Texts (LCTs). However, existing Large Language Models (LLMs) often generate replies that are semantically fluent but lack the structured reasoning necessary for genuine psychological support, particularly in a Chinese context. To bridge this gap, we introduce Empathy-R1, a novel framework that integrates a Chain-of-Empathy (CoE) reasoning process with Reinforcement Learning (RL) to enhance response quality for LCTs. Inspired by cognitive-behavioral therapy, our CoE paradigm guides the model to sequentially reason about a help-seeker's emotions, causes, and intentions, making its thinking process both transparent and interpretable. Our framework is empowered by a new large-scale Chinese dataset, Empathy-QA, and a two-stage training process. First, Supervised Fine-Tuning instills the CoE's reasoning structure. Subsequently, RL, guided by a dedicated reward model, refines the therapeutic relevance and contextual appropriateness of the final responses. Experiments show that Empathy-R1 achieves strong performance on key automatic metrics. More importantly, human evaluations confirm its superiority, showing a clear preference over strong baselines and achieving a Win@1 rate of 44.30% on our new benchmark. By enabling interpretable and contextually nuanced responses, Empathy-R1 represents a significant advancement in developing responsible and genuinely beneficial AI for mental health support.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-18T11:16:09Z
+                    <strong>Updated:</strong> 2025-09-19T07:24:59Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.14851v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14851v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.14851v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14851v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5374,13 +5374,13 @@
                     <strong>Summary:</strong> With the advent of extremely large-scale MIMO (XL-MIMO), mmWave/THz bands and ultra-wideband transmission, future 6G systems demand real-time positioning with centimeter or even millimeter level accuracy. This paper addresses the pronounced near-field beam squint problem caused by phase shifter based beamforming in wideband near-field scenarios and proposes a beam squint assisted joint angle-distance localization scheme. The key idea is to employ true-time-delay (TTD) units together with phase shifters (PS) to synthesize a controllable joint angle-distance (JAD) trajectory that establishes a unique mapping between subcarriers and spatial locations, enabling single scan acquisition of target angle and range. To implement this paradigm efficiently, we design a coarse to fine two stage estimator: a low complexity coarse stage based on subcarrier power peaks for user separation and candidate region selection, followed by a local high resolution refinement stage that applies spatial smoothing and near-field multiple signal classification (MUSIC) over multiple subcarriers and fuses the resulting spectra by geometric averaging to suppress spurious peaks. We theoretically prove the correctness and uniqueness of the MUSIC spatial spectrum peak under the proposed near-field steering model, and derive the Cram\'er-Rao lower bound (CRLB) for joint angle-distance estimation. Simulation results in single and multi-user scenarios validate that the proposed method achieves very high accuracy and robustness, significantly outperforming conventional two-step approaches, and is promising for practical 6G sensing and localization deployments.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-18T11:15:27Z
+                    <strong>Updated:</strong> 2025-09-19T01:35:16Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.IT</span><span>math.IT</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.14850v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14850v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.14850v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14850v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5408,19 +5408,19 @@
                 <h2>#72 LLM Agents at the Roundtable: A Multi-Perspective and Dialectical
   Reasoning Framework for Essay Scoring</h2>
                 <div class="authors">
-                    <strong>Authors:</strong> Jinhee Jang, Ayoung Moon, Minkyoung Jung, YoungBin Kim. Seung Jin Lee
+                    <strong>Authors:</strong> Jinhee Jang, Ayoung Moon, Minkyoung Jung, YoungBin Kim, Seung Jin Lee
                 </div>
                 <div class="summary">
                     <strong>Summary:</strong> The emergence of large language models (LLMs) has brought a new paradigm to automated essay scoring (AES), a long-standing and practical application of natural language processing in education. However, achieving human-level multi-perspective understanding and judgment remains a challenge. In this work, we propose Roundtable Essay Scoring (RES), a multi-agent evaluation framework designed to perform precise and human-aligned scoring under a zero-shot setting. RES constructs evaluator agents based on LLMs, each tailored to a specific prompt and topic context. Each agent independently generates a trait-based rubric and conducts a multi-perspective evaluation. Then, by simulating a roundtable-style discussion, RES consolidates individual evaluations through a dialectical reasoning process to produce a final holistic score that more closely aligns with human evaluation. By enabling collaboration and consensus among agents with diverse evaluation perspectives, RES outperforms prior zero-shot AES approaches. Experiments on the ASAP dataset using ChatGPT and Claude show that RES achieves up to a 34.86% improvement in average QWK over straightforward prompting (Vanilla) methods.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-18T10:55:33Z
+                    <strong>Updated:</strong> 2025-09-19T03:11:00Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.14834v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14834v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.14834v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.14834v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
