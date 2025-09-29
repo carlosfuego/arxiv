@@ -572,13 +572,13 @@
                     <strong>Summary:</strong> Vision-language foundation models (VLMs), such as CLIP, exhibit remarkable performance across a wide range of tasks. However, deploying these models can be unreliable when significant distribution gaps exist between training and test data, while fine-tuning for diverse scenarios is often costly. Cache-based test-time adapters offer an efficient alternative by storing representative test samples to guide subsequent classifications. Yet, these methods typically employ naive cache management with limited capacity, leading to severe catastrophic forgetting when samples are inevitably dropped during updates. In this paper, we propose DOTA (DistributiOnal Test-time Adaptation), a simple yet effective method addressing this limitation. Crucially, instead of merely memorizing individual test samples, DOTA continuously estimates the underlying distribution of the test data stream. Test-time posterior probabilities are then computed using these dynamically estimated distributions via Bayes' theorem for adaptation. This distribution-centric approach enables the model to continually learn and adapt to the deployment environment. Extensive experiments validate that DOTA significantly mitigates forgetting and achieves state-of-the-art performance compared to existing methods.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-23T01:58:07Z
+                    <strong>Updated:</strong> 2025-09-26T03:17:15Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span><span>cs.AI</span><span>cs.CL</span><span>cs.CV</span><span>cs.HC</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2409.19375v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.19375v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2409.19375v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2409.19375v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3169,16 +3169,16 @@
                     <strong>Authors:</strong> Chantal Shaib, Vinith M. Suriyakumar, Levent Sagun, Byron C. Wallace, Marzyeh Ghassemi
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> For an LLM to correctly respond to an instruction it must understand both the semantics and the domain (i.e., subject area) of a given task-instruction pair. However, syntax can also convey implicit information Recent work shows that syntactic templates--frequent sequences of Part-of-Speech (PoS) tags--are prevalent in training data and often appear in model outputs. In this work we characterize syntactic templates, domain, and semantics in task-instruction pairs. We identify cases of spurious correlations between syntax and domain, where models learn to associate a domain with syntax during training; this can sometimes override prompt semantics. Using a synthetic training dataset, we find that the syntactic-domain correlation can lower performance (mean 0.51 +/- 0.06) on entity knowledge tasks in OLMo-2 models (1B-13B). We introduce an evaluation framework to detect this phenomenon in trained models, and show that it occurs on a subset of the FlanV2 dataset in open (OLMo-2-7B; Llama-4-Maverick), and closed (GPT-4o) models. Finally, we present a case study on the implications for safety finetuning, showing that unintended syntactic-domain correlations can be used to bypass refusals in OLMo-2-7B Instruct and GPT-4o. Our findings highlight two needs: (1) to explicitly test for syntactic-domain correlations, and (2) to ensure syntactic diversity in training data, specifically within domains, to prevent such spurious correlations.
+                    <strong>Summary:</strong> For an LLM to correctly respond to an instruction it must understand both the semantics and the domain (i.e., subject area) of a given task-instruction pair. However, syntax can also convey implicit information Recent work shows that syntactic templates -- frequent sequences of Part-of-Speech (PoS) tags -- are prevalent in training data and often appear in model outputs. In this work we characterize syntactic templates, domain, and semantics in task-instruction pairs. We identify cases of spurious correlations between syntax and domain, where models learn to associate a domain with syntax during training; this can sometimes override prompt semantics. Using a synthetic training dataset, we find that the syntactic-domain correlation can lower performance (mean 0.51 +/- 0.06) on entity knowledge tasks in OLMo-2 models (1B-13B). We introduce an evaluation framework to detect this phenomenon in trained models, and show that it occurs on a subset of the FlanV2 dataset in open (OLMo-2-7B; Llama-4-Maverick), and closed (GPT-4o) models. Finally, we present a case study on the implications for safety finetuning, showing that unintended syntactic-domain correlations can be used to bypass refusals in OLMo-2-7B Instruct and GPT-4o. Our findings highlight two needs: (1) to explicitly test for syntactic-domain correlations, and (2) to ensure syntactic diversity in training data, specifically within domains, to prevent such spurious correlations.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-25T13:42:28Z
+                    <strong>Updated:</strong> 2025-09-26T02:37:41Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.21155v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.21155v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.21155v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.21155v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3426,13 +3426,13 @@
                     <strong>Summary:</strong> The adoption of Large Language Models (LLMs) as automated evaluators (LLM-as-a-judge) has revealed critical inconsistencies in current evaluation frameworks. We identify two fundamental types of inconsistencies: (1) Score-Comparison Inconsistency, where lower-rated responses outperform higher-scored ones in pairwise comparisons, and (2) Pairwise Transitivity Inconsistency, manifested through circular preference chains (A>B>C>A) and equivalence contradictions (A=B=C\neq A). We argue that these issues come from information loss in discrete rating systems and ambiguous tie judgments during pairwise evaluation. We propose TrustJudge, a probabilistic framework that addresses these limitations through two key innovations: 1) distribution-sensitive scoring that computes continuous expectations from discrete rating probabilities, preserving information entropy for more precise scoring, and 2) likelihood-aware aggregation that resolves transitivity violations using bidirectional preference probabilities or perplexity. We also formalize the theoretical limitations of current LLM-as-a-judge frameworks and demonstrate how TrustJudge's components overcome them. When evaluated with Llama-3.1-70B-Instruct as judge using our dataset, TrustJudge reduces Score-Comparison inconsistency by 8.43% (from 23.32% to 14.89%) and Pairwise Transitivity inconsistency by 10.82% (from 15.22% to 4.40%), while maintaining higher evaluation accuracy. Our work provides the first systematic analysis of evaluation framework inconsistencies in LLM-as-a-judge paradigms, offering both theoretical insights and practical solutions for reliable automated assessment. The framework demonstrates consistent improvements across various model architectures and scales, enabling more trustworthy LLM evaluation without requiring additional training or human annotations. The codes can be found at https://github.com/TrustJudge/TrustJudge.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-25T13:04:29Z
+                    <strong>Updated:</strong> 2025-09-26T05:33:48Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.21117v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.21117v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.21117v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.21117v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3974,16 +3974,16 @@
                     <strong>Authors:</strong> Zhichao Shi, Xuhui Jiang, Chengjin Xu, Cangli Yao, Zhenxin Huang, Shengjie Ma, Yinghan Shen, Jian Guo, Yuanzhuo Wang
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Current evaluation paradigms for large language models (LLMs) suffer from overestimated or biased evaluation and mismatched question difficulty, leading to incomplete evaluations of LLM's knowledge and capability boundaries, which hinder LLM's effective application and optimization. To address these challenges, we propose Agent-as-Interviewer, a dynamic evaluation paradigm that employs LLM agents to conduct multi-turn interactions for evaluation. Unlike current benchmarking or dynamic interaction paradigms, Agent-as-Interviewer utilizes agents to call knowledge tools for wider and deeper knowledge in the dynamic multi-turn question generation, achieving more complete evaluations of the LLM's knowledge boundaries. It also leverages agents to plan query strategies for adjustment of the question difficulty levels, enhancing the difficulty control to match the actual capabilities of target LLMs. Based on this paradigm, we develop JudgeAgent, a knowledge-wise dynamic evaluation framework that employs knowledge-driven synthesis as the agent's tool, and uses difficulty scoring as strategy guidance, thereby finally providing valuable suggestions to help targets optimize themselves. Extensive experiments validate the effectiveness of JudgeAgent's suggestions, demonstrating that Agent-as-Interviewer can accurately identify the knowledge and capability boundaries of target models. The source code is available on https://anonymous.4open.science/r/JudgeAgent.
+                    <strong>Summary:</strong> Current evaluation paradigms for large language models (LLMs) suffer from overestimated or biased evaluations and mismatched question difficulty, leading to incomplete evaluations of knowledge and capability boundaries, which hinder their effective application and optimization. To address these challenges, we propose Agent-as-Interviewer, a dynamic evaluation paradigm that employs LLM agents to conduct multi-turn interactions for evaluation. Unlike current benchmarking or dynamic interaction paradigms, Agent-as-Interviewer utilizes agents to invoke knowledge tools for wider and deeper knowledge in the dynamic multi-turn question generation, achieving more comprehensive evaluations of LLM's knowledge boundaries. It also leverages agents to plan query strategies for adjustment of the question difficulty levels, enhancing the difficulty control to match the actual capabilities of target LLMs. Based on this paradigm, we develop JudgeAgent, a knowledge-wise dynamic evaluation framework that employs knowledge-driven synthesis as the agent's tool and uses difficulty scoring as strategy guidance, thereby finally providing valuable suggestions to help targets optimize themselves. Extensive experiments validate the effectiveness of JudgeAgent's suggestions, demonstrating that Agent-as-Interviewer can accurately identify the knowledge and capability boundaries of target models. The source code is available on https://github.com/DataArcTech/JudgeAgent.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-25T12:06:13Z
+                    <strong>Updated:</strong> 2025-09-26T02:22:22Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.02097v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.02097v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.02097v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.02097v3' target='_blank'>pdf</a>
                 </div>
             </div>
             <h1>Keyword: LLM Deployment</h1>
@@ -5118,16 +5118,16 @@
                     <strong>Authors:</strong> Chantal Shaib, Vinith M. Suriyakumar, Levent Sagun, Byron C. Wallace, Marzyeh Ghassemi
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> For an LLM to correctly respond to an instruction it must understand both the semantics and the domain (i.e., subject area) of a given task-instruction pair. However, syntax can also convey implicit information Recent work shows that syntactic templates--frequent sequences of Part-of-Speech (PoS) tags--are prevalent in training data and often appear in model outputs. In this work we characterize syntactic templates, domain, and semantics in task-instruction pairs. We identify cases of spurious correlations between syntax and domain, where models learn to associate a domain with syntax during training; this can sometimes override prompt semantics. Using a synthetic training dataset, we find that the syntactic-domain correlation can lower performance (mean 0.51 +/- 0.06) on entity knowledge tasks in OLMo-2 models (1B-13B). We introduce an evaluation framework to detect this phenomenon in trained models, and show that it occurs on a subset of the FlanV2 dataset in open (OLMo-2-7B; Llama-4-Maverick), and closed (GPT-4o) models. Finally, we present a case study on the implications for safety finetuning, showing that unintended syntactic-domain correlations can be used to bypass refusals in OLMo-2-7B Instruct and GPT-4o. Our findings highlight two needs: (1) to explicitly test for syntactic-domain correlations, and (2) to ensure syntactic diversity in training data, specifically within domains, to prevent such spurious correlations.
+                    <strong>Summary:</strong> For an LLM to correctly respond to an instruction it must understand both the semantics and the domain (i.e., subject area) of a given task-instruction pair. However, syntax can also convey implicit information Recent work shows that syntactic templates -- frequent sequences of Part-of-Speech (PoS) tags -- are prevalent in training data and often appear in model outputs. In this work we characterize syntactic templates, domain, and semantics in task-instruction pairs. We identify cases of spurious correlations between syntax and domain, where models learn to associate a domain with syntax during training; this can sometimes override prompt semantics. Using a synthetic training dataset, we find that the syntactic-domain correlation can lower performance (mean 0.51 +/- 0.06) on entity knowledge tasks in OLMo-2 models (1B-13B). We introduce an evaluation framework to detect this phenomenon in trained models, and show that it occurs on a subset of the FlanV2 dataset in open (OLMo-2-7B; Llama-4-Maverick), and closed (GPT-4o) models. Finally, we present a case study on the implications for safety finetuning, showing that unintended syntactic-domain correlations can be used to bypass refusals in OLMo-2-7B Instruct and GPT-4o. Our findings highlight two needs: (1) to explicitly test for syntactic-domain correlations, and (2) to ensure syntactic diversity in training data, specifically within domains, to prevent such spurious correlations.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-25T13:42:28Z
+                    <strong>Updated:</strong> 2025-09-26T02:37:41Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.21155v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.21155v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.21155v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.21155v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5356,13 +5356,13 @@
                     <strong>Summary:</strong> The adoption of Large Language Models (LLMs) as automated evaluators (LLM-as-a-judge) has revealed critical inconsistencies in current evaluation frameworks. We identify two fundamental types of inconsistencies: (1) Score-Comparison Inconsistency, where lower-rated responses outperform higher-scored ones in pairwise comparisons, and (2) Pairwise Transitivity Inconsistency, manifested through circular preference chains (A>B>C>A) and equivalence contradictions (A=B=C\neq A). We argue that these issues come from information loss in discrete rating systems and ambiguous tie judgments during pairwise evaluation. We propose TrustJudge, a probabilistic framework that addresses these limitations through two key innovations: 1) distribution-sensitive scoring that computes continuous expectations from discrete rating probabilities, preserving information entropy for more precise scoring, and 2) likelihood-aware aggregation that resolves transitivity violations using bidirectional preference probabilities or perplexity. We also formalize the theoretical limitations of current LLM-as-a-judge frameworks and demonstrate how TrustJudge's components overcome them. When evaluated with Llama-3.1-70B-Instruct as judge using our dataset, TrustJudge reduces Score-Comparison inconsistency by 8.43% (from 23.32% to 14.89%) and Pairwise Transitivity inconsistency by 10.82% (from 15.22% to 4.40%), while maintaining higher evaluation accuracy. Our work provides the first systematic analysis of evaluation framework inconsistencies in LLM-as-a-judge paradigms, offering both theoretical insights and practical solutions for reliable automated assessment. The framework demonstrates consistent improvements across various model architectures and scales, enabling more trustworthy LLM evaluation without requiring additional training or human annotations. The codes can be found at https://github.com/TrustJudge/TrustJudge.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-25T13:04:29Z
+                    <strong>Updated:</strong> 2025-09-26T05:33:48Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.21117v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.21117v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.21117v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.21117v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5904,16 +5904,16 @@
                     <strong>Authors:</strong> Zhichao Shi, Xuhui Jiang, Chengjin Xu, Cangli Yao, Zhenxin Huang, Shengjie Ma, Yinghan Shen, Jian Guo, Yuanzhuo Wang
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Current evaluation paradigms for large language models (LLMs) suffer from overestimated or biased evaluation and mismatched question difficulty, leading to incomplete evaluations of LLM's knowledge and capability boundaries, which hinder LLM's effective application and optimization. To address these challenges, we propose Agent-as-Interviewer, a dynamic evaluation paradigm that employs LLM agents to conduct multi-turn interactions for evaluation. Unlike current benchmarking or dynamic interaction paradigms, Agent-as-Interviewer utilizes agents to call knowledge tools for wider and deeper knowledge in the dynamic multi-turn question generation, achieving more complete evaluations of the LLM's knowledge boundaries. It also leverages agents to plan query strategies for adjustment of the question difficulty levels, enhancing the difficulty control to match the actual capabilities of target LLMs. Based on this paradigm, we develop JudgeAgent, a knowledge-wise dynamic evaluation framework that employs knowledge-driven synthesis as the agent's tool, and uses difficulty scoring as strategy guidance, thereby finally providing valuable suggestions to help targets optimize themselves. Extensive experiments validate the effectiveness of JudgeAgent's suggestions, demonstrating that Agent-as-Interviewer can accurately identify the knowledge and capability boundaries of target models. The source code is available on https://anonymous.4open.science/r/JudgeAgent.
+                    <strong>Summary:</strong> Current evaluation paradigms for large language models (LLMs) suffer from overestimated or biased evaluations and mismatched question difficulty, leading to incomplete evaluations of knowledge and capability boundaries, which hinder their effective application and optimization. To address these challenges, we propose Agent-as-Interviewer, a dynamic evaluation paradigm that employs LLM agents to conduct multi-turn interactions for evaluation. Unlike current benchmarking or dynamic interaction paradigms, Agent-as-Interviewer utilizes agents to invoke knowledge tools for wider and deeper knowledge in the dynamic multi-turn question generation, achieving more comprehensive evaluations of LLM's knowledge boundaries. It also leverages agents to plan query strategies for adjustment of the question difficulty levels, enhancing the difficulty control to match the actual capabilities of target LLMs. Based on this paradigm, we develop JudgeAgent, a knowledge-wise dynamic evaluation framework that employs knowledge-driven synthesis as the agent's tool and uses difficulty scoring as strategy guidance, thereby finally providing valuable suggestions to help targets optimize themselves. Extensive experiments validate the effectiveness of JudgeAgent's suggestions, demonstrating that Agent-as-Interviewer can accurately identify the knowledge and capability boundaries of target models. The source code is available on https://github.com/DataArcTech/JudgeAgent.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-25T12:06:13Z
+                    <strong>Updated:</strong> 2025-09-26T02:22:22Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.02097v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.02097v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.02097v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.02097v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
