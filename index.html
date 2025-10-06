@@ -84,13 +84,13 @@
                     <strong>Summary:</strong> In the World Wide Web, reliable time series forecasts provide the forward-looking signals that drive resource planning, cache placement, and anomaly response, enabling platforms to operate efficiently as user behavior and content distributions evolve. Compared with other domains, time series forecasting for Web applications requires much faster responsiveness to support real-time decision making. We present KAIROS, a non-autoregressive time series forecasting framework that directly models segment-level multi-peak distributions. Unlike autoregressive approaches, KAIROS avoids error accumulation and achieves just-in-time inference, while improving over existing non-autoregressive models that collapse to over-smoothed predictions. Trained on the large-scale corpus, KAIROS demonstrates strong zero-shot generalization on six widely used benchmarks, delivering forecasting performance comparable to state-of-the-art foundation models with similar scale, at a fraction of their inference cost. Beyond empirical results, KAIROS highlights the importance of non-autoregressive design as a scalable paradigm for foundation models in time series.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-10-02T14:50:50Z
+                    <strong>Updated:</strong> 2025-10-03T05:10:02Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2510.02084v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2510.02084v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2510.02084v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2510.02084v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -642,7 +642,7 @@
             
             <div class="paper">
                 <h2>#31 Learning to Parallel: Accelerating Diffusion Large Language Models via
-  Adaptive Parallel Decoding</h2>
+  Learnable Parallel Decoding</h2>
                 <div class="authors">
                     <strong>Authors:</strong> Wenrui Bao, Zhiben Chen, Dan Xu, Yuzhang Shang
                 </div>
@@ -650,13 +650,13 @@
                     <strong>Summary:</strong> Autoregressive decoding in large language models (LLMs) requires $\mathcal{O}(n)$ sequential steps for $n$ tokens, fundamentally limiting inference throughput. Recent diffusion-based LLMs (dLLMs) enable parallel token generation through iterative denoising. However, current parallel decoding strategies rely on fixed, input-agnostic heuristics (e.g., confidence thresholds), which fail to adapt to input-specific characteristics, resulting in suboptimal speed-quality trade-offs across diverse NLP tasks. In this work, we explore a more flexible and dynamic approach to parallel decoding. We propose Learning to Parallel Decode (Learn2PD), a framework that trains a lightweight and adaptive filter model to predict, for each token position, whether the current prediction matches the final output. This learned filter approximates an oracle parallel decoding strategy that unmasks tokens only when correctly predicted. Importantly, the filter model is learned in a post-training manner, requiring only a small amount of computation to optimize it (minute-level GPU time). Additionally, we introduce End-of-Text Prediction (EoTP) to detect decoding completion at the end of sequence, avoiding redundant decoding of padding tokens. Experiments on the LLaDA benchmark demonstrate that our method achieves up to 22.58$\times$ speedup without any performance drop, and up to 57.51$\times$ when combined with KV-Cache.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-09-29T17:59:54Z
+                    <strong>Updated:</strong> 2025-10-03T00:40:49Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2509.25188v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.25188v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2509.25188v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2509.25188v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3343,13 +3343,13 @@
                     <strong>Summary:</strong> In the World Wide Web, reliable time series forecasts provide the forward-looking signals that drive resource planning, cache placement, and anomaly response, enabling platforms to operate efficiently as user behavior and content distributions evolve. Compared with other domains, time series forecasting for Web applications requires much faster responsiveness to support real-time decision making. We present KAIROS, a non-autoregressive time series forecasting framework that directly models segment-level multi-peak distributions. Unlike autoregressive approaches, KAIROS avoids error accumulation and achieves just-in-time inference, while improving over existing non-autoregressive models that collapse to over-smoothed predictions. Trained on the large-scale corpus, KAIROS demonstrates strong zero-shot generalization on six widely used benchmarks, delivering forecasting performance comparable to state-of-the-art foundation models with similar scale, at a fraction of their inference cost. Beyond empirical results, KAIROS highlights the importance of non-autoregressive design as a scalable paradigm for foundation models in time series.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-10-02T14:50:50Z
+                    <strong>Updated:</strong> 2025-10-03T05:10:02Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span><span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2510.02084v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2510.02084v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2510.02084v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2510.02084v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5581,16 +5581,16 @@
                     <strong>Authors:</strong> Qiyuan Liu, Hao Xu, Xuhong Chen, Wei Chen, Yee Whye Teh, Ning Miao
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> Reward models (RMs) play a critical role in enhancing the reasoning performance of LLMs. For example, they can provide training signals to finetune LLMs during reinforcement learning (RL) and help select the best answer from multiple candidates during inference. In this paper, we provide a systematic introduction to RMs, along with a comprehensive survey of their applications in LLM reasoning. We first review fundamental concepts of RMs, including their architectures, training methodologies, and evaluation techniques. Then, we explore their key applications: (1) guiding generation and selecting optimal outputs during LLM inference, (2) facilitating data synthesis and iterative self-improvement for LLMs, and (3) providing training signals in RL-based finetuning. Finally, we address critical open questions regarding the selection, generalization, evaluation, and enhancement of RMs, based on existing research and our own empirical findings. Our analysis aims to provide actionable insights for the effective deployment and advancement of RMs for LLM reasoning.
+                    <strong>Summary:</strong> Reward models (RMs) play a critical role in enhancing the reasoning performance of LLMs. For example, they can provide training signals to finetune LLMs during reinforcement learning (RL) and help select the best answer from multiple candidates during inference. In this paper, we provide a systematic introduction to RMs, along with a comprehensive survey of their applications in LLM reasoning. We first review fundamental concepts of RMs, including their architectures, training methodologies, and evaluation techniques. Then, we explore their key applications: (1) guiding generation and selecting optimal outputs during LLM inference, (2) facilitating data synthesis and iterative self-improvement for LLMs, and (3) providing training signals in RL-based finetuning. Finally, we discuss critical open questions regarding the selection, generalization, evaluation, and enhancement of RMs, based on existing research and our own empirical findings. Our analysis aims to provide actionable insights for the effective deployment and advancement of RMs for LLM reasoning.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-10-02T11:42:17Z
+                    <strong>Updated:</strong> 2025-10-03T10:55:18Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2510.01925v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2510.01925v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2510.01925v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2510.01925v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
