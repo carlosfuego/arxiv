@@ -418,13 +418,13 @@
                     <strong>Summary:</strong> With the growing use of embedded systems in various industries, the need for automated platforms for the development and deployment of customized Linux-based operating systems has become more important. This research was conducted with the aim of designing and implementing an integrated and reproducible infrastructure for the development, building, and testing of a Linux-based operating system using the Yocto Project. The proposed structure was implemented based on a three-layer architecture consisting of the main Yocto repositories, a custom layer (meta-custom), and a coordinating manifest layer to ensure version synchronization, scalability, and reproducibility. Three sample projects, including libhelloworld, helloworld, and the kernel module hello mod, were developed and integrated into the build process. Continuous Integration and Continuous Deployment pipelines were implemented with GitLab CI and combined with an isolated Docker environment to automate and streamline the build and testing workflows. Using a local cache server containing hashserv, downloads and sstate cache significantly reduced the build time. The functionality and stability of the system were verified through six boot test scenarios in the QEMU simulator. The results show that the proposed design not only ensures reproducibility but also can be extended to advanced applications such as continuous deployment of real-time Linux versions. Future recommendations include expanding automated tests, implementing system monitoring with Prometheus and Grafana, using distributed builds, optimizing with Docker multi-stage builds, and enabling continuous deployment of real-time Linux changes to provide a stable and scalable model for industrial and research projects in embedded systems with a rapid and reliable development cycle.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-10-22T04:48:41Z
+                    <strong>Updated:</strong> 2025-10-24T08:35:21Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.SE</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2510.19240v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2510.19240v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2510.19240v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2510.19240v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -2894,13 +2894,13 @@
                     <strong>Summary:</strong> DeepSeek-R1 has successfully enhanced Large Language Model (LLM) reasoning capabilities through its rule-based reward system. While it's a ''perfect'' reward system that effectively mitigates reward hacking, such reward functions are often discrete. Our experimental observations suggest that discrete rewards can lead to gradient anomaly, unstable optimization, and slow convergence. To address this issue, we propose ReDit (Reward Dithering), a method that dithers the discrete reward signal by adding simple random noise. With this perturbed reward, exploratory gradients are continuously provided throughout the learning process, enabling smoother gradient updates and accelerating convergence. The injected noise also introduces stochasticity into flat reward regions, encouraging the model to explore novel policies and escape local optima. Experiments across diverse tasks demonstrate the effectiveness and efficiency of ReDit. On average, ReDit achieves performance comparable to vanilla GRPO with only approximately 10% the training steps, and furthermore, still exhibits a 4% performance improvement over vanilla GRPO when trained for a similar duration. Visualizations confirm significant mitigation of gradient issues with ReDit. Moreover, theoretical analyses are provided to further validate these advantages.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-10-23T15:48:56Z
+                    <strong>Updated:</strong> 2025-10-24T12:32:00Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span><span>cs.AI</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.18631v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.18631v3' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.18631v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.18631v4' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -3953,13 +3953,13 @@
                     <strong>Summary:</strong> Aligning large language models with human preferences is critical for creating reliable and controllable AI systems. A human preference can be visualized as a high-dimensional vector where different directions represent trade-offs between desired attributes (e.g., helpfulness vs. verbosity). Yet, because the training data often reflects dominant, average preferences, LLMs tend to perform well on common requests but fall short in specific, individual needs. This mismatch creates a preference coverage gap. Existing methods often address this through costly retraining, which may not be generalized to the full spectrum of diverse preferences. This brittleness means that when a user's request reflects a nuanced preference deviating from the training data's central tendency, model performance can degrade unpredictably. To address this challenge, we introduce Robust Preference Selection (RPS), a post-hoc, training-free method by leveraging directional neighborhood consensus. Instead of forcing a model to generate a response from a single, highly specific preference, RPS samples multiple responses from a local neighborhood of related preferences to create a superior candidate pool. It then selects the response that best aligns with the user's original intent. We provide a theoretical framework showing our neighborhood generation strategy is provably superior to a strong baseline that also samples multiple candidates. Comprehensive experiments across three distinct alignment paradigms (DPA, DPO, and SFT) demonstrate that RPS consistently improves robustness against this baseline, achieving win rates of up to 69% on challenging preferences from under-represented regions of the space without any model retraining. Our work presents a practical, theoretically-grounded solution for enhancing the reliability of preference-aligned models.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-10-23T12:39:20Z
+                    <strong>Updated:</strong> 2025-10-24T02:19:56Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2510.20498v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2510.20498v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2510.20498v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2510.20498v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -4660,13 +4660,13 @@
                     <strong>Summary:</strong> DeepSeek-R1 has successfully enhanced Large Language Model (LLM) reasoning capabilities through its rule-based reward system. While it's a ''perfect'' reward system that effectively mitigates reward hacking, such reward functions are often discrete. Our experimental observations suggest that discrete rewards can lead to gradient anomaly, unstable optimization, and slow convergence. To address this issue, we propose ReDit (Reward Dithering), a method that dithers the discrete reward signal by adding simple random noise. With this perturbed reward, exploratory gradients are continuously provided throughout the learning process, enabling smoother gradient updates and accelerating convergence. The injected noise also introduces stochasticity into flat reward regions, encouraging the model to explore novel policies and escape local optima. Experiments across diverse tasks demonstrate the effectiveness and efficiency of ReDit. On average, ReDit achieves performance comparable to vanilla GRPO with only approximately 10% the training steps, and furthermore, still exhibits a 4% performance improvement over vanilla GRPO when trained for a similar duration. Visualizations confirm significant mitigation of gradient issues with ReDit. Moreover, theoretical analyses are provided to further validate these advantages.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-10-23T15:48:56Z
+                    <strong>Updated:</strong> 2025-10-24T12:32:00Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.LG</span><span>cs.AI</span><span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2506.18631v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.18631v3' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2506.18631v4' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2506.18631v4' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5388,13 +5388,13 @@
                     <strong>Summary:</strong> Aligning large language models with human preferences is critical for creating reliable and controllable AI systems. A human preference can be visualized as a high-dimensional vector where different directions represent trade-offs between desired attributes (e.g., helpfulness vs. verbosity). Yet, because the training data often reflects dominant, average preferences, LLMs tend to perform well on common requests but fall short in specific, individual needs. This mismatch creates a preference coverage gap. Existing methods often address this through costly retraining, which may not be generalized to the full spectrum of diverse preferences. This brittleness means that when a user's request reflects a nuanced preference deviating from the training data's central tendency, model performance can degrade unpredictably. To address this challenge, we introduce Robust Preference Selection (RPS), a post-hoc, training-free method by leveraging directional neighborhood consensus. Instead of forcing a model to generate a response from a single, highly specific preference, RPS samples multiple responses from a local neighborhood of related preferences to create a superior candidate pool. It then selects the response that best aligns with the user's original intent. We provide a theoretical framework showing our neighborhood generation strategy is provably superior to a strong baseline that also samples multiple candidates. Comprehensive experiments across three distinct alignment paradigms (DPA, DPO, and SFT) demonstrate that RPS consistently improves robustness against this baseline, achieving win rates of up to 69% on challenging preferences from under-represented regions of the space without any model retraining. Our work presents a practical, theoretically-grounded solution for enhancing the reliability of preference-aligned models.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-10-23T12:39:20Z
+                    <strong>Updated:</strong> 2025-10-24T02:19:56Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.CL</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2510.20498v1' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2510.20498v1' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2510.20498v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2510.20498v2' target='_blank'>pdf</a>
                 </div>
             </div>
             
@@ -5854,16 +5854,16 @@
                     <strong>Authors:</strong> Silas Ruhrberg Estévez, Nicolás Astorga, Mihaela van der Schaar
                 </div>
                 <div class="summary">
-                    <strong>Summary:</strong> There is growing interest in using machine learning (ML) to support clinical diag- nosis, but most approaches rely on static, fully observed datasets and fail to reflect the sequential, resource-aware reasoning clinicians use in practice. Diagnosis remains complex and error prone, especially in high-pressure or resource-limited settings, underscoring the need for frameworks that help clinicians make timely and cost-effective decisions. We propose ACTMED (Adaptive Clinical Test selection via Model-based Experimental Design), a diagnostic framework that integrates Bayesian Experimental Design (BED) with large language models (LLMs) to better emulate real-world diagnostic reasoning. At each step, ACTMED selects the test expected to yield the greatest reduction in diagnostic uncertainty for a given patient. LLMs act as flexible simulators, generating plausible patient state distributions and supporting belief updates without requiring structured, task-specific training data. Clinicians can remain in the loop; reviewing test suggestions, interpreting intermediate outputs, and applying clinical judgment throughout. We evaluate ACTMED on real-world datasets and show it can optimize test selection to improve diagnostic accuracy, interpretability, and resource use. This represents a step to- ward transparent, adaptive, and clinician-aligned diagnostic systems that generalize across settings with reduced reliance on domain-specific data.
+                    <strong>Summary:</strong> There is growing interest in using machine learning (ML) to support clinical diagnosis, but most approaches rely on static, fully observed datasets and fail to reflect the sequential, resource-aware reasoning clinicians use in practice. Diagnosis remains complex and error prone, especially in high-pressure or resource-limited settings, underscoring the need for frameworks that help clinicians make timely and cost-effective decisions. We propose ACTMED (Adaptive Clinical Test selection via Model-based Experimental Design), a diagnostic framework that integrates Bayesian Experimental Design (BED) with large language models (LLMs) to better emulate real-world diagnostic reasoning. At each step, ACTMED selects the test expected to yield the greatest reduction in diagnostic uncertainty for a given patient. LLMs act as flexible simulators, generating plausible patient state distributions and supporting belief updates without requiring structured, task-specific training data. Clinicians can remain in the loop; reviewing test suggestions, interpreting intermediate outputs, and applying clinical judgment throughout. We evaluate ACTMED on real-world datasets and show it can optimize test selection to improve diagnostic accuracy, interpretability, and resource use. This represents a step toward transparent, adaptive, and clinician-aligned diagnostic systems that generalize across settings with reduced reliance on domain-specific data.
                 </div>
                 <div class="updated">
-                    <strong>Updated:</strong> 2025-10-23T09:56:27Z
+                    <strong>Updated:</strong> 2025-10-24T12:05:14Z
                 </div>
                 <div class="tags">
                     <strong>Tags:</strong> <span>cs.AI</span>
                 </div>
                 <div class="links">
-                    <a href='http://arxiv.org/abs/2510.18988v2' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2510.18988v2' target='_blank'>pdf</a>
+                    <a href='http://arxiv.org/abs/2510.18988v3' target='_blank'>HTML</a><a href='http://arxiv.org/pdf/2510.18988v3' target='_blank'>pdf</a>
                 </div>
             </div>
             
